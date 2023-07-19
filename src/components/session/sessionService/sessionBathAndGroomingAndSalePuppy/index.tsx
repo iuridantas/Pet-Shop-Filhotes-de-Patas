@@ -11,6 +11,27 @@ export function SessionBathAndGroomingAndSalePuppy() {
           Desfrute de Banho e Tosas Profissionais e Encontre o Seu Filhote
           Perfeito!
         </h1>
+        <h2>
+          Descubra mais informações clicando em uma das categorias abaixo:
+        </h2>
+        <div>
+          <a
+            onClick={() => {
+              navigate('/serviços/estetica');
+            }}
+            className="container-link"
+          >
+            Serviços de Centro de Estética
+          </a>
+          <a
+            onClick={() => {
+              navigate('/serviços/filhotes');
+            }}
+            className="container-link"
+          >
+            Filhotes
+          </a>
+        </div>
         <h2>Banho</h2>
         <p>
           No nosso pet shop, oferecemos serviços de banho especializados para
@@ -44,27 +65,6 @@ export function SessionBathAndGroomingAndSalePuppy() {
           cuidados, para que você possa ter a certeza de que estará levando para
           casa um companheiro peludo feliz e saudável.
         </p>
-        <h2>
-          Descubra mais informações clicando em uma das categorias abaixo:
-        </h2>
-        <div>
-          <a
-            onClick={() => {
-              navigate('/serviços/estetica');
-            }}
-            className="container-link"
-          >
-            Serviços de Centro de Estética
-          </a>
-          <a
-            onClick={() => {
-              navigate('/serviços/filhotes');
-            }}
-            className="container-link"
-          >
-            Filhotes
-          </a>
-        </div>
       </BathAndGroomingAndSalePuppySession>
     </section>
   );
