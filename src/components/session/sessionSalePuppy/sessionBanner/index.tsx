@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import { BannerSession } from './style';
 
-export function SessionBannerBathAndGrooming() {
-  const images = ['/img/banho_tosa.png'];
-  const imagesPhone = ['/img/banho_tosa_cel.png'];
+export function SessionBannerSalePuppy() {
+  const images = ['/img/venda_filhotes.png'];
+  const imagesPhone = ['/img/venda_filhotes_cel.png'];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
@@ -33,14 +33,14 @@ export function SessionBannerBathAndGrooming() {
   }, []);
 
   return (
-    <section aria-label="Banner sobre banho e tosa">
+    <section aria-label="Banner sobre venda de filhotes">
       <BannerSession>
         {(window.innerWidth <= 600 ? imagesPhone : images).map((src, index) => (
           <div
             key={index}
             style={{ display: index === currentImageIndex ? 'block' : 'none' }}
           >
-            <img src={src} alt="Foto do Banner sobre banho e tosa" />
+            <img src={src} alt="Foto do Banner sobre venda de filhotes" />
           </div>
         ))}
       </BannerSession>

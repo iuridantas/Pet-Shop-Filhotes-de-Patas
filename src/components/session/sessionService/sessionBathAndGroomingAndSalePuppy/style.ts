@@ -54,16 +54,16 @@ export const BathAndGroomingAndSalePuppySession = styled.div`
   @media (max-width: 600px) {
     h1 {
       font-size: 1.4rem;
-      margin: 10px 4px;
+      margin: 10px 20px;
     }
 
     h2 {
       font-size: 1.2rem;
-      margin: 5px 10px;
+      margin: 5px 20px;
     }
 
     p {
-      margin: 5px 10px;
+      margin: 5px 20px;
       font-size: 1rem;
     }
 

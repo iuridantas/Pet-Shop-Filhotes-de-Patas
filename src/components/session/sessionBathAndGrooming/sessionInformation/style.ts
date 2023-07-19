@@ -47,11 +47,11 @@ export const InformationSession = styled.div`
     flex-direction: column;
     h2 {
       font-size: 1.2rem;
-      margin: 5px 10px;
+      margin: 5px 20px;
     }
 
     p {
-      margin: 5px 30px;
+      margin: 5px 20px;
       font-size: 1rem;
       text-align: justify;
     }
