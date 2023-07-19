@@ -1,12 +1,12 @@
 import { SessionBanners } from '../../components/session/sessionService/sessionBanner';
-import { SessionBathAndGrooming } from '../../components/session/sessionService/sessionBathAndGrooming';
+import { SessionBathAndGroomingAndSalePuppy } from '../../components/session/sessionService/sessionBathAndGroomingAndSalePuppy';
 import { Container } from './style';
 
 export function Service() {
   return (
     <Container aria-label="Página inicial">
       <SessionBanners />
-      <SessionBathAndGrooming />
+      <SessionBathAndGroomingAndSalePuppy />
     </Container>
   );
 }

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const BathAndGroomingSession = styled.div`
+export const BathAndGroomingAndSalePuppySession = styled.div`
   display: flex;
   flex-direction: column;
 
@@ -44,10 +44,6 @@ export const BathAndGroomingSession = styled.div`
     margin: 0 20px;
   }
 
-  .container-link:last-of-type {
-    margin-right: 0;
-  }
-
   .container-link:hover {
     background-color: #1f1c6e;
     color: #dd9094;
@@ -73,6 +69,7 @@ export const BathAndGroomingSession = styled.div`
 
     div {
       flex-direction: column;
+      margin: 10px auto;
     }
 
     .container-link {

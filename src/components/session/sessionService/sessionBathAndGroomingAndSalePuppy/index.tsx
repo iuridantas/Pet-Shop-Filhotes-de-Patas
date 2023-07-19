@@ -1,12 +1,12 @@
 import { useNavigate } from 'react-router-dom';
-import { BathAndGroomingSession } from './style';
+import { BathAndGroomingAndSalePuppySession } from './style';
 
-export function SessionBathAndGrooming() {
+export function SessionBathAndGroomingAndSalePuppy() {
   const navigate = useNavigate();
 
   return (
     <section aria-label="Explicação Sobre banho, banho e tosa e sobre venda de filhotes">
-      <BathAndGroomingSession>
+      <BathAndGroomingAndSalePuppySession>
         <h1>
           Desfrute de Banho e Tosas Profissionais e Encontre o Seu Filhote
           Perfeito!
@@ -65,7 +65,7 @@ export function SessionBathAndGrooming() {
             Filhotes
           </a>
         </div>
-      </BathAndGroomingSession>
+      </BathAndGroomingAndSalePuppySession>
     </section>
   );
 }
