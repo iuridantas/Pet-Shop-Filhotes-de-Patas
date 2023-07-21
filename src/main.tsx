@@ -6,6 +6,7 @@ import GlobalStyle from './styles/global';
 import { Service } from './pages/services';
 import { BathAndGrooming } from './pages/bathAndGrooming';
 import { SalePuppy } from './pages/salePuppy';
+import { Contact } from './pages/contact';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
@@ -16,6 +17,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
         <Route path="/serviços" element={<Service />} />
         <Route path="/serviços/estetica" element={<BathAndGrooming />} />
         <Route path="/serviços/filhotes" element={<SalePuppy />} />
+        <Route path="/contato" element={<Contact />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
