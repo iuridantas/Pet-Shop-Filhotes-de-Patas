@@ -23,13 +23,6 @@ const dogsInformation = [
     price: 'R$ 2.000,00',
   },
   {
-    photo: '/img/pug.png',
-    name: 'Pug',
-    description:
-      'Conheça a fofura do Pug! Pequeno, carismático e adorável, esse cãozinho de olhos brilhantes é um verdadeiro encanto. Com seu temperamento afetuoso e leal, torna-se o melhor amigo de qualquer pessoa.',
-    price: 'R$ 2.000,00',
-  },
-  {
     photo: '/img/maltes.png',
     name: 'Maltês',
     description:
@@ -53,9 +46,6 @@ export function CardDogsInformation() {
           <h2>{dogsInformation.name}</h2>
           <img src={dogsInformation.photo} alt={dogsInformation.name} />
           <p>{dogsInformation.description}</p>
-          <div>
-            <h3>{dogsInformation.price}</h3>
-          </div>
         </CardSession>
       ))}
     </section>

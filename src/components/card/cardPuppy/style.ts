@@ -13,19 +13,8 @@ export const CardSession = styled.div`
     border-radius: 1rem;
   }
 
-  div {
-    display: flex;
-    justify-content: center;
-    border-top: 1px solid black;
-  }
-
   h2 {
     font-size: 1.8rem;
-  }
-
-  h3 {
-    font-size: 1.4rem;
-    margin-top: 5px;
   }
 
   p {
@@ -33,7 +22,6 @@ export const CardSession = styled.div`
     text-align: justify;
     padding: 5px;
     line-height: 1.5;
-
   }
 
   @media (max-width: 600px) {
@@ -47,10 +35,6 @@ export const CardSession = styled.div`
       border-radius: 1rem;
     }
     h2 {
-      font-size: 1.2rem;
-    }
-
-    h3 {
       font-size: 1.2rem;
     }
   }
