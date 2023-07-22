@@ -5,7 +5,7 @@ import { Container } from './style';
 
 export function SalePuppy() {
   return (
-    <Container aria-label="Página inicial">
+    <Container aria-label="Página dos filhotes que a Filhotes de Patas tem disponível para venda">
       <SessionBannerSalePuppy />
       <SessionInformationPuppy />
       <SessionDogs />

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const BannerSession = styled.div`
   img {
     width: 100vw;
-    height: 320px;
+    height: 400px;
   }
 
   @media (max-width: 600px) {

@@ -89,7 +89,7 @@ export function Header() {
             <li>
               <a
                 onClick={() => {
-                  navigate('/Cachorross');
+                  navigate('/cachorro');
                 }}
                 className="container-link"
               >
@@ -99,7 +99,7 @@ export function Header() {
             <li>
               <a
                 onClick={() => {
-                  navigate('/gatos');
+                  navigate('/gato');
                 }}
                 className="container-link"
               >
