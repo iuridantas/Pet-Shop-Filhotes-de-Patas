@@ -8,8 +8,7 @@ export const BannerSession = styled.div`
 
   @media (max-width: 600px) {
     img {
-      width: 100vw;
-      height: 200px;
+      height: 100%;
     }
   }
 `;
