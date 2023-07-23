@@ -16,6 +16,7 @@ export const CardSession = styled.div`
   img {
     height: 250px;
     width: 250px;
+    padding: 10px;
   }
 
   .information {
@@ -38,13 +39,16 @@ export const CardSession = styled.div`
 
   h4 {
     font-size: 1rem;
-    margin-bottom: 5px;
   }
 
   @media (max-width: 600px) {
     width: 280px;
-    height: auto;
+    height: 365px;
     margin: 0 auto;
+
+    img {
+    padding: 20px;
+  }
 
     h2 {
       font-size: 1.2rem;
