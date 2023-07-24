@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 
 export const CardSession = styled.div`
-  width: 300px;
+  width: 308px;
   height: 375px;
   padding: 16px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24),
@@ -47,8 +47,8 @@ export const CardSession = styled.div`
     margin: 0 auto;
 
     img {
-    padding: 20px;
-  }
+      padding: 20px;
+    }
 
     h2 {
       font-size: 1.2rem;
@@ -64,27 +64,26 @@ export const CardSession = styled.div`
   }
 `;
 
-export const IconContainer = styled.div`
-  position: absolute;
-  bottom: 0;
-  transform: translateY(-50%);
-  display: flex;
-
-  @media (max-width: 600px) {
-    bottom: auto;
-    transform: translateY(-295%);
-  }
+export const ImageContainer = styled.div`
+  position: relative;
 `;
 
-export const LeftIcon = styled(FiChevronLeft)`
+export const IconLeft = styled(FiChevronLeft)`
+  position: absolute;
+  left: -30px;
+  top: 50%;
+  transform: translateY(-50%);
   font-size: 50px;
   cursor: pointer;
   user-select: none;
 `;
 
-export const RightIcon = styled(FiChevronRight)`
+export const IconRight = styled(FiChevronRight)`
+  position: absolute;
+  right: -30px;
+  top: 50%;
+  transform: translateY(-50%);
   font-size: 50px;
   cursor: pointer;
-  margin-left: 150px;
   user-select: none;
 `;
