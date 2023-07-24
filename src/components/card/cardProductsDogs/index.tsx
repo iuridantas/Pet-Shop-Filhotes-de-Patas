@@ -9,7 +9,7 @@ import {
 } from './style';
 import productsDogs from '../../products/dogs';
 
-export function CardProductsForDogs({ searchTerm }: { searchTerm: string }) {
+export function CardProductsForDogs({ searchTerm, selectedFilter }: { searchTerm: string, selectedFilter: string }) {
   const [productColors, setProductColors] = useState(
     productsDogs.map((product) => ({
       productId: product.id,
@@ -21,6 +21,21 @@ export function CardProductsForDogs({ searchTerm }: { searchTerm: string }) {
     null,
   );
 
+  const sortProducts = (products: any[]) => {
+    switch (selectedFilter) {
+      case 'NameAscending':
+        return products.slice().sort((a, b) => a.name.localeCompare(b.name));
+      case 'NameDescending':
+        return products.slice().sort((a, b) => b.name.localeCompare(a.name));
+      case 'PriceAscending':
+        return products.slice().sort((a, b) => a.price - b.price);
+      case 'PriceDescending':
+        return products.slice().sort((a, b) => b.price - a.price);
+      default:
+        return products;
+    }
+  };
+
   const handleCardClick = (productId: number) => {
     const index = productsDogs.findIndex((product) => product.id === productId);
     setSelectedCardIndex(index);
@@ -28,6 +43,10 @@ export function CardProductsForDogs({ searchTerm }: { searchTerm: string }) {
 
   const handleFullScreenCardClose = () => {
     setSelectedCardIndex(null);
+  };
+
+  const formatPrice = (price: number) => {
+    return price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
   };
 
   const handleNextColor = (productId: number, colorsLength: number) => {
@@ -65,7 +84,7 @@ export function CardProductsForDogs({ searchTerm }: { searchTerm: string }) {
 
   return (
     <section aria-label="card sobre produtos para cachorro disponível para venda">
-      {productsDogs
+      {sortProducts(productsDogs)
         .filter(
           (product) =>
             searchTerm === '' ||
@@ -111,7 +130,7 @@ export function CardProductsForDogs({ searchTerm }: { searchTerm: string }) {
               )}
             </ImageContainer>
             <div className="information">
-              <h3>{product.price}</h3>
+            <h3>{formatPrice(product.price)}</h3>
               <h4>{product.installments}</h4>
             </div>
           </CardSession>
