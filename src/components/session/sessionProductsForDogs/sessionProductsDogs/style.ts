@@ -37,7 +37,7 @@ export const ProductsDogs = styled.div`
     section {
       display: flex;
       flex-direction: column;
-      margin: 10px auto;
+      margin: 15px auto;
     }
   }
 `;
