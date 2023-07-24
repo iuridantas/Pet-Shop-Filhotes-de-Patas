@@ -45,7 +45,7 @@ export const CardSession = styled.div`
 
   @media (max-width: 600px) {
     width: 320px;
-    height: 365px;
+    height: auto;
     margin: 0 auto;
 
     img {
