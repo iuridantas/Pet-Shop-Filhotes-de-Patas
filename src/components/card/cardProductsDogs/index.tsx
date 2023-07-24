@@ -9,7 +9,15 @@ import {
 } from './style';
 import productsDogs from '../../products/dogs';
 
-export function CardProductsForDogs({ searchTerm, selectedFilter }: { searchTerm: string, selectedFilter: string }) {
+export function CardProductsForDogs({
+  searchTerm,
+  selectedFilter,
+  selectedCategory,
+}: {
+  searchTerm: string;
+  selectedFilter: string;
+  selectedCategory: string;
+}) {
   const [productColors, setProductColors] = useState(
     productsDogs.map((product) => ({
       productId: product.id,
@@ -22,18 +30,35 @@ export function CardProductsForDogs({ searchTerm, selectedFilter }: { searchTerm
   );
 
   const sortProducts = (products: any[]) => {
+    let sortedProducts = [...products];
     switch (selectedFilter) {
       case 'NameAscending':
-        return products.slice().sort((a, b) => a.name.localeCompare(b.name));
+        sortedProducts = sortedProducts.sort((a, b) =>
+          a.name.localeCompare(b.name),
+        );
+        break;
       case 'NameDescending':
-        return products.slice().sort((a, b) => b.name.localeCompare(a.name));
+        sortedProducts = sortedProducts.sort((a, b) =>
+          b.name.localeCompare(a.name),
+        );
+        break;
       case 'PriceAscending':
-        return products.slice().sort((a, b) => a.price - b.price);
+        sortedProducts = sortedProducts.sort((a, b) => a.price - b.price);
+        break;
       case 'PriceDescending':
-        return products.slice().sort((a, b) => b.price - a.price);
+        sortedProducts = sortedProducts.sort((a, b) => b.price - a.price);
+        break;
       default:
-        return products;
+        break;
     }
+
+    if (selectedCategory !== '') {
+      sortedProducts = sortedProducts.filter(
+        (product) => product.category === selectedCategory,
+      );
+    }
+
+    return sortedProducts;
   };
 
   const handleCardClick = (productId: number) => {
@@ -46,7 +71,10 @@ export function CardProductsForDogs({ searchTerm, selectedFilter }: { searchTerm
   };
 
   const formatPrice = (price: number) => {
-    return price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+    return price.toLocaleString('pt-BR', {
+      style: 'currency',
+      currency: 'BRL',
+    });
   };
 
   const handleNextColor = (productId: number, colorsLength: number) => {
@@ -130,7 +158,7 @@ export function CardProductsForDogs({ searchTerm, selectedFilter }: { searchTerm
               )}
             </ImageContainer>
             <div className="information">
-            <h3>{formatPrice(product.price)}</h3>
+              <h3>{formatPrice(product.price)}</h3>
               <h4>{product.installments}</h4>
             </div>
           </CardSession>

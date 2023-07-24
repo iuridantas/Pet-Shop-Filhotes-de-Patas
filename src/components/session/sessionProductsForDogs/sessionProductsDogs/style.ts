@@ -8,8 +8,7 @@ export const ProductsDogs = styled.div`
 
   .filter {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     margin: 10px 0;
 
@@ -28,7 +27,6 @@ export const ProductsDogs = styled.div`
     border-radius: 10px;
     border-color: black;
     font-size: 1.2rem;
-    margin: 0 300px 0 550px;
     text-align: center;
     padding: 5px;
   }
@@ -60,16 +58,12 @@ export const ProductsDogs = styled.div`
     .filter {
       display: flex;
       flex-direction: column;
-      margin: 10px 0;
+      margin: 10px auto;
 
       h2 {
         font-size: 1.1rem;
         margin: 0 10px 0 0;
       }
-    }
-
-    .select {
-      margin-top: 10px;
     }
 
     select {
@@ -80,7 +74,7 @@ export const ProductsDogs = styled.div`
     input {
       width: 50%;
       font-size: 1rem;
-      margin: 0 auto;
+      margin: 10px auto;
     }
 
     section {
