@@ -1,14 +1,34 @@
 import { useState } from 'react';
-import { CardSession, IconLeft, IconRight, ImageContainer } from './style';
+import {
+  ButtonIcon,
+  CardSession,
+  FullScreenCard,
+  IconLeft,
+  IconRight,
+  ImageContainer,
+} from './style';
 import productsDogs from '../../products/dogs';
 
-export function CardProductsForDogs() {
+export function CardProductsForDogs({ searchTerm }: { searchTerm: string }) {
   const [productColors, setProductColors] = useState(
     productsDogs.map((product) => ({
       productId: product.id,
       currentColorIndex: 0,
     })),
   );
+
+  const [selectedCardIndex, setSelectedCardIndex] = useState<number | null>(
+    null,
+  );
+
+  const handleCardClick = (productId: number) => {
+    const index = productsDogs.findIndex((product) => product.id === productId);
+    setSelectedCardIndex(index);
+  };
+
+  const handleFullScreenCardClose = () => {
+    setSelectedCardIndex(null);
+  };
 
   const handleNextColor = (productId: number, colorsLength: number) => {
     setProductColors((prevProductColors) =>
@@ -45,34 +65,72 @@ export function CardProductsForDogs() {
 
   return (
     <section aria-label="card sobre produtos para cachorro disponível para venda">
-      {productsDogs.map((product) => (
-        <CardSession key={product.id}>
-          <h2>{product.name}</h2>
-          <h2>{product.brand}</h2>
-          <ImageContainer>
-            {product.colors && Array.isArray(product.colors) && product.colors.length > 0 ? (
-              <>
+      {productsDogs
+        .filter(
+          (product) =>
+            searchTerm === '' ||
+            product.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+            product.brand.toLowerCase().includes(searchTerm.toLowerCase()),
+        )
+        .map((product) => (
+          <CardSession key={product.id}>
+            <h2>{product.name}</h2>
+            <h2>{product.brand}</h2>
+            <ImageContainer>
+              {product.colors &&
+              Array.isArray(product.colors) &&
+              product.colors.length > 0 ? (
+                <>
+                  <img
+                    src={
+                      product.colors[
+                        productColors.find((p) => p.productId === product.id)
+                          ?.currentColorIndex || 0
+                      ]?.photo
+                    }
+                    alt={product.name}
+                    onClick={() => handleCardClick(product.id)}
+                  />
+                  <IconLeft
+                    onClick={() =>
+                      handlePreviousColor(product.id, product.colors!.length)
+                    }
+                  />
+                  <IconRight
+                    onClick={() =>
+                      handleNextColor(product.id, product.colors!.length)
+                    }
+                  />
+                </>
+              ) : (
                 <img
-                  src={
-                    product.colors[
-                      productColors.find((p) => p.productId === product.id)?.currentColorIndex || 0
-                    ]?.photo
-                  }
+                  src={product.photo}
                   alt={product.name}
+                  onClick={() => handleCardClick(product.id)}
                 />
-                <IconLeft onClick={() => handlePreviousColor(product.id, product.colors!.length)} />
-                <IconRight onClick={() => handleNextColor(product.id, product.colors!.length)} />
-              </>
-            ) : (
-              <img src={product.photo} alt={product.name} />
-            )}
-          </ImageContainer>
-          <div className="information">
-            <h3>{product.price}</h3>
-            <h4>{product.installments}</h4>
-          </div>
-        </CardSession>
-      ))}
+              )}
+            </ImageContainer>
+            <div className="information">
+              <h3>{product.price}</h3>
+              <h4>{product.installments}</h4>
+            </div>
+          </CardSession>
+        ))}
+      {selectedCardIndex !== null && (
+        <FullScreenCard>
+          <img
+            src={
+              productsDogs[selectedCardIndex].colors
+                ? productsDogs[selectedCardIndex]?.colors?.[
+                    productColors[selectedCardIndex]?.currentColorIndex
+                  ]?.photo
+                : productsDogs[selectedCardIndex].photo
+            }
+            alt={productsDogs[selectedCardIndex].name}
+          />
+          <ButtonIcon onClick={handleFullScreenCardClose} />
+        </FullScreenCard>
+      )}
     </section>
   );
 }

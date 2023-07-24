@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
+import { AiOutlineClose } from 'react-icons/ai';
 
 export const CardSession = styled.div`
   width: 308px;
   height: 375px;
   padding: 16px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24),
-    5px 5px 10px black;
+    1px 1px 5px black;
   border-radius: 2rem;
   display: flex;
   flex-direction: column;
@@ -17,6 +18,7 @@ export const CardSession = styled.div`
     height: 250px;
     width: 250px;
     padding: 10px;
+    cursor: pointer;
   }
 
   .information {
@@ -86,4 +88,48 @@ export const IconRight = styled(FiChevronRight)`
   font-size: 50px;
   cursor: pointer;
   user-select: none;
+`;
+
+export const FullScreenCard = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  color: white;
+
+  img {
+    width: auto;
+    height: auto;
+  }
+
+  @media (max-width: 600px) {
+    img {
+      width: 400px;
+      height: auto;
+    }
+  }
+`;
+
+export const ButtonIcon = styled(AiOutlineClose)`
+  color: white;
+  cursor: pointer;
+  font-size: 32px;
+  z-index: 1;
+  margin-top: 20px;
+
+  &:hover {
+    color: red;
+  }
+
+  @media (max-width: 600px) {
+    color: red;
+    margin-top: 10px;
+  }
 `;

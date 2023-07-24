@@ -384,7 +384,7 @@ const productsDogs: Product[] = [
   {
     id: 43,
     photo: '/img/refil_cata_caca.png',
-    name: 'Refil do Cata-Caca',
+    name: 'Refil do Cata Caca',
     brand: 'Pet Ninho',
     price: 'R$ 100,00',
     installments: 'ou 2x de R$ 50,00',
@@ -471,4 +471,15 @@ const productsDogs: Product[] = [
   },
 ];
 
-export default productsDogs;
+function shuffleArray<T>(array: T[]): T[] {
+  const shuffledArray = array.slice();
+  for (let i = shuffledArray.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
+  }
+  return shuffledArray;
+}
+
+const shuffledProducts = shuffleArray(productsDogs);
+
+export default shuffledProducts;
