@@ -42,7 +42,7 @@ export const CardSession = styled.div`
   }
 
   @media (max-width: 600px) {
-    width: 280px;
+    width: 320px;
     height: 365px;
     margin: 0 auto;
 
