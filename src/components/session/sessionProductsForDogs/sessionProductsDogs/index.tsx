@@ -53,12 +53,6 @@ export function SessionProductsDogs() {
               <option value="Roupas">Roupas</option>
             </select>
           </div>
-          <input
-            type="text"
-            placeholder="Digite o nome do produto"
-            value={searchTerm}
-            onChange={handleInputChange}
-          />
           <div className="select">
             <h2>Ordenar por:</h2>
             <select value={selectedFilter} onChange={handleFilterChange}>
@@ -69,6 +63,15 @@ export function SessionProductsDogs() {
               <option value="PriceDescending">Maior Preço</option>
             </select>
           </div>
+        </div>
+        <div className="teste">
+          <input
+            className="search"
+            type="text"
+            placeholder="Digite o nome do produto"
+            value={searchTerm}
+            onChange={handleInputChange}
+          />
         </div>
         <CardProductsForDogs
           searchTerm={searchTerm}
