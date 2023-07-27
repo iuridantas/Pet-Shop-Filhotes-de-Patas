@@ -9,7 +9,7 @@ export const ProductsDogs = styled.div`
   .filter {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     margin: 10px 0;
 
     h2 {
@@ -20,6 +20,8 @@ export const ProductsDogs = styled.div`
   .select {
     display: flex;
     align-items: center;
+    flex-direction: column;
+    margin: 0 100px;
   }
 
   .teste {
@@ -34,7 +36,7 @@ export const ProductsDogs = styled.div`
     font-size: 1.2rem;
     text-align: center;
     padding: 5px;
-    margin-top: 10px;
+    margin: 10px 0;
   }
 
   select {
@@ -43,17 +45,17 @@ export const ProductsDogs = styled.div`
     border-radius: 10px;
     border-color: black;
     font-size: 1.2rem;
-    margin: 0 0 0 10px;
+    margin: 5px 0;
     text-align: center;
     padding: 5px 10px;
   }
 
   section {
     display: grid;
-    grid-template-columns: repeat(5, 310px);
+    grid-template-columns: repeat(5, 1fr);
     gap: 20px;
     justify-content: center;
-    margin: 20px 30px;
+    margin: 20px 0;
   }
 
   @media (max-width: 600px) {
@@ -62,7 +64,7 @@ export const ProductsDogs = styled.div`
     }
 
     .select {
-      flex-direction: column;
+      margin: 0 auto;
     }
 
     .filter {
@@ -76,7 +78,6 @@ export const ProductsDogs = styled.div`
 
     select {
       font-size: 1rem;
-      margin: 0;
     }
 
     input {

@@ -25,6 +25,15 @@ export function SessionProductsDogs() {
     <section aria-label="Seção dos produtos para cachorros">
       <ProductsDogs>
         <h1>Produtos para cachorro</h1>
+        <div className="teste">
+          <input
+            className="search"
+            type="text"
+            placeholder="Digite o nome do produto"
+            value={searchTerm}
+            onChange={handleInputChange}
+          />
+        </div>
         <div className="filter">
           <div className="select">
             <h2>Categorias:</h2>
@@ -63,15 +72,6 @@ export function SessionProductsDogs() {
               <option value="PriceDescending">Maior Preço</option>
             </select>
           </div>
-        </div>
-        <div className="teste">
-          <input
-            className="search"
-            type="text"
-            placeholder="Digite o nome do produto"
-            value={searchTerm}
-            onChange={handleInputChange}
-          />
         </div>
         <CardProductsForDogs
           searchTerm={searchTerm}
