@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 
 export const ProductsDogs = styled.div`
+  width: 90%;
+  margin: 0 auto;
+  
   h1 {
     font-size: 2rem;
     text-align: center;
