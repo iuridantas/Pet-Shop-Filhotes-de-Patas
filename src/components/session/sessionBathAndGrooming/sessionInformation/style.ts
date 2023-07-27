@@ -2,7 +2,9 @@ import styled from 'styled-components';
 
 export const InformationSession = styled.div`
   display: flex;
-  margin: 20px 0;
+  max-width: 1440px;
+  margin: 20px auto;
+
   justify-content: space-around;
 
   h2 {

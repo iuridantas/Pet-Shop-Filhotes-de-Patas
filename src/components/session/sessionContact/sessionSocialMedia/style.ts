@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 export const SocialMediaSession = styled.div`
   display: flex;
-  margin: 20px 0;
+  max-width: 1440px;
+  margin: 20px auto;
   justify-content: center;
 
   h2 {

@@ -1,6 +1,11 @@
 import styled from 'styled-components';
 
 export const ProductsDogs = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1440px;
+  margin: 0 auto;
 
   h1 {
     font-size: 2rem;
@@ -25,7 +30,7 @@ export const ProductsDogs = styled.div`
     margin: 0 100px;
   }
 
-  .teste {
+  .input {
     display: flex;
     justify-content: center;
   }
@@ -56,7 +61,7 @@ export const ProductsDogs = styled.div`
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     justify-content: center;
-    margin: 20px 0;
+    margin: 20px auto;
   }
 
   @media (max-width: 600px) {

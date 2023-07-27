@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const DogsSession = styled.div`
-  margin: 20px 210px;
+  max-width: 1440px;
+  margin: 20px auto;
 
   h2 {
     font-size: 2rem;

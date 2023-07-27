@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const Title = styled.div`
-  margin: 20px 0;
+  max-width: 1440px;
+  margin: 20px auto;
 
   h1 {
     font-size: 2rem;
