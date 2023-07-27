@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const ProductsDogs = styled.div`
-  margin: 0 auto;
 
   h1 {
     font-size: 2rem;
@@ -54,7 +53,7 @@ export const ProductsDogs = styled.div`
 
   section {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     justify-content: center;
     margin: 20px 0;
