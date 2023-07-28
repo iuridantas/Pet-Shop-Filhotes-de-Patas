@@ -234,7 +234,7 @@
   {
     "id": 23,
     "photo": "/img/mercepton_oral.png",
-    "name": "Mercepton Gotas Oral 20mL",
+    "name": "Mercepton Gotas Oral",
     "brand": "Bravet",
     "price": 100.0,
     "installments": "ou 2x de 50,00",
@@ -252,7 +252,7 @@
   {
     "id": 25,
     "photo": "/img/naturalcare_ração_filhote.png",
-    "name": "Ração Para Filhote",
+    "name": "Ração Para Filhote 2,5Kg",
     "brand": "Natural Care",
     "price": 100.0,
     "installments": "ou 2x de 50,00",
@@ -261,7 +261,7 @@
   {
     "id": 26,
     "photo": "/img/Otospan.png",
-    "name": "Otospan 10mL",
+    "name": "Otospan",
     "brand": "Duprat",
     "price": 100.0,
     "installments": "ou 2x de 50,00",
@@ -486,7 +486,7 @@
   {
     "id": 51,
     "photo": "/img/dolce_pet_leavein.png",
-    "name": "Leave In Cereja E Avelã 300mL",
+    "name": "Leave In 300mL",
     "brand": "Dolce Pet",
     "price": 100.0,
     "installments": "ou 2x de 50,00",
@@ -509,5 +509,140 @@
     "price": 100.0,
     "installments": "ou 2x de 50,00",
     "category": "Tapetes, Fraldas e Banheiros"
+  },
+  {
+    "id": 54,
+    "photo": "/img/naturalcare_ração_adulto.png",
+    "name": "Ração Para Adulto 2,5Kg",
+    "brand": "Natural Care",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Ração"
+  },
+  {
+    "id": 55,
+    "photo": "/img/premier1_ração_porte_pequeno.png",
+    "name": "Ração Porte Pequeno 1,0Kg",
+    "brand": "PremieR Formula",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Ração"
+  },
+  {
+    "id": 56,
+    "photo": "/img/fortcanis_plus.png",
+    "name": "Suplemento Vitamínico Fortcanis",
+    "brand": "Provets",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Farmácia"
+  },
+  {
+    "id": 57,
+    "photo": "/img/coleira_tea.png",
+    "name": "Coleira Anti-Pulgas TEA 327 28g",
+    "brand": "König",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Farmácia"
+  },
+  {
+    "id": 58,
+    "photo": "/img/biovitam.png",
+    "name": "Coleira Anti-Pulgas TEA 327 28g",
+    "brand": "König",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Farmácia"
+  },
+  {
+    "id": 59,
+    "photo": "/img/pet_clean_creme_dental_menta.png",
+    "name": "Creme Dental Menta 60g",
+    "brand": "Pet Clean",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Beleza e Limpeza"
+  },
+  {
+    "id": 60,
+    "photo": "/img/pet_clean_creme_dental_tuttifrutti.png",
+    "name": "Creme Dental Tutti-Frutti 60g",
+    "brand": "Pet Clean",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Beleza e Limpeza"
+  },
+  {
+    "id": 61,
+    "photo": "/img/pet_clean_hidrata_focinho.png",
+    "name": "Hidratante de Focinho 60g",
+    "brand": "Pet Clean",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Beleza e Limpeza"
+  },
+  {
+    "id": 62,
+    "photo": "/img/pet_clean_adestra.png",
+    "name": "Educador Sanitário 500mL",
+    "brand": "Pet Clean",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Beleza e Limpeza"
+  },
+  {
+    "id": 63,
+    "photo": "/img/dolce_pet_shampoo.png",
+    "name": "Shampoo Esmeralda Suave 300mL",
+    "brand": "Dolce Pet",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Beleza e Limpeza"
+  },
+  {
+    "id": 64,
+    "photo": "/img/dolce_pet_tonalizante.png",
+    "name": "Shampoo Tonalizante 300mL",
+    "brand": "Dolce Pet",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Beleza e Limpeza"
+  },
+  {
+    "id": 65,
+    "photo": "/img/clubpet_tapete_higienico.png",
+    "name": "Tapete Higiênico 7 un.",
+    "brand": "Club Pet",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Tapetes, Fraldas e Banheiros"
+  },
+  {
+    "id": 66,
+    "photo": "/img/Savana_escova_cental.png",
+    "name": "Escova Dental Dupla 1 un.",
+    "brand": "Savana",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Beleza e Limpeza"
+  },
+  {
+    "id": 67,
+    "photo": "/img/escova_banho_caracol.png",
+    "name": "Escova de Banho",
+    "brand": "Caracol",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Beleza e Limpeza"
+  },
+  {
+    "id": 68,
+    "photo": "/img/limpa_pata_caracol.png",
+    "name": "Limpador de Patas",
+    "brand": "Caracol",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Beleza e Limpeza"
   }
 ]
