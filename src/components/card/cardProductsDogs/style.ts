@@ -30,7 +30,7 @@ export const CardSession = styled.div`
   }
 
   h2 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     text-align: center;
   }
 
@@ -49,10 +49,6 @@ export const CardSession = styled.div`
 
     img {
       padding: 20px;
-    }
-
-    h2 {
-      font-size: 1.2rem;
     }
 
     h3 {
