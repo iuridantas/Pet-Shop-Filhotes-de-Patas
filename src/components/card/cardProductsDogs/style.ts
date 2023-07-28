@@ -3,7 +3,7 @@ import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import { AiOutlineClose } from 'react-icons/ai';
 
 export const CardSession = styled.div`
-  width: 320px;
+  width: 345px;
   height: 330px;
   padding: 16px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24),
