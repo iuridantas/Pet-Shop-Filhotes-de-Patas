@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import { AiOutlineClose } from 'react-icons/ai';
+import { PiMagnifyingGlassPlus } from 'react-icons/pi';
 
 export const CardSession = styled.div`
   width: 345px;
@@ -18,7 +19,6 @@ export const CardSession = styled.div`
     height: 200px;
     width: 200px;
     padding: 10px;
-    cursor: pointer;
   }
 
   .information {
@@ -89,6 +89,18 @@ export const IconRight = styled(FiChevronRight)`
   user-select: none;
 `;
 
+export const IconMagnifyingGlass = styled(PiMagnifyingGlassPlus)`
+  position: absolute;
+  top: 5%;
+  transform: translateY(-50%);
+  font-size: 25px;
+  cursor: pointer;
+
+  @media (max-width: 600px) {
+    top: 15%;
+  }
+`;
+
 export const FullScreenCard = styled.div`
   position: fixed;
   top: 0;
@@ -116,8 +128,8 @@ export const ButtonIcon = styled(AiOutlineClose)`
   font-size: 32px;
   z-index: 1;
   position: absolute;
-  right: 600px; 
-  top: 200px; 
+  right: 600px;
+  top: 200px;
 
   &:hover {
     color: red;

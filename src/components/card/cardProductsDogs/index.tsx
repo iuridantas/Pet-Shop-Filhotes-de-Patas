@@ -1,13 +1,27 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import {
   ButtonIcon,
   CardSession,
   FullScreenCard,
   IconLeft,
+  IconMagnifyingGlass,
   IconRight,
   ImageContainer,
 } from './style';
-import productsDogs from '../../products/dogs';
+import productsDogs from '../../products/productsDogs.json';
+
+interface Product {
+  id: number;
+  name: string;
+  brand: string;
+  colors?: {
+    photo: string;
+  }[];
+  price: number;
+  installments: string;
+  photo?: string;
+  category: string;
+}
 
 export function CardProductsForDogs({
   searchTerm,
@@ -28,6 +42,24 @@ export function CardProductsForDogs({
   const [selectedCardIndex, setSelectedCardIndex] = useState<number | null>(
     null,
   );
+
+  const [shuffledProducts, setShuffledProducts] = useState<Product[]>([]);
+
+  useEffect(() => {
+    const shuffleArray = (array: Product[]) => {
+      const shuffledArray = [...array];
+      for (let i = shuffledArray.length - 1; i > 0; i--) {
+        const randomIndex = Math.floor(Math.random() * (i + 1));
+        [shuffledArray[i], shuffledArray[randomIndex]] = [
+          shuffledArray[randomIndex],
+          shuffledArray[i],
+        ];
+      }
+      return shuffledArray;
+    };
+
+    setShuffledProducts(shuffleArray(productsDogs));
+  }, []);
 
   const sortProducts = (products: any[]) => {
     let sortedProducts = [...products];
@@ -112,7 +144,7 @@ export function CardProductsForDogs({
 
   return (
     <section aria-label="card sobre produtos para cachorro disponível para venda">
-      {sortProducts(productsDogs)
+      {sortProducts(shuffledProducts)
         .filter(
           (product) =>
             searchTerm === '' ||
@@ -136,6 +168,8 @@ export function CardProductsForDogs({
                       ]?.photo
                     }
                     alt={product.name}
+                  />
+                  <IconMagnifyingGlass
                     onClick={() => handleCardClick(product.id)}
                   />
                   <IconLeft
@@ -150,11 +184,12 @@ export function CardProductsForDogs({
                   />
                 </>
               ) : (
-                <img
-                  src={product.photo}
-                  alt={product.name}
-                  onClick={() => handleCardClick(product.id)}
-                />
+                <>
+                  <img src={product.photo} alt={product.name} />
+                  <IconMagnifyingGlass
+                    onClick={() => handleCardClick(product.id)}
+                  />
+                </>
               )}
             </ImageContainer>
             <div className="information">
