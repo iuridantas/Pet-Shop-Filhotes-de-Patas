@@ -4,7 +4,7 @@ import { AiOutlineClose } from 'react-icons/ai';
 
 export const CardSession = styled.div`
   width: 320px;
-  height: 375px;
+  height: 330px;
   padding: 16px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24),
     1px 1px 5px black;
@@ -15,8 +15,8 @@ export const CardSession = styled.div`
   margin: 0 auto;
 
   img {
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
     padding: 10px;
     cursor: pointer;
   }
@@ -30,7 +30,7 @@ export const CardSession = styled.div`
   }
 
   h2 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     text-align: center;
   }
 
@@ -51,6 +51,10 @@ export const CardSession = styled.div`
       padding: 20px;
     }
 
+    h2 {
+      font-size: 1.2rem;
+    }
+
     h3 {
       font-size: 1.1rem;
     }
@@ -67,7 +71,7 @@ export const ImageContainer = styled.div`
 
 export const IconLeft = styled(FiChevronLeft)`
   position: absolute;
-  left: -30px;
+  left: -50px;
   top: 50%;
   transform: translateY(-50%);
   font-size: 50px;
@@ -77,7 +81,7 @@ export const IconLeft = styled(FiChevronLeft)`
 
 export const IconRight = styled(FiChevronRight)`
   position: absolute;
-  right: -30px;
+  right: -50px;
   top: 50%;
   transform: translateY(-50%);
   font-size: 50px;
@@ -100,15 +104,9 @@ export const FullScreenCard = styled.div`
   color: white;
 
   img {
-    width: auto;
-    height: auto;
-  }
-
-  @media (max-width: 600px) {
-    img {
-      width: 400px;
-      height: auto;
-    }
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
   }
 `;
 
@@ -117,7 +115,9 @@ export const ButtonIcon = styled(AiOutlineClose)`
   cursor: pointer;
   font-size: 32px;
   z-index: 1;
-  margin-top: 20px;
+  position: absolute;
+  right: 600px; 
+  top: 200px; 
 
   &:hover {
     color: red;
@@ -125,6 +125,7 @@ export const ButtonIcon = styled(AiOutlineClose)`
 
   @media (max-width: 600px) {
     color: red;
-    margin-top: 10px;
+    right: 50px;
+    top: 150px;
   }
 `;

@@ -57,10 +57,10 @@ export const ProductsDogs = styled.div`
   }
 
   section {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 20px;
     margin: 20px auto;
   }
 
