@@ -644,5 +644,77 @@
     "price": 100.0,
     "installments": "ou 2x de 50,00",
     "category": "Beleza e Limpeza"
+  },
+  {
+    "id": 69,
+    "photo": "/img/pelucia_macaco.png",
+    "name": "Macaco de Pelúcia Com Apito",
+    "brand": "Napi",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Brinquedos"
+  },
+  {
+    "id": 70,
+    "photo": "/img/pelucia_urso.png",
+    "name": "Urso de Pelúcia Com Apito",
+    "brand": "",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Brinquedos"
+  },
+  {
+    "id": 71,
+    "photo": "/img/pelucia_dinossauro.png",
+    "name": "Pelúcia Dinossauro",
+    "brand": "S2 TOYS",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Brinquedos"
+  },
+  {
+    "id": 72,
+    "photo": "/img/pelucia_zebra.png",
+    "name": "Pelúcia Zebra",
+    "brand": "S2 TOYS",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Brinquedos"
+  },
+  {
+    "id": 73,
+    "photo": "/img/pelucia_girafa.png",
+    "name": "Pelúcia Girafa",
+    "brand": "S2 TOYS",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Brinquedos"
+  },
+  {
+    "id": 74,
+    "photo": "/img/pelucia_leao.png",
+    "name": "Pelúcia Leão",
+    "brand": "S2 TOYS",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Brinquedos"
+  },
+  {
+    "id": 75,
+    "photo": "/img/sanitario_canino.png",
+    "name": "Banheiro Pet",
+    "brand": "Tudo Pet",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Beleza e Limpeza"
+  },
+  {
+    "id": 76,
+    "photo": "/img/colar_elizabetano.png",
+    "name": "Colar Elizabetano",
+    "brand": "Jireh Dog",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Farmácia"
   }
 ]
