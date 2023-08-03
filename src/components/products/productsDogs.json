@@ -716,5 +716,57 @@
     "price": 100.0,
     "installments": "ou 2x de 50,00",
     "category": "Farmácia"
+  },
+    {
+    "id": 77,
+    "name": "Comedouro e bebedouro",
+    "brand": "New Pratic",
+    "colors": [
+      {
+        "photo": "/img/bebedouro_e_comedouro_newpratic_rosa.png"
+      },
+      {
+        "photo": "/img/bebedouro_e_comedouro_newpratic_roxo.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Comedouros e Bebedouros"
+  },
+  {
+    "id": 78,
+    "photo": "/img/comedouro_chalesco_200.png",
+    "name": "Comedouro Antiderrapante 200mL",
+    "brand": "Chalesco",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Comedouros e Bebedouros"
+  },
+  {
+    "id": 79,
+    "photo": "/img/comedouro_chalesco_400.png",
+    "name": "Comedouro Antiderrapante 400mL",
+    "brand": "Chalesco",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Comedouros e Bebedouros"
+  },
+  {
+    "id": 80,
+    "photo": "/img/comedouro_chalesco_650.png",
+    "name": "Comedouro Antiderrapante 650mL",
+    "brand": "Chalesco",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Comedouros e Bebedouros"
+  },
+  {
+    "id": 81,
+    "photo": "/img/comedouro_chalesco_900.png",
+    "name": "Comedouro Antiderrapante 900mL",
+    "brand": "Chalesco",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Comedouros e Bebedouros"
   }
 ]
