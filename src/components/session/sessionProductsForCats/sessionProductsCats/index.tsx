@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import { CardProductsForDogs } from '../../../card/cardProductsDogs';
-import { ProductsDogs } from './style';
+import { CardProductsForCats } from '../../../card/cardProductsCats';
+import { ProductsCats } from './style';
 
-export function SessionProductsDogs() {
+export function SessionProductsCats() {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedFilter, setSelectedFilter] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('');
@@ -22,10 +22,10 @@ export function SessionProductsDogs() {
   };
 
   return (
-    <section aria-label="Seção dos produtos para cachorros">
-      <ProductsDogs>
+    <section aria-label="Seção dos produtos para gatos">
+      <ProductsCats>
         <h1>
-          Descubra a diversidade de produtos para cachorro na nossa loja física
+          Descubra a diversidade de produtos para gato na nossa loja física
         </h1>
         <div className="filter">
           <div className="select">
@@ -33,7 +33,7 @@ export function SessionProductsDogs() {
             <select value={selectedCategory} onChange={handleCategoryChange}>
               <option value="">Escolha</option>
               <option value="Ração">Ração</option>
-              <option value="Petiscos e Ossos">Petiscos e Ossos</option>
+              <option value="Petiscos e Ossos">Petiscos</option>
               <option value="Tapetes, Fraldas e Banheiros">
                 Tapetes, Fraldas e Banheiros
               </option>
@@ -51,7 +51,6 @@ export function SessionProductsDogs() {
               <option value="Acessórios de Transporte">
                 Acessórios de Transporte
               </option>
-              <option value="Portões e Grades">Portões e Grades</option>
               <option value="Roupas">Roupas</option>
             </select>
           </div>
@@ -75,12 +74,12 @@ export function SessionProductsDogs() {
             onChange={handleInputChange}
           />
         </div>
-        <CardProductsForDogs
+        <CardProductsForCats
           searchTerm={searchTerm}
           selectedFilter={selectedFilter}
           selectedCategory={selectedCategory}
         />
-      </ProductsDogs>
+      </ProductsCats>
     </section>
   );
 }

@@ -40,7 +40,10 @@ export function SessionBannerCat() {
             key={index}
             style={{ display: index === currentImageIndex ? 'block' : 'none' }}
           >
-            <img src={src} alt="Foto do Banner dos produtos a venda para gato" />
+            <img
+              src={src}
+              alt="Foto do Banner dos produtos a venda para gato"
+            />
           </div>
         ))}
       </BannerSession>

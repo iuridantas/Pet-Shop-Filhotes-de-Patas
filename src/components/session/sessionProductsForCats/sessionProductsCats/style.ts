@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ProductsDogs = styled.div`
+export const ProductsCats = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;

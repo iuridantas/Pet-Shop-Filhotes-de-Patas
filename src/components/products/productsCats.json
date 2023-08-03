@@ -1,41 +1,6 @@
 [
   {
     "id": 1,
-    "name": "Bebedouro Bilha e Comedouro",
-    "brand": "Chalesco",
-    "colors": [
-      {
-        "photo": "/img/bebedouro_e_comedouro_chalesco_bico_bilha_rosa.png"
-      },
-      {
-        "photo": "/img/bebedouro_e_comedouro_chalesco_bico_bilha_azul.png"
-      }
-    ],
-    "price": 100.0,
-    "installments": "ou 2x de 50,00",
-    "category": "Comedouros e Bebedouros"
-  },
-  {
-    "id": 2,
-    "name": "Bebedouro Bilha e Comedouro",
-    "brand": "MMA Pet",
-    "colors": [
-      {
-        "photo": "/img/bebedouro_e_comedouro_mmapet_bico_bilha_azul.png"
-      },
-      {
-        "photo": "/img/bebedouro_e_comedouro_mmapet_bico_bilha_rosa.png"
-      },
-      {
-        "photo": "/img/bebedouro_e_comedouro_mmapet_bico_bilha_vermelho.png"
-      }
-    ],
-    "price": 100.0,
-    "installments": "ou 2x de 50,00",
-    "category": "Comedouros e Bebedouros"
-  },
-  {
-    "id": 3,
     "name": "Bebedouro Portátil",
     "brand": "Aqua Dog",
     "colors": [
@@ -51,44 +16,7 @@
     "category": "Comedouros e Bebedouros"
   },
   {
-    "id": 4,
-    "name": "Cata Caca",
-    "brand": "LMZ",
-    "colors": [
-      {
-        "photo": "/img/cata_caca_azul.png"
-      },
-      {
-        "photo": "/img/cata_caca_rosa.png"
-      },
-      {
-        "photo": "/img/cata_caca_vermelho.png"
-      }
-    ],
-    "price": 100.0,
-    "installments": "ou 2x de 50,00",
-    "category": "Acessórios de Transporte"
-  },
-  {
-    "id": 5,
-    "photo": "/img/bedog_adestra.png",
-    "name": "Kit Educador Sanitário",
-    "brand": "Be Dog",
-    "price": 100.0,
-    "installments": "ou 2x de 50,00",
-    "category": "Beleza e Limpeza"
-  },
-  {
-    "id": 6,
-    "photo": "/img/cortador_com_lixa.png",
-    "name": "Kit Cortador de Unhas e Lixa",
-    "brand": "Weemsbox",
-    "price": 100.0,
-    "installments": "ou 2x de 50,00",
-    "category": "Beleza e Limpeza"
-  },
-  {
-    "id": 7,
+    "id": 2,
     "photo": "/img/escova_madeira_caracol.png",
     "name": "Escova Dupla de Madeira",
     "brand": "Caracol",
@@ -97,7 +25,7 @@
     "category": "Beleza e Limpeza"
   },
   {
-    "id": 8,
+    "id": 3,
     "photo": "/img/curinfec.png",
     "name": "Curinfec",
     "brand": "Provets",
@@ -106,7 +34,7 @@
     "category": "Farmácia"
   },
   {
-    "id": 9,
+    "id": 4,
     "photo": "/img/escova_dupla_eloimports.png",
     "name": "Escova Dupla Plástica",
     "brand": "elo imports",
@@ -115,7 +43,7 @@
     "category": "Beleza e Limpeza"
   },
   {
-    "id": 10,
+    "id": 5,
     "photo": "/img/gel_dental_upclean_barbeque.png",
     "name": "Creme Dental Barbecue 120g",
     "brand": "Up Clean",
@@ -124,7 +52,7 @@
     "category": "Beleza e Limpeza"
   },
   {
-    "id": 11,
+    "id": 6,
     "photo": "/img/gel_dental_upclean_chocolate.png",
     "name": "Creme Dental Chocolote 120g",
     "brand": "Up Clean",
@@ -133,7 +61,7 @@
     "category": "Beleza e Limpeza"
   },
   {
-    "id": 12,
+    "id": 7,
     "photo": "/img/gel_dental_upclean_hortela.png",
     "name": "Creme Dental Hortelã 120g",
     "brand": "Up Clean",
@@ -142,7 +70,7 @@
     "category": "Beleza e Limpeza"
   },
   {
-    "id": 13,
+    "id": 8,
     "photo": "/img/granado_sabonete_enxofre.png",
     "name": "Sabonete de enxofre 90g",
     "brand": "Granado",
@@ -151,7 +79,7 @@
     "category": "Beleza e Limpeza"
   },
   {
-    "id": 14,
+    "id": 9,
     "photo": "/img/granado_shampoo_branco.png",
     "name": "Shampoo Pelos Claros 500mL",
     "brand": "Granado",
@@ -160,7 +88,7 @@
     "category": "Beleza e Limpeza"
   },
   {
-    "id": 15,
+    "id": 10,
     "photo": "/img/granado_shampoo_escuro.png",
     "name": "Shampoo Pelos Escuros 500mL",
     "brand": "Granado",
@@ -169,7 +97,7 @@
     "category": "Beleza e Limpeza"
   },
   {
-    "id": 16,
+    "id": 11,
     "photo": "/img/granado_shampoo_filhote.png",
     "name": "Shampoo Para Filhotes 500mL",
     "brand": "Granado",
@@ -178,7 +106,7 @@
     "category": "Beleza e Limpeza"
   },
   {
-    "id": 17,
+    "id": 12,
     "photo": "/img/granado_shampoo_neutro.png",
     "name": "Shampoo Neutro 500mL",
     "brand": "Granado",
@@ -187,7 +115,7 @@
     "category": "Beleza e Limpeza"
   },
   {
-    "id": 18,
+    "id": 13,
     "photo": "/img/catdog__hidratação.png",
     "name": "Hidratação 500g",
     "brand": "CatDog",
@@ -196,7 +124,7 @@
     "category": "Beleza e Limpeza"
   },
   {
-    "id": 19,
+    "id": 14,
     "photo": "/img/catdog__hidratação2.png",
     "name": "Hidratação 500g",
     "brand": "CatDog",
@@ -205,7 +133,7 @@
     "category": "Beleza e Limpeza"
   },
   {
-    "id": 20,
+    "id": 15,
     "photo": "/img/green_pet_care.png",
     "name": "Deo Colônia Macho 150mL",
     "brand": "Green Pet Care",
@@ -214,7 +142,7 @@
     "category": "Beleza e Limpeza"
   },
   {
-    "id": 21,
+    "id": 16,
     "photo": "/img/green_pet_care1.png",
     "name": "Deo Colônia Filhote 150mL",
     "brand": "Green Pet Care",
@@ -223,7 +151,7 @@
     "category": "Beleza e Limpeza"
   },
   {
-    "id": 22,
+    "id": 17,
     "photo": "/img/green_pet_care2.png",
     "name": "Deo Colônia Fêmea 150mL",
     "brand": "Green Pet Care",
@@ -232,7 +160,7 @@
     "category": "Beleza e Limpeza"
   },
   {
-    "id": 23,
+    "id": 18,
     "photo": "/img/mercepton_oral.png",
     "name": "Mercepton Gotas Oral",
     "brand": "Bravet",
@@ -241,7 +169,7 @@
     "category": "Farmácia"
   },
   {
-    "id": 24,
+    "id": 19,
     "photo": "/img/napi_bebedouro_portatil.png",
     "name": "Bebedouro Portátil",
     "brand": "Napi",
@@ -250,16 +178,7 @@
     "category": "Comedouros e Bebedouros"
   },
   {
-    "id": 25,
-    "photo": "/img/naturalcare_ração_filhote.png",
-    "name": "Ração Para Filhote 2,5Kg",
-    "brand": "Natural Care",
-    "price": 100.0,
-    "installments": "ou 2x de 50,00",
-    "category": "Ração"
-  },
-  {
-    "id": 26,
+    "id": 20,
     "photo": "/img/Otospan.png",
     "name": "Otospan",
     "brand": "Duprat",
@@ -268,16 +187,7 @@
     "category": "Farmácia"
   },
   {
-    "id": 27,
-    "photo": "/img/pente_aço.png",
-    "name": "Pente de Aço",
-    "brand": "Napi",
-    "price": 100.0,
-    "installments": "ou 2x de 50,00",
-    "category": "Beleza e Limpeza"
-  },
-  {
-    "id": 28,
+    "id": 21,
     "photo": "/img/pet_clean_condicionador.png",
     "name": "Condicionador 700mL",
     "brand": "Pet Clean",
@@ -286,7 +196,7 @@
     "category": "Beleza e Limpeza"
   },
   {
-    "id": 29,
+    "id": 22,
     "photo": "/img/pet_clean_shampoo_pelos_escuros.png",
     "name": "Shampoo Pelos Escuros 700mL",
     "brand": "Pet Clean",
@@ -295,7 +205,7 @@
     "category": "Beleza e Limpeza"
   },
   {
-    "id": 30,
+    "id": 23,
     "photo": "/img/pet_clean_shampoo_filhote.png",
     "name": "Shampoo Para Filhotes 700mL",
     "brand": "Pet Clean",
@@ -304,7 +214,7 @@
     "category": "Beleza e Limpeza"
   },
   {
-    "id": 31,
+    "id": 24,
     "photo": "/img/pet_clean_shampoo_neutro.png",
     "name": "Shampoo Neutro 700mL",
     "brand": "Pet Clean",
@@ -313,7 +223,7 @@
     "category": "Beleza e Limpeza"
   },
   {
-    "id": 32,
+    "id": 25,
     "photo": "/img/pet_clean_shampoo_pelos_claros.png",
     "name": "Shampoo Pelos Claros 700mL",
     "brand": "Pet Clean",
@@ -322,7 +232,7 @@
     "category": "Beleza e Limpeza"
   },
   {
-    "id": 33,
+    "id": 26,
     "photo": "/img/pet_clean_creme_dental_morango.png",
     "name": "Creme Dental Morango 60g",
     "brand": "Pet Clean",
@@ -331,16 +241,7 @@
     "category": "Beleza e Limpeza"
   },
   {
-    "id": 34,
-    "photo": "/img/pet_clean_desembaraçador.png",
-    "name": "Desembaraçador 500mL",
-    "brand": "Pet Clean",
-    "price": 100.0,
-    "installments": "ou 2x de 50,00",
-    "category": "Beleza e Limpeza"
-  },
-  {
-    "id": 35,
+    "id": 27,
     "photo": "/img/pet_clean_hidratação.png",
     "name": "Hidratação 500g",
     "brand": "Pet Clean",
@@ -349,34 +250,7 @@
     "category": "Beleza e Limpeza"
   },
   {
-    "id": 36,
-    "photo": "/img/pet_clean_hidratante_patas.png",
-    "name": "Hidratante Para Patas 150g",
-    "brand": "Pet Clean",
-    "price": 100.0,
-    "installments": "ou 2x de 50,00",
-    "category": "Beleza e Limpeza"
-  },
-  {
-    "id": 37,
-    "photo": "/img/pet_clean_limpa_lagrimas.png",
-    "name": "Limpa Lágrimas 120mL",
-    "brand": "Pet Clean",
-    "price": 100.0,
-    "installments": "ou 2x de 50,00",
-    "category": "Beleza e Limpeza"
-  },
-  {
-    "id": 38,
-    "photo": "/img/pet_clean_limpa_orelhas.png",
-    "name": "Limpa Orelhas 100g",
-    "brand": "Pet Clean",
-    "price": 100.0,
-    "installments": "ou 2x de 50,00",
-    "category": "Beleza e Limpeza"
-  },
-  {
-    "id": 39,
+    "id": 28,
     "photo": "/img/pet_clean_mascara_hidratação.png",
     "name": "Hidratação 400g",
     "brand": "Pet Clean",
@@ -385,7 +259,7 @@
     "category": "Beleza e Limpeza"
   },
   {
-    "id": 40,
+    "id": 29,
     "photo": "/img/pet_clean_perfume.png",
     "name": "Perfume Macho 120mL",
     "brand": "Pet Clean",
@@ -394,16 +268,7 @@
     "category": "Beleza e Limpeza"
   },
   {
-    "id": 41,
-    "photo": "/img/premier_ração_porte_pequeno.png",
-    "name": "Ração Porte Pequeno 2,5Kg",
-    "brand": "PremieR Formula",
-    "price": 100.0,
-    "installments": "ou 2x de 50,00",
-    "category": "Ração"
-  },
-  {
-    "id": 42,
+    "id": 30,
     "photo": "/img/rasqueadeira.png",
     "name": "Rasqueadeira",
     "brand": "American Pets",
@@ -412,16 +277,7 @@
     "category": "Beleza e Limpeza"
   },
   {
-    "id": 43,
-    "photo": "/img/refil_cata_caca.png",
-    "name": "Refil do Cata Caca",
-    "brand": "Pet Ninho",
-    "price": 100.0,
-    "installments": "ou 2x de 50,00",
-    "category": "Acessórios de Transporte"
-  },
-  {
-    "id": 44,
+    "id": 31,
     "photo": "/img/soluver_vermifugo.png",
     "name": "Soluver Vermífugo",
     "brand": "Imeve",
@@ -430,16 +286,7 @@
     "category": "Farmácia"
   },
   {
-    "id": 45,
-    "photo": "/img/stoppads_tapete_higienico.png",
-    "name": "Tapete Higiênico 30 unid.",
-    "brand": "Stop Pads",
-    "price": 100.0,
-    "installments": "ou 2x de 50,00",
-    "category": "Tapetes, Fraldas e Banheiros"
-  },
-  {
-    "id": 46,
+    "id": 32,
     "photo": "/img/up_clean_mascara.png",
     "name": "Hidratação A+B 490g",
     "brand": "Up Clean",
@@ -448,7 +295,7 @@
     "category": "Beleza e Limpeza"
   },
   {
-    "id": 47,
+    "id": 33,
     "photo": "/img/up_clean_mascara_amendoas.png",
     "name": "Hidrataçao Amendoas 490g",
     "brand": "Up Clean",
@@ -457,16 +304,7 @@
     "category": "Beleza e Limpeza"
   },
   {
-    "id": 48,
-    "photo": "/img/upclean_upstop.png",
-    "name": "Kit Educador Sanitário 500mL",
-    "brand": "Up Clean",
-    "price": 100.0,
-    "installments": "ou 2x de 50,00",
-    "category": "Beleza e Limpeza"
-  },
-  {
-    "id": 49,
+    "id": 34,
     "photo": "/img/world_antiparasitario_shampoo.png",
     "name": "shampoo Antiparasitário 500mL",
     "brand": "World",
@@ -475,7 +313,7 @@
     "category": "Beleza e Limpeza"
   },
   {
-    "id": 50,
+    "id": 35,
     "photo": "/img/world_clorexidina_shampoo.png",
     "name": "Shampoo Clorexdina 500mL",
     "brand": "World",
@@ -484,52 +322,7 @@
     "category": "Beleza e Limpeza"
   },
   {
-    "id": 51,
-    "photo": "/img/dolce_pet_leavein.png",
-    "name": "Leave In 300mL",
-    "brand": "Dolce Pet",
-    "price": 100.0,
-    "installments": "ou 2x de 50,00",
-    "category": "Beleza e Limpeza"
-  },
-  {
-    "id": 52,
-    "photo": "/img/dolce_pet_mascara.png",
-    "name": "Hidratação 290mL",
-    "brand": "Dolce Pet",
-    "price": 100.0,
-    "installments": "ou 2x de 50,00",
-    "category": "Beleza e Limpeza"
-  },
-  {
-    "id": 53,
-    "photo": "/img/king_tapete_higienico.png",
-    "name": "Tapete Higiênico 30 un.",
-    "brand": "King Pads",
-    "price": 100.0,
-    "installments": "ou 2x de 50,00",
-    "category": "Tapetes, Fraldas e Banheiros"
-  },
-  {
-    "id": 54,
-    "photo": "/img/naturalcare_ração_adulto.png",
-    "name": "Ração Para Adulto 2,5Kg",
-    "brand": "Natural Care",
-    "price": 100.0,
-    "installments": "ou 2x de 50,00",
-    "category": "Ração"
-  },
-  {
-    "id": 55,
-    "photo": "/img/premier1_ração_porte_pequeno.png",
-    "name": "Ração Porte Pequeno 1,0Kg",
-    "brand": "PremieR Formula",
-    "price": 100.0,
-    "installments": "ou 2x de 50,00",
-    "category": "Ração"
-  },
-  {
-    "id": 56,
+    "id": 36,
     "photo": "/img/fortcanis_plus.png",
     "name": "Suplemento Vitamínico Fortcanis",
     "brand": "Provets",
@@ -538,7 +331,7 @@
     "category": "Farmácia"
   },
   {
-    "id": 57,
+    "id": 37,
     "photo": "/img/coleira_tea.png",
     "name": "Coleira Anti-Pulgas TEA 327 28g",
     "brand": "König",
@@ -547,7 +340,7 @@
     "category": "Farmácia"
   },
   {
-    "id": 58,
+    "id": 38,
     "photo": "/img/biovitam.png",
     "name": "Biovitam Com Probiótico",
     "brand": "Imeve",
@@ -556,7 +349,7 @@
     "category": "Farmácia"
   },
   {
-    "id": 59,
+    "id": 39,
     "photo": "/img/pet_clean_creme_dental_menta.png",
     "name": "Creme Dental Menta 60g",
     "brand": "Pet Clean",
@@ -565,7 +358,7 @@
     "category": "Beleza e Limpeza"
   },
   {
-    "id": 60,
+    "id": 40,
     "photo": "/img/pet_clean_creme_dental_tuttifrutti.png",
     "name": "Creme Dental Tutti-Frutti 60g",
     "brand": "Pet Clean",
@@ -574,7 +367,7 @@
     "category": "Beleza e Limpeza"
   },
   {
-    "id": 61,
+    "id": 41,
     "photo": "/img/pet_clean_hidrata_focinho.png",
     "name": "Hidratante de Focinho 60g",
     "brand": "Pet Clean",
@@ -583,43 +376,7 @@
     "category": "Beleza e Limpeza"
   },
   {
-    "id": 62,
-    "photo": "/img/pet_clean_adestra.png",
-    "name": "Educador Sanitário 500mL",
-    "brand": "Pet Clean",
-    "price": 100.0,
-    "installments": "ou 2x de 50,00",
-    "category": "Beleza e Limpeza"
-  },
-  {
-    "id": 63,
-    "photo": "/img/dolce_pet_shampoo.png",
-    "name": "Shampoo Esmeralda Suave 300mL",
-    "brand": "Dolce Pet",
-    "price": 100.0,
-    "installments": "ou 2x de 50,00",
-    "category": "Beleza e Limpeza"
-  },
-  {
-    "id": 64,
-    "photo": "/img/dolce_pet_tonalizante.png",
-    "name": "Shampoo Tonalizante 300mL",
-    "brand": "Dolce Pet",
-    "price": 100.0,
-    "installments": "ou 2x de 50,00",
-    "category": "Beleza e Limpeza"
-  },
-  {
-    "id": 65,
-    "photo": "/img/clubpet_tapete_higienico.png",
-    "name": "Tapete Higiênico 7 un.",
-    "brand": "Club Pet",
-    "price": 100.0,
-    "installments": "ou 2x de 50,00",
-    "category": "Tapetes, Fraldas e Banheiros"
-  },
-  {
-    "id": 66,
+    "id": 42,
     "photo": "/img/Savana_escova_cental.png",
     "name": "Escova Dental Dupla 1 un.",
     "brand": "Savana",
@@ -628,16 +385,7 @@
     "category": "Beleza e Limpeza"
   },
   {
-    "id": 67,
-    "photo": "/img/escova_banho_caracol.png",
-    "name": "Escova de Banho",
-    "brand": "Caracol",
-    "price": 100.0,
-    "installments": "ou 2x de 50,00",
-    "category": "Beleza e Limpeza"
-  },
-  {
-    "id": 68,
+    "id": 43,
     "photo": "/img/limpa_pata_caracol.png",
     "name": "Limpador de Patas",
     "brand": "Caracol",
@@ -646,70 +394,7 @@
     "category": "Beleza e Limpeza"
   },
   {
-    "id": 69,
-    "photo": "/img/pelucia_macaco.png",
-    "name": "Macaco de Pelúcia Com Apito",
-    "brand": "Napi",
-    "price": 100.0,
-    "installments": "ou 2x de 50,00",
-    "category": "Brinquedos"
-  },
-  {
-    "id": 70,
-    "photo": "/img/pelucia_urso.png",
-    "name": "Urso de Pelúcia Com Apito",
-    "brand": "",
-    "price": 100.0,
-    "installments": "ou 2x de 50,00",
-    "category": "Brinquedos"
-  },
-  {
-    "id": 71,
-    "photo": "/img/pelucia_dinossauro.png",
-    "name": "Pelúcia Dinossauro",
-    "brand": "S2 TOYS",
-    "price": 100.0,
-    "installments": "ou 2x de 50,00",
-    "category": "Brinquedos"
-  },
-  {
-    "id": 72,
-    "photo": "/img/pelucia_zebra.png",
-    "name": "Pelúcia Zebra",
-    "brand": "S2 TOYS",
-    "price": 100.0,
-    "installments": "ou 2x de 50,00",
-    "category": "Brinquedos"
-  },
-  {
-    "id": 73,
-    "photo": "/img/pelucia_girafa.png",
-    "name": "Pelúcia Girafa",
-    "brand": "S2 TOYS",
-    "price": 100.0,
-    "installments": "ou 2x de 50,00",
-    "category": "Brinquedos"
-  },
-  {
-    "id": 74,
-    "photo": "/img/pelucia_leao.png",
-    "name": "Pelúcia Leão",
-    "brand": "S2 TOYS",
-    "price": 100.0,
-    "installments": "ou 2x de 50,00",
-    "category": "Brinquedos"
-  },
-  {
-    "id": 75,
-    "photo": "/img/sanitario_canino.png",
-    "name": "Banheiro Pet",
-    "brand": "Tudo Pet",
-    "price": 100.0,
-    "installments": "ou 2x de 50,00",
-    "category": "Tapetes, Fraldas e Banheiros"
-  },
-  {
-    "id": 76,
+    "id": 44,
     "photo": "/img/colar_elizabetano.png",
     "name": "Colar Elizabetano",
     "brand": "Jireh Dog",
@@ -718,7 +403,7 @@
     "category": "Farmácia"
   },
   {
-    "id": 77,
+    "id": 45,
     "name": "Comedouro e bebedouro",
     "brand": "New Pratic",
     "colors": [
@@ -734,7 +419,7 @@
     "category": "Comedouros e Bebedouros"
   },
   {
-    "id": 78,
+    "id": 46,
     "photo": "/img/comedouro_chalesco_200.png",
     "name": "Comedouro Antiderrapante 200mL",
     "brand": "Chalesco",
@@ -743,7 +428,7 @@
     "category": "Comedouros e Bebedouros"
   },
   {
-    "id": 79,
+    "id": 47,
     "photo": "/img/comedouro_chalesco_400.png",
     "name": "Comedouro Antiderrapante 400mL",
     "brand": "Chalesco",
@@ -752,7 +437,7 @@
     "category": "Comedouros e Bebedouros"
   },
   {
-    "id": 80,
+    "id": 48,
     "photo": "/img/comedouro_chalesco_650.png",
     "name": "Comedouro Antiderrapante 650mL",
     "brand": "Chalesco",
@@ -761,12 +446,103 @@
     "category": "Comedouros e Bebedouros"
   },
   {
-    "id": 81,
+    "id": 49,
     "photo": "/img/comedouro_chalesco_900.png",
     "name": "Comedouro Antiderrapante 900mL",
     "brand": "Chalesco",
     "price": 100.0,
     "installments": "ou 2x de 50,00",
     "category": "Comedouros e Bebedouros"
+  },
+  {
+    "id": 50,
+    "photo": "/img/sanitario_felino.png",
+    "name": "Banheiro Pet",
+    "brand": "Tudo Pet",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Tapetes, Fraldas e Banheiros"
+  },
+  {
+    "id": 51,
+    "photo": "/img/profeline_silica_higienica.png",
+    "name": "Areia Higiênica Sílica 1,4Kg",
+    "brand": "ProFeline",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Beleza e Limpeza"
+  },
+  {
+    "id": 52,
+    "photo": "/img/pet_clean_catnip.png",
+    "name": "Atrativo Catnip",
+    "brand": "Pet Clean",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Beleza e Limpeza"
+  },
+  {
+    "id": 53,
+    "photo": "/img/ipetwoods_granulado_higienico.png",
+    "name": "Granulado de Madeira 2Kg",
+    "brand": "Ipet Woods",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Beleza e Limpeza"
+  },
+  {
+    "id": 54,
+    "photo": "/img/gatex_cristais_silica.png",
+    "name": "Areia Higiênica Sílica 1,4Kg",
+    "brand": "Gatex",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Beleza e Limpeza"
+  },
+  {
+    "id": 55,
+    "photo": "/img/becat_adestra.png",
+    "name": "Afasta Cat 500mL",
+    "brand": "Be Cat",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Beleza e Limpeza"
+  },
+  {
+    "id": 56,
+    "name": "Arranhador",
+    "brand": "São Pet",
+    "colors": [
+      {
+        "photo": "/img/arranhador_vermelho.png"
+      },
+      {
+        "photo": "/img/arranhador_azul.png"
+      },
+      {
+        "photo": "/img/arranhador_rosa.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Brinquedos"
+  },
+  {
+    "id": 57,
+    "photo": "/img/arranhador_canto.png",
+    "name": "Arranhador de Canto",
+    "brand": "Be Cat",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Brinquedos"
+  },
+  {
+    "id": 58,
+    "photo": "/img/arranhador_obstaculo.png",
+    "name": "Arranhador Com Obstáculo",
+    "brand": "LD Pet",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Brinquedos"
   }
 ]
