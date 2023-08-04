@@ -544,5 +544,63 @@
     "price": 100.0,
     "installments": "ou 2x de 50,00",
     "category": "Brinquedos"
+  },
+  {
+    "id": 59,
+    "photo": "/img/cilindro_guttipet.png",
+    "name": "Cilindro com Peninha",
+    "brand": "Stillopet",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Brinquedos"
+  },
+  {
+    "id": 60,
+    "photo": "/img/cilindro1_guttipet.png",
+    "name": "Cilindro",
+    "brand": "Guttipet",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Brinquedos"
+  },
+  {
+    "id": 61,
+    "photo": "/img/varinha_westernpet.png",
+    "name": "Varinha Circular com Penacho",
+    "brand": "Western Pet",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Brinquedos"
+  },
+  {
+    "id": 62,
+    "name": "Ratinho",
+    "brand": "Guttipet",
+    "colors": [
+      {
+        "photo": "/img/ratinho1_guttipet.png"
+      },
+      {
+        "photo": "/img/ratinho2_guttipet.png"
+      },
+      {
+        "photo": "/img/ratinho3_guttipet.png"
+      },
+      {
+        "photo": "/img/ratinho4_guttipet.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Brinquedos"
+  },
+  {
+    "id": 63,
+    "photo": "/img/mola_thepetsbrasil.png",
+    "name": "Mola Interativa com Penacho",
+    "brand": "The Pets Brasil",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Brinquedos"
   }
 ]

@@ -648,7 +648,7 @@
   {
     "id": 69,
     "photo": "/img/pelucia_macaco.png",
-    "name": "Macaco de Pelúcia Com Apito",
+    "name": "Macaco de Pelúcia",
     "brand": "Napi",
     "price": 100.0,
     "installments": "ou 2x de 50,00",
@@ -657,7 +657,7 @@
   {
     "id": 70,
     "photo": "/img/pelucia_urso.png",
-    "name": "Urso de Pelúcia Com Apito",
+    "name": "Urso de Pelúcia",
     "brand": "",
     "price": 100.0,
     "installments": "ou 2x de 50,00",
@@ -1199,6 +1199,171 @@
         "photo": "/img/mordedor_petflext_amarelo.png"
       }
     ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Brinquedos"
+  },
+  {
+    "id": 105,
+    "name": "Mordedor",
+    "brand": "Pet Well",
+    "colors": [
+      {
+        "photo": "/img/mordedor_petwell_amarelo.png"
+      },
+      {
+        "photo": "/img/mordedor_petwell_laranja.png"
+      },
+      {
+        "photo": "/img/mordedor_petwell_rosa.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Brinquedos"
+  },
+  {
+    "id": 106,
+    "name": "Mordedor",
+    "brand": "Caracol",
+    "colors": [
+      {
+        "photo": "/img/mordedor11_caracol_rosa.png"
+      },
+      {
+        "photo": "/img/mordedor11_caracol_azul.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Brinquedos"
+  },
+  {
+    "id": 107,
+    "name": "Polvo de Pelúcia",
+    "brand": "Kabum Pet",
+    "colors": [
+      {
+        "photo": "/img/polvo_kabumpet_cinza.png"
+      },
+      {
+        "photo": "/img/polvo_kabumpet_vermelho.png"
+      },
+      {
+        "photo": "/img/polvo_kabumpet_rosa.png"
+      },
+      {
+        "photo": "/img/polvo_kabumpet_azul.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Brinquedos"
+  },
+  {
+    "id": 108,
+    "photo": "/img/mordedor_caracol.png",
+    "name": "Mordedor",
+    "brand": "Caracol",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Brinquedos"
+  },
+  {
+    "id": 109,
+    "photo": "/img/mordedor1_caracol.png",
+    "name": "Mordedor",
+    "brand": "Caracol",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Brinquedos"
+  },
+  {
+    "id": 110,
+    "photo": "/img/mordedor2_caracol.png",
+    "name": "Mordedor",
+    "brand": "Caracol",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Brinquedos"
+  },
+  {
+    "id": 111,
+    "photo": "/img/mordedor3_caracol.png",
+    "name": "Mordedor",
+    "brand": "Caracol",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Brinquedos"
+  },
+  {
+    "id": 112,
+    "photo": "/img/mordedor_petinjet.png",
+    "name": "Mordedor Massageador",
+    "brand": "Pet Injet",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Brinquedos"
+  },
+  {
+    "id": 113,
+    "photo": "/img/mordedor4_caracol.png",
+    "name": "Mordedor",
+    "brand": "Caracol",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Brinquedos"
+  },
+  {
+    "id": 114,
+    "photo": "/img/mordedor_7pet.png",
+    "name": "Mordedor",
+    "brand": "Seven Pet",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Brinquedos"
+  },
+  {
+    "id": 115,
+    "photo": "/img/mordedor_petninho.png",
+    "name": "Mordedor",
+    "brand": "Pet Ninho",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Brinquedos"
+  },
+  {
+    "id": 116,
+    "photo": "/img/bola_caracol.png",
+    "name": "Bola",
+    "brand": "Caracol",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Brinquedos"
+  },
+  {
+    "id": 117,
+    "photo": "/img/mordedor_corda_caracol.png",
+    "name": "Mordedor Corda",
+    "brand": "Caracol",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Brinquedos"
+  },
+  {
+    "id": 118,
+    "photo": "/img/mordedor1_corda_caracol.png",
+    "name": "Mordedor Corda",
+    "brand": "Caracol",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Brinquedos"
+  },
+  {
+    "id": 119,
+    "photo": "/img/mordedor_corda_petitens.png",
+    "name": "Mordedor Corda",
+    "brand": "Pet Itens",
     "price": 100.0,
     "installments": "ou 2x de 50,00",
     "category": "Brinquedos"
