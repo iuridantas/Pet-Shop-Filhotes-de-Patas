@@ -768,5 +768,439 @@
     "price": 100.0,
     "installments": "ou 2x de 50,00",
     "category": "Comedouros e Bebedouros"
+  },
+  {
+    "id": 82,
+    "name": "Mordedor",
+    "brand": "Caracol",
+    "colors": [
+      {
+        "photo": "/img/mordedor4_caracol_rosa.png"
+      },
+      {
+        "photo": "/img/mordedor4_caracol_laranja.png"
+      },
+      {
+        "photo": "/img/mordedor4_caracol_amarelo.png"
+      },
+      {
+        "photo": "/img/mordedor4_caracol_vermelho.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Brinquedos"
+  },
+  {
+    "id": 83,
+    "name": "Mordedor",
+    "brand": "Caracol",
+    "colors": [
+      {
+        "photo": "/img/mordedor1_caracol_laranja.png"
+      },
+      {
+        "photo": "/img/mordedor1_caracol_roxo.png"
+      },
+      {
+        "photo": "/img/mordedor1_caracol_verde.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Brinquedos"
+  },
+  {
+    "id": 84,
+    "name": "Mordedor",
+    "brand": "Caracol",
+    "colors": [
+      {
+        "photo": "/img/mordedor2_caracol_verde.png"
+      },
+      {
+        "photo": "/img/mordedor2_caracol_amarelo.png"
+      },
+      {
+        "photo": "/img/mordedor2_caracol_laranja.png"
+      },
+      {
+        "photo": "/img/mordedor2_caracol_rosa.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Brinquedos"
+  },
+  {
+    "id": 85,
+    "name": "Mordedor",
+    "brand": "Caracol",
+    "colors": [
+      {
+        "photo": "/img/mordedor3_caracol_azul.png"
+      },
+      {
+        "photo": "/img/mordedor3_caracol_verde.png"
+      },
+      {
+        "photo": "/img/mordedor3_caracol_rosa.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Brinquedos"
+  },
+  {
+    "id": 86,
+    "name": "Mordedor",
+    "brand": "Pet Itens",
+    "colors": [
+      {
+        "photo": "/img/mordedor_petitens_azul.png"
+      },
+      {
+        "photo": "/img/mordedor_petitens_verde.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Brinquedos"
+  },
+  {
+    "id": 87,
+    "name": "Mordedor",
+    "brand": "Seven Pet",
+    "colors": [
+      {
+        "photo": "/img/mordedor_7pet_verde.png"
+      },
+      {
+        "photo": "/img/mordedor_7pet_laranja.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Brinquedos"
+  },
+  {
+    "id": 88,
+    "name": "Mordedor",
+    "brand": "Seven Pet",
+    "colors": [
+      {
+        "photo": "/img/mordedor1_7pet_azul.png"
+      },
+      {
+        "photo": "/img/mordedor1_7pet_amarelo.png"
+      },
+      {
+        "photo": "/img/mordedor1_7pet_laranja.png"
+      },
+      {
+        "photo": "/img/mordedor1_7pet_vermelho.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Brinquedos"
+  },
+  {
+    "id": 89,
+    "name": "Mordedor",
+    "brand": "Seven Pet",
+    "colors": [
+      {
+        "photo": "/img/mordedor2_7pet_azul.png"
+      },
+      {
+        "photo": "/img/mordedor2_7pet_amarelo.png"
+      },
+      {
+        "photo": "/img/mordedor2_7pet_verde.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Brinquedos"
+  },
+  {
+    "id": 90,
+    "name": "Mordedor",
+    "brand": "Caracol",
+    "colors": [
+      {
+        "photo": "/img/mordedor5_caracol_rosa.png"
+      },
+      {
+        "photo": "/img/mordedor5_caracol_azul.png"
+      },
+      {
+        "photo": "/img/mordedor5_caracol_amarelo.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Brinquedos"
+  },
+  {
+    "id": 91,
+    "name": "Mordedor",
+    "brand": "Caracol",
+    "colors": [
+      {
+        "photo": "/img/mordedor6_caracol_verde.png"
+      },
+      {
+        "photo": "/img/mordedor6_caracol_amarelo.png"
+      },
+      {
+        "photo": "/img/mordedor6_caracol_rosa.png"
+      },
+      {
+        "photo": "/img/mordedor6_caracol_vermelho.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Brinquedos"
+  },
+  {
+    "id": 92,
+    "name": "Mordedor",
+    "brand": "Seven Pet",
+    "colors": [
+      {
+        "photo": "/img/mordedor3_7pet_vermelho.png"
+      },
+      {
+        "photo": "/img/mordedor3_7pet_amarelo.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Brinquedos"
+  },
+  {
+    "id": 93,
+    "name": "Mordedor",
+    "brand": "Caracol",
+    "colors": [
+      {
+        "photo": "/img/mordedor7_caracol_verde.png"
+      },
+      {
+        "photo": "/img/mordedor7_caracol_amarelo.png"
+      },
+      {
+        "photo": "/img/mordedor7_caracol_rosa.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Brinquedos"
+  },
+  {
+    "id": 94,
+    "name": "Mordedor",
+    "brand": "Caracol",
+    "colors": [
+      {
+        "photo": "/img/mordedor8_caracol_verde.png"
+      },
+      {
+        "photo": "/img/mordedor8_caracol_laranja.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Brinquedos"
+  },
+  {
+    "id": 95,
+    "name": "Mordedor",
+    "brand": "Caracol",
+    "colors": [
+      {
+        "photo": "/img/mordedor9_caracol_rosa.png"
+      },
+      {
+        "photo": "/img/mordedor9_caracol_laranja.png"
+      },
+      {
+        "photo": "/img/mordedor9_caracol_amarelo.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Brinquedos"
+  },
+  {
+    "id": 96,
+    "name": "Mordedor",
+    "brand": "Caracol",
+    "colors": [
+      {
+        "photo": "/img/mordedor10_caracol_rosa.png"
+      },
+      {
+        "photo": "/img/mordedor10_caracol_amarelo.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Brinquedos"
+  },
+  {
+    "id": 97,
+    "name": " Bola",
+    "brand": "Caracol",
+    "colors": [
+      {
+        "photo": "/img/bola_caracol_rosa.png"
+      },
+      {
+        "photo": "/img/bola_caracol_laranja.png"
+      },
+      {
+        "photo": "/img/bola_caracol_amarelo.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Brinquedos"
+  },
+  {
+    "id": 98,
+    "name": "Mordedor",
+    "brand": "Seven Pet",
+    "colors": [
+      {
+        "photo": "/img/mordedor4_7pet_verde.png"
+      },
+      {
+        "photo": "/img/mordedor4_7pet_rosa.png"
+      },
+      {
+        "photo": "/img/mordedor4_7pet_laranja.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Brinquedos"
+  },
+  {
+    "id": 99,
+    "name": "Mordedor",
+    "brand": "Seven Pet",
+    "colors": [
+      {
+        "photo": "/img/mordedor5_7pet_verde.png"
+      },
+      {
+        "photo": "/img/mordedor5_7pet_amarelo.png"
+      },
+      {
+        "photo": "/img/mordedor5_7pet_laranja.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Brinquedos"
+  },
+  {
+    "id": 100,
+    "name": "Mordedor",
+    "brand": "Folia Pet",
+    "colors": [
+      {
+        "photo": "/img/mordedor_foliapet_rosa.png"
+      },
+      {
+        "photo": "/img/mordedor_foliapet_amarelo.png"
+      },
+      {
+        "photo": "/img/mordedor_foliapet_laranja.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Brinquedos"
+  },
+  {
+    "id": 101,
+    "name": "Mordedor Corda",
+    "brand": "Kabum Pet",
+    "colors": [
+      {
+        "photo": "/img/mordedor_kabumpet_rosa.png"
+      },
+      {
+        "photo": "/img/mordedor_kabumpet_azul.png"
+      },
+      {
+        "photo": "/img/mordedor_kabumpet_verde.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Brinquedos"
+  },
+  {
+    "id": 102,
+    "name": "Mordedor",
+    "brand": "Kabum Pet",
+    "colors": [
+      {
+        "photo": "/img/mordedor1_kabumpet_verde.png"
+      },
+      {
+        "photo": "/img/mordedor1_kabumpet_branco.png"
+      },
+      {
+        "photo": "/img/mordedor1_kabumpet_azul.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Brinquedos"
+  },
+  {
+    "id": 103,
+    "name": "Mordedor Massageador Grande",
+    "brand": "Pet Injet",
+    "colors": [
+      {
+        "photo": "/img/mordedor_petinjet_azul.png"
+      },
+      {
+        "photo": "/img/mordedor_petinjet_amarelo.png"
+      },
+      {
+        "photo": "/img/mordedor_petinjet_rosa.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Brinquedos"
+  },
+  {
+    "id": 104,
+    "name": "Mordedor",
+    "brand": "Petflex",
+    "colors": [
+      {
+        "photo": "/img/mordedor_petflex_laranja.png"
+      },
+      {
+        "photo": "/img/mordedor_petflext_rosa.png"
+      },
+      {
+        "photo": "/img/mordedor_petflext_amarelo.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Brinquedos"
   }
 ]
