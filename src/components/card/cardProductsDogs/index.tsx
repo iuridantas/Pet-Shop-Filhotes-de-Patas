@@ -154,7 +154,7 @@ export function CardProductsForDogs({
         .map((product) => (
           <CardSession key={product.id}>
             <h2>{product.name}</h2>
-            <h2>{product.brand}</h2>
+            <h2 className="brand">{product.brand}</h2>
             <ImageContainer>
               {product.colors &&
               Array.isArray(product.colors) &&

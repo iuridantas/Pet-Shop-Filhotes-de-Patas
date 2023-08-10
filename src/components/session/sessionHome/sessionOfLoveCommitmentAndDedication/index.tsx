@@ -1,8 +1,15 @@
-import { LoveCommitmentAndDedicationSession } from './style';
+import { LoveCommitmentAndDedicationSession, TitleSession } from './style';
 
 export function SessionOfLoveCommitmentAndDedication() {
   return (
     <section aria-label="Explicação Sobre os valores: amor, compromisso e dedicação">
+      <TitleSession>
+        <h1>Bem-vindo à Filhotes de Patas</h1>
+        <h2>
+          Onde o bem-estar e a felicidade do seu pet são nossas principais
+          prioridades!
+        </h2>
+      </TitleSession>
       <LoveCommitmentAndDedicationSession>
         <div>
           <img src="/img/amor.png" alt="Foto sobre amor" />
