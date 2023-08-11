@@ -37,6 +37,10 @@ export const AestheticsandHygieneSession = styled.div`
     flex-direction: column;
     margin: 10px auto;
 
+    div{
+      flex-direction: column
+    }
+
     img {
       width: 370px;
       margin-bottom: 10px;
@@ -88,10 +92,7 @@ export const SalePuppySession = styled.div`
 
   @media (max-width: 600px) {
     margin: 10px auto;
-
-    div {
-      flex-direction: column-reverse;
-    }
+    flex-direction: column-reverse;
 
     img {
       width: 370px;
@@ -152,6 +153,11 @@ export const SaleProductSession = styled.div`
   @media (max-width: 600px) {
     flex-direction: column;
     margin: 10px auto;
+
+    div{
+      flex-direction: column
+    }
+
 
     img {
       width: 370px;
