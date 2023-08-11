@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const CardSession = styled.div`
   width: 430px;
-  height: 620px;
+  height: 590px;
   padding: 16px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   background-color: #fff8c1;

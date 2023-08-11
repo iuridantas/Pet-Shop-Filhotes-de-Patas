@@ -109,11 +109,21 @@ export function Header() {
             <li>
               <a
                 onClick={() => {
-                  navigate('/serviços');
+                  navigate('/estetica');
                 }}
                 className="container-link"
               >
-                Serviços
+                Estética
+              </a>
+            </li>
+            <li>
+              <a
+                onClick={() => {
+                  navigate('/filhotes');
+                }}
+                className="container-link"
+              >
+                Filhotes
               </a>
             </li>
             <li>
