@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const LoveCommitmentAndDedicationSession = styled.div`
   display: flex;
   max-width: 1440px;
-  margin: 20px auto;
+  margin: 0 auto;
   justify-content: space-around;
 
   h2 {
@@ -37,13 +37,13 @@ export const LoveCommitmentAndDedicationSession = styled.div`
     flex-direction: column;
     
     h2 {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       margin: 5px 20px;
     }
 
     p {
       margin: 5px 20px;
-      font-size: 1rem;
+      font-size: 1.2rem;
       text-align: justify;
     }
 
@@ -69,7 +69,7 @@ export const TitleSession = styled.div`
 
   h2 {
     font-size: 1.8rem;
-    margin: 10px 0;
+    margin: 0 0 20px 0;
   }
 
   @media (max-width: 600px) {
@@ -79,8 +79,8 @@ export const TitleSession = styled.div`
     }
 
     h2 {
-      font-size: 1.2rem;
-      margin: 5px auto;
+      font-size: 1.4rem;
+      margin: 5px 10px;
     }
   }
 `;
