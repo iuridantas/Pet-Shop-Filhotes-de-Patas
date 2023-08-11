@@ -1,9 +1,14 @@
 import styled from 'styled-components';
 
 export const AestheticsandHygieneSession = styled.div`
-  display: flex;
-  max-width: 1440px;
-  margin: 20px auto;
+  background-color: #fff8c1;
+  padding: 1px 0;
+
+  div {
+    display: flex;
+    max-width: 1440px;
+    margin: 20px auto;
+  }
 
   img {
     width: 600px;
@@ -19,6 +24,7 @@ export const AestheticsandHygieneSession = styled.div`
   .info {
     margin: 40px 0;
     max-width: 760px;
+    flex-direction: column;
   }
 
   h2 {
@@ -54,14 +60,9 @@ export const AestheticsandHygieneSession = styled.div`
 `;
 
 export const SalePuppySession = styled.div`
-  background-color: #fff8c1;
-  padding: 1px 0;
-
-  div {
-    display: flex;
-    max-width: 1440px;
-    margin: 20px auto;
-  }
+  display: flex;
+  max-width: 1440px;
+  margin: 20px auto;
 
   img {
     width: 600px;
@@ -77,7 +78,6 @@ export const SalePuppySession = styled.div`
   .info {
     margin: 40px 0;
     max-width: 760px;
-    flex-direction: column;
   }
 
   h2 {
@@ -116,13 +116,18 @@ export const SalePuppySession = styled.div`
 `;
 
 export const SaleProductSession = styled.div`
-  display: flex;
-  max-width: 1440px;
-  margin: 20px auto;
+  background-color: #fff8c1;
+  padding: 1px 0;
+
+  div {
+    display: flex;
+    max-width: 1440px;
+    margin: 20px auto;
+  }
 
   img {
     width: 600px;
-    height: 350px;
+    height: 360px;
     margin: 0 auto;
   }
 
@@ -135,6 +140,7 @@ export const SaleProductSession = styled.div`
   .info {
     margin: 40px 0;
     max-width: 760px;
+    flex-direction: column;
   }
 
   h2 {
