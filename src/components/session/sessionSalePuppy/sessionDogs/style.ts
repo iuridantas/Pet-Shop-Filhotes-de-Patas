@@ -17,9 +17,10 @@ export const DogsSession = styled.div`
   }
 
   section {
-    display: grid;
-    grid-template-columns: repeat(3, 480px);
-    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 70px;
   }
 
   @media (max-width: 600px) {
