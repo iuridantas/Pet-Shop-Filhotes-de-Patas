@@ -2,66 +2,26 @@ import styled from 'styled-components';
 
 export const InformationSession = styled.div`
   display: flex;
-  max-width: 1440px;
-  margin: 20px auto;
+  justify-content: center;
 
-  justify-content: space-around;
-
-  h2 {
-    font-size: 1.8rem;
-    margin: 10px 0;
-    text-align: center;
-  }
-
-  p {
-    font-size: 1.4rem;
-    margin: 10px 0;
-    text-align: center;
-  }
-
-  img {
-    width: 150px;
-    height: 150px;
-    border-radius: 100px;
-    margin: 0 auto;
-  }
-
-  a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-    color: black;
+  button {
+    position: absolute;
+    padding: 17.5px 24px;
+    background: #4B0AEB;
+    border: none;
+    border-radius: 8px;
+    width: 243px;
+    height: 80px;
+    top: 500px;
     cursor: pointer;
   }
 
-  div {
-    flex: 1;
-    max-width: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 10px;
+  h1 {
+    font-weight: 700;
+    font-size: 30px;
+    color: #ffffff;
   }
 
   @media (max-width: 600px) {
-    display: flex;
-    flex-direction: column;
-    h2 {
-      font-size: 1.2rem;
-      margin: 5px 20px;
-    }
-
-    p {
-      margin: 5px 20px;
-      font-size: 1rem;
-      text-align: justify;
-    }
-
-    div {
-      flex: none;
-      max-width: none;
-      margin: 10px auto;
-    }
   }
 `;
