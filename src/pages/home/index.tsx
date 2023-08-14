@@ -6,9 +6,9 @@ import { Container } from './style';
 export function Home() {
   return (
     <Container aria-label="Página inicial">
-      <SessionBannersHome/>
-      <SessionOfLoveCommitmentAndDedication/>
-      <SessionServiceDetails/>
+      <SessionBannersHome />
+      <SessionOfLoveCommitmentAndDedication />
+      <SessionServiceDetails />
     </Container>
   );
 }

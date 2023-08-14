@@ -31,9 +31,7 @@ export function SessionProductsCats() {
     setSelectedCategory(selectedCategoryValue);
 
     if (selectedCategoryValue) {
-      navigate(
-        `/gato?category=${encodeURIComponent(selectedCategoryValue)}`,
-      );
+      navigate(`/gato?category=${encodeURIComponent(selectedCategoryValue)}`);
     } else {
       navigate('/gato');
     }

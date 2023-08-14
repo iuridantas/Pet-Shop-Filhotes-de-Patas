@@ -30,7 +30,7 @@ export const CardSession = styled.div`
     height: 26px;
   }
 
-  .brand{
+  .brand {
     height: 26px;
   }
 

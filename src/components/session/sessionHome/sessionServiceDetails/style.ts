@@ -37,8 +37,8 @@ export const AestheticsandHygieneSession = styled.div`
     flex-direction: column;
     margin: 10px auto;
 
-    div{
-      flex-direction: column
+    div {
+      flex-direction: column;
     }
 
     img {
@@ -154,10 +154,9 @@ export const SaleProductSession = styled.div`
     flex-direction: column;
     margin: 10px auto;
 
-    div{
-      flex-direction: column
+    div {
+      flex-direction: column;
     }
-
 
     img {
       width: 370px;

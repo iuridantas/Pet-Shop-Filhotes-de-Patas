@@ -5,8 +5,8 @@ import { Container } from './style';
 export function Contact() {
   return (
     <Container aria-label="Página onde mostra as formas de entrar em contato com a Filhotes de Patas">
-      <SessionMaps/>
-      <SessionSocialMedia/>
+      <SessionMaps />
+      <SessionSocialMedia />
     </Container>
   );
 }

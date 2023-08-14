@@ -12,7 +12,7 @@ export const DogsSession = styled.div`
 
   .text {
     font-size: 1.4rem;
-    margin: 20px 12px 20px 0 ;
+    margin: 20px 12px 20px 0;
     text-align: justify;
   }
 

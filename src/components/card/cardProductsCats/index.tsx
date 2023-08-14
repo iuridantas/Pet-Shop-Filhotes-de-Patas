@@ -8,7 +8,7 @@ import {
   IconRight,
   ImageContainer,
 } from './style';
-import productsCats from '../../products/productsCats.json';
+import productsCats from '../../json/products/productsCats.json';
 
 interface Product {
   id: number;

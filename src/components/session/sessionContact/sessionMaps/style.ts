@@ -9,7 +9,7 @@ export const MapsSession = styled.div`
 
   @media (max-width: 600px) {
     iframe {
-    height: 250px;
-  }
+      height: 250px;
+    }
   }
 `;

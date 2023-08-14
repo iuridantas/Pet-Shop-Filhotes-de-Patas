@@ -35,7 +35,7 @@ export const LoveCommitmentAndDedicationSession = styled.div`
   @media (max-width: 600px) {
     display: flex;
     flex-direction: column;
-    
+
     h2 {
       font-size: 1.4rem;
       margin: 5px 20px;

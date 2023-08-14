@@ -40,7 +40,10 @@ export function SessionBannerDog() {
             key={index}
             style={{ display: index === currentImageIndex ? 'block' : 'none' }}
           >
-            <img src={src} alt="Foto do Banner dos produtos a venda para cachorro" />
+            <img
+              src={src}
+              alt="Foto do Banner dos produtos a venda para cachorro"
+            />
           </div>
         ))}
       </BannerSession>
