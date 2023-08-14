@@ -1,8 +1,11 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { CardProductsForDogs } from '../../../card/cardProductsDogs';
 import { ProductsDogs } from './style';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 export function SessionProductsDogs() {
+  const navigate = useNavigate();
+  const location = useLocation();
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedFilter, setSelectedFilter] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('');
@@ -15,10 +18,25 @@ export function SessionProductsDogs() {
     setSelectedFilter(event.target.value);
   };
 
+  useEffect(() => {
+    const searchParams = new URLSearchParams(location.search);
+    const categoryFromUrl = searchParams.get('category');
+    setSelectedCategory(categoryFromUrl || '');
+  }, [location.search]);
+
   const handleCategoryChange = (
     event: React.ChangeEvent<HTMLSelectElement>,
   ) => {
-    setSelectedCategory(event.target.value);
+    const selectedCategoryValue = event.target.value;
+    setSelectedCategory(selectedCategoryValue);
+
+    if (selectedCategoryValue) {
+      navigate(
+        `/cachorro?category=${encodeURIComponent(selectedCategoryValue)}`,
+      );
+    } else {
+      navigate('/cachorro');
+    }
   };
 
   return (

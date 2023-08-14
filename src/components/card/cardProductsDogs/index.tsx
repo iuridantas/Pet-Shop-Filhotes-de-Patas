@@ -147,9 +147,10 @@ export function CardProductsForDogs({
       {sortProducts(shuffledProducts)
         .filter(
           (product) =>
-            searchTerm === '' ||
-            product.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            product.brand.toLowerCase().includes(searchTerm.toLowerCase()),
+            (searchTerm === '' ||
+              product.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+              product.brand.toLowerCase().includes(searchTerm.toLowerCase())) &&
+            (selectedCategory === '' || product.category === selectedCategory),
         )
         .map((product) => (
           <CardSession key={product.id}>
