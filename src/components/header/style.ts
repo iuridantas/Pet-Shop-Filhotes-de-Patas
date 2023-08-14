@@ -2,23 +2,21 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  padding: 32px 80px;
-  width: 100%;
+  padding: 20px;
   background-color: #fff8c1;
   margin: 0 auto;
 
   img {
-    width: 300px;
-    height: 150px;
+    width: 200px;
+    height: 100px;
   }
 
   ul {
     display: flex;
     list-style: none;
     gap: 20px;
-    margin-left: 500px;
   }
 
   .container-link {
@@ -34,10 +32,6 @@ export const Container = styled.div`
     box-shadow: 4px 4px 3px #1f1c6e;
     transform: translate(0px, 0px);
     transition: all 0.3s ease-in-out;
-  }
-
-  .container-link:last-of-type {
-    margin-right: 0;
   }
 
   .container-link:hover {
