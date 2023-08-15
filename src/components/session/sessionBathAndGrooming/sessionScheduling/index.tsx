@@ -10,7 +10,7 @@ export function SessionScheduling() {
   };
 
   return (
-    <section aria-label="Explicação Sobre banho, banho e tosa e sobre venda de filhotes">
+    <section aria-label="Botão para agendamento">
       <SchedulingSession>
         <button
           onClick={handleWhatsAppClick}
