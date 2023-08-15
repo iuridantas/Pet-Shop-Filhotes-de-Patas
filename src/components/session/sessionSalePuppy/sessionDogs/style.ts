@@ -12,7 +12,7 @@ export const DogsSession = styled.div`
 
   .text {
     font-size: 1.4rem;
-    margin: 20px 12px 20px 0;
+    margin: 20px 50px;
     text-align: justify;
   }
 
@@ -20,7 +20,7 @@ export const DogsSession = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 70px;
+    gap: 24px;
   }
 
   @media (max-width: 600px) {

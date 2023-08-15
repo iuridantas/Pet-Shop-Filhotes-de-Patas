@@ -1,4 +1,5 @@
 import { SessionBannerBathAndGrooming } from '../../components/session/sessionBathAndGrooming/sessionBanner';
+import { SessionBathSteps } from '../../components/session/sessionBathAndGrooming/sessionBathSteps';
 import { SessionHygienePet } from '../../components/session/sessionBathAndGrooming/sessionHygienePet';
 import { SessionScheduling } from '../../components/session/sessionBathAndGrooming/sessionScheduling';
 import { Container } from './style';
@@ -9,6 +10,7 @@ export function BathAndGrooming() {
       <SessionBannerBathAndGrooming />
       <SessionScheduling />
       <SessionHygienePet/>
+      <SessionBathSteps/>
     </Container>
   );
 }

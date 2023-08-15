@@ -16,6 +16,11 @@ export const SchedulingSession = styled.div`
     height: 80px;
     top: 500px;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  button:hover {
+    transform: translate(0px, -5px);
   }
 
   h1 {

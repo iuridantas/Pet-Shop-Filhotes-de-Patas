@@ -20,12 +20,13 @@ export const Title = styled.div`
 
 export const InformationPuppySession = styled.div`
   display: flex;
-  margin: 20px 190px;
+  max-width: 1440px;
+  margin: 0 auto;
 
   img {
     height: 600px;
-    margin: 0 20px;
     box-shadow: 10px 10px 20px black;
+    margin: 0 auto 0 50px;
   }
 
   p {
@@ -35,7 +36,9 @@ export const InformationPuppySession = styled.div`
   }
 
   div {
-    margin: 40px 0;
+    min-width: 720px;
+    padding: 10px 0;
+    margin: 0 20px 0 auto;
   }
 
   h2 {
