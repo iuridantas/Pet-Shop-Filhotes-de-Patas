@@ -1692,5 +1692,14 @@
     "price": 100.0,
     "installments": "ou 2x de 50,00",
     "category": "Roupas"
+  },
+  {
+    "id": 149,
+    "photo": "/img/osso.png",
+    "name": "Osso Nó Natural",
+    "brand": "",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Petiscos e Ossos"
   }
 ]

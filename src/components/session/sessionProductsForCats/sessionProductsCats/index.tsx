@@ -48,8 +48,6 @@ export function SessionProductsCats() {
             <h2>Categorias:</h2>
             <select value={selectedCategory} onChange={handleCategoryChange}>
               <option value="">Escolha</option>
-              <option value="Ração">Ração</option>
-              <option value="Petiscos e Ossos">Petiscos</option>
               <option value="Tapetes, Fraldas e Banheiros">
                 Tapetes, Fraldas e Banheiros
               </option>
@@ -67,7 +65,6 @@ export function SessionProductsCats() {
               <option value="Acessórios de Transporte">
                 Acessórios de Transporte
               </option>
-              <option value="Roupas">Roupas</option>
             </select>
           </div>
           <div className="select">
