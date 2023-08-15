@@ -35,7 +35,7 @@ export const SchedulingSession = styled.div`
 
   @media (max-width: 600px) {
     button {
-      width: 140px;
+      width: 150px;
       height: 40px;
       top: 250px;
     }
