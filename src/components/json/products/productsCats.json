@@ -602,5 +602,151 @@
     "price": 100.0,
     "installments": "ou 2x de 50,00",
     "category": "Brinquedos"
+  },
+  {
+    "id": 64,
+    "photo": "/img/comedouro1.png",
+    "name": "Comedouro",
+    "brand": "",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Comedouros e Bebedouros"
+  },
+  {
+    "id": 65,
+    "photo": "/img/comedouro.png",
+    "name": "Comedouro e Bebedouro",
+    "brand": "",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Comedouros e Bebedouros"
+  },
+  {
+    "id": 66,
+    "name": "Comedouro",
+    "brand": "Melamina Gato",
+    "colors": [
+      {
+        "photo": "/img/comedouro_melaminagato.png"
+      },
+      {
+        "photo": "/img/comedouro_melaminagato1.png"
+      },
+      {
+        "photo": "/img/comedouro_melaminagato2.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Comedouros e Bebedouros"
+  },
+  {
+    "id": 67,
+    "name": "Comedouro 300mL",
+    "brand": "Western Pet",
+    "colors": [
+      {
+        "photo": "/img/comedouro_westernpet.png"
+      },
+      {
+        "photo": "/img/comedouro1_westernpet.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Comedouros e Bebedouros"
+  },
+  {
+    "id": 68,
+    "photo": "/img/comedouro6.png",
+    "name": "Comedouro e Bebedouro",
+    "brand": "",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Comedouros e Bebedouros"
+  },
+  {
+    "id": 69,
+    "photo": "/img/comedouro_thepets.png",
+    "name": "Comedouro Porcelana",
+    "brand": "The Pets",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Comedouros e Bebedouros"
+  },
+  {
+    "id": 70,
+    "photo": "/img/comedouro1_thepets.png",
+    "name": "Comedouro Porcelana",
+    "brand": "The Pets",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Comedouros e Bebedouros"
+  },
+  {
+    "id": 71,
+    "photo": "/img/comedouro2_thepets.png",
+    "name": "Comedouro Porcelana",
+    "brand": "The Pets",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Comedouros e Bebedouros"
+  },
+  {
+    "id": 72,
+    "name": "Bolsa Atenas",
+    "brand": "São Pet",
+    "colors": [
+      {
+        "photo": "/img/bolsa_saopet_rosa.png"
+      },
+      {
+        "photo": "/img/bolsa_saosaopet_azul.png"
+      },
+      {
+        "photo": "/img/bolsa_saosaopet_vermelha.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Acessórios de Transporte"
+  },
+  {
+    "id": 73,
+    "name": "Bolsa Safety",
+    "brand": "São Pet",
+    "colors": [
+      {
+        "photo": "/img/bolsa_saopet_preto.png"
+      },
+      {
+        "photo": "/img/bolsa_saosaopet_rosa1.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Acessórios de Transporte"
+  },
+  {
+    "id": 74,
+    "name": "Bolsa Grecia",
+    "brand": "",
+    "colors": [
+      {
+        "photo": "/img/bolsa_preto.png"
+      },
+      {
+        "photo": "/img/bolsa_azul.png"
+      },
+      {
+        "photo": "/img/bolsa_rosa.png"
+      },
+      {
+        "photo": "/img/bolsa_rosa1.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Acessórios de Transporte"
   }
 ]

@@ -27,6 +27,11 @@ export const CardSession = styled.div`
     align-items: center;
     border-top: 1px solid black;
     width: 100%;
+    height: 26px;
+  }
+
+  .brand {
+    height: 26px;
   }
 
   h2 {

@@ -1701,5 +1701,400 @@
     "price": 100.0,
     "installments": "ou 2x de 50,00",
     "category": "Petiscos e Ossos"
+  },
+  {
+    "id": 150,
+    "photo": "/img/comedouro_petitems.png",
+    "name": "Comedouro",
+    "brand": "Pet Itens",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Comedouros e Bebedouros"
+  },
+  {
+    "id": 151,
+    "name": "Comedouro 800mL",
+    "brand": "Plast Pet",
+    "colors": [
+      {
+        "photo": "/img/comedouro_plastpet_roxo.png"
+      },
+      {
+        "photo": "/img/comedouro_plastpet_vermelho.png"
+      },
+      {
+        "photo": "/img/comedouro_plastpet_azul.png"
+      },
+      {
+        "photo": "/img/comedouro_plastpet_rosa.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Comedouros e Bebedouros"
+  },
+  {
+    "id": 152,
+    "name": "Comedouro 300mL",
+    "brand": "Plast Pet",
+    "colors": [
+      {
+        "photo": "/img/comedouro_petinjet_vermelho.png"
+      },
+      {
+        "photo": "/img/comedouro_petinjet_rosa.png"
+      },
+      {
+        "photo": "/img/comedouro_petinjet_roxo.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Comedouros e Bebedouros"
+  },
+  {
+    "id": 153,
+    "name": "Bebedouro 350mL",
+    "brand": "Plast Pet",
+    "colors": [
+      {
+        "photo": "/img/bebedouro_plastpet_vermelho.png"
+      },
+      {
+        "photo": "/img/bebedouro_plastpet_azul.png"
+      },
+      {
+        "photo": "/img/bebedouro_plastpet_roxo.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Comedouros e Bebedouros"
+  },
+  {
+    "id": 154,
+    "name": "Bebedouro com Boia Limitador",
+    "brand": "Plast Pet",
+    "colors": [
+      {
+        "photo": "/img/bebedouro_azul.png"
+      },
+      {
+        "photo": "/img/bebedouro_roxo.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Comedouros e Bebedouros"
+  },
+  {
+    "id": 155,
+    "name": "Comedouro 300mL",
+    "brand": "Erca Plast",
+    "colors": [
+      {
+        "photo": "/img/comedouro_ercaplast_verde1.png"
+      },
+      {
+        "photo": "/img/comedouro_ercaplast_verde.png"
+      },
+      {
+        "photo": "/img/comedouro_ercaplast_vermelho.png"
+      },
+      {
+        "photo": "/img/comedouro_ercaplast_rosa.png"
+      },
+      {
+        "photo": "/img/comedouro_ercaplast_azul.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Comedouros e Bebedouros"
+  },
+  {
+    "id": 156,
+    "name": "Comedouro Retrátil",
+    "brand": "Maylon Pet",
+    "colors": [
+      {
+        "photo": "/img/comedouro_retratil_maylonpet_laranja.png"
+      },
+      {
+        "photo": "/img/comedouro_retratil_maylonpet_verde.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Comedouros e Bebedouros"
+  },
+  {
+    "id": 157,
+    "photo": "/img/comedouro2.png",
+    "name": "Comedouro e Bebedouro Sapinho",
+    "brand": "",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Comedouros e Bebedouros"
+  },
+  {
+    "id": 158,
+    "photo": "/img/comedouro_guttipet.png",
+    "name": "Comedouro",
+    "brand": "Guttipet",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Comedouros e Bebedouros"
+  },
+  {
+    "id": 159,
+    "photo": "/img/comedouro_bbbpet.png",
+    "name": "Comedouro 160mL",
+    "brand": "BBB Pet",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Comedouros e Bebedouros"
+  },
+  {
+    "id": 160,
+    "name": "Comedouro e Bebedouro",
+    "brand": "MMA Pet",
+    "colors": [
+      {
+        "photo": "/img/bebedouro_comedouro_mmapet_azul.png"
+      },
+      {
+        "photo": "/img/bebedouro_comedouro_mmapet_preto.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Comedouros e Bebedouros"
+  },
+  {
+    "id": 161,
+    "name": "Comedouro",
+    "brand": "Rio Tijucas",
+    "colors": [
+      {
+        "photo": "/img/comedouro3.png"
+      },
+      {
+        "photo": "/img/comedouro4.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Comedouros e Bebedouros"
+  },
+  {
+    "id": 162,
+    "name": "Comedouro Interativo",
+    "brand": "",
+    "colors": [
+      {
+        "photo": "/img/comedouro_interativo_rosa.png"
+      },
+      {
+        "photo": "/img/comedouro_interativo_vermelho.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Comedouros e Bebedouros"
+  },
+  {
+    "id": 163,
+    "photo": "/img/comedouro_interativo.png",
+    "name": "Comedouro Interativo",
+    "brand": "",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Comedouros e Bebedouros"
+  },
+  {
+    "id": 164,
+    "name": "Comedouro Interativo",
+    "brand": "",
+    "colors": [
+      {
+        "photo": "/img/comedouro_interativo_verde.png"
+      },
+      {
+        "photo": "/img/comedouro_interativo_cinza.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Comedouros e Bebedouros"
+  },
+  {
+    "id": 165,
+    "name": "Comedouro",
+    "brand": "Rio Tijucas",
+    "colors": [
+      {
+        "photo": "/img/comedouro_riotijucas.png"
+      },
+      {
+        "photo": "/img/comedouro1_riotijucas.png"
+      },
+      {
+        "photo": "/img/comedouro2_riotijucas.png"
+      },
+      {
+        "photo": "/img/comedouro3_riotijucas.png"
+      },
+      {
+        "photo": "/img/comedouro4_riotijucas.png"
+      },
+      {
+        "photo": "/img/comedouro5_riotijucas.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Comedouros e Bebedouros"
+  },
+  {
+    "id": 166,
+    "photo": "/img/comedouro3_thepets.png",
+    "name": "Comedouro Porcelana",
+    "brand": "The Pets",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Comedouros e Bebedouros"
+  },
+  {
+    "id": 167,
+    "photo": "/img/comedouro4_thepets.png",
+    "name": "Comedouro Porcelana",
+    "brand": "The Pets",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Comedouros e Bebedouros"
+  },
+  {
+    "id": 168,
+    "photo": "/img/comedouro5_thepets.png",
+    "name": "Comedouro Porcelana",
+    "brand": "The Pets",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Comedouros e Bebedouros"
+  },
+  {
+    "id": 169,
+    "name": "Comedouro Porcelana",
+    "brand": "The Pets",
+    "colors": [
+      {
+        "photo": "/img/comedouro6_thepets.png"
+      },
+      {
+        "photo": "/img/comedouro7_thepets.png"
+      },
+      {
+        "photo": "/img/comedouro8_thepets.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Comedouros e Bebedouros"
+  },
+  {
+    "id": 170,
+    "name": "Comedouro Porcelana",
+    "brand": "The Pets",
+    "colors": [
+      {
+        "photo": "/img/comedouro9_thepets.png"
+      },
+      {
+        "photo": "/img/comedouro10_thepets.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Comedouros e Bebedouros"
+  },
+  {
+    "id": 171,
+    "name": "Edredom",
+    "brand": "São Benedito",
+    "colors": [
+      {
+        "photo": "/img/edredom_saobenedito.png"
+      },
+      {
+        "photo": "/img/edredom1_saobenedito.png"
+      },
+      {
+        "photo": "/img/edredom2_saobenedito.png"
+      },
+      {
+        "photo": "/img/edredom3_saobenedito.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Comedouros e Bebedouros"
+  },
+  {
+    "id": 172,
+    "name": "Bolsa Atenas",
+    "brand": "São Pet",
+    "colors": [
+      {
+        "photo": "/img/bolsa_saopet_rosa.png"
+      },
+      {
+        "photo": "/img/bolsa_saosaopet_azul.png"
+      },
+      {
+        "photo": "/img/bolsa_saosaopet_vermelha.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Acessórios de Transporte"
+  },
+  {
+    "id": 173,
+    "name": "Bolsa Safety",
+    "brand": "São Pet",
+    "colors": [
+      {
+        "photo": "/img/bolsa_saopet_preto.png"
+      },
+      {
+        "photo": "/img/bolsa_saosaopet_rosa1.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Acessórios de Transporte"
+  },
+  {
+    "id": 174,
+    "name": "Bolsa Grecia",
+    "brand": "",
+    "colors": [
+      {
+        "photo": "/img/bolsa_preto.png"
+      },
+      {
+        "photo": "/img/bolsa_azul.png"
+      },
+      {
+        "photo": "/img/bolsa_rosa.png"
+      },
+      {
+        "photo": "/img/bolsa_rosa1.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Acessórios de Transporte"
   }
 ]
