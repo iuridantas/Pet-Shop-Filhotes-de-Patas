@@ -748,5 +748,27 @@
     "price": 100.0,
     "installments": "ou 2x de 50,00",
     "category": "Acessórios de Transporte"
+  },
+  {
+    "id": 75,
+    "name": "Edredom",
+    "brand": "São Benedito",
+    "colors": [
+      {
+        "photo": "/img/edredom_saobenedito.png"
+      },
+      {
+        "photo": "/img/edredom1_saobenedito.png"
+      },
+      {
+        "photo": "/img/edredom2_saobenedito.png"
+      },
+      {
+        "photo": "/img/edredom3_saobenedito.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Cobertores"
   }
 ]
