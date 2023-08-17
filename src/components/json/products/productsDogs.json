@@ -2096,5 +2096,23 @@
     "price": 100.0,
     "installments": "ou 2x de 50,00",
     "category": "Acessórios de Transporte"
+  },
+  {
+    "id": 175,
+    "photo": "/img/portão.png",
+    "name": "Grade de Porta + Extensor",
+    "brand": "",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Portões e Grades"
+  },
+  {
+    "id": 176,
+    "photo": "/img/portão1.png",
+    "name": "Grade de Porta + Extensor",
+    "brand": "",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Portões e Grades"
   }
 ]
