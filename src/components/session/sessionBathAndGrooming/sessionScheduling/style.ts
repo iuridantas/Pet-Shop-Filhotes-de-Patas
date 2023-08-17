@@ -12,7 +12,7 @@ export const SchedulingSession = styled.div`
     background: #4b0aeb;
     border: none;
     border-radius: 8px;
-    width: 243px;
+    width: 280px;
     height: 80px;
     top: 500px;
     cursor: pointer;
@@ -25,7 +25,7 @@ export const SchedulingSession = styled.div`
 
   h1 {
     font-weight: 700;
-    font-size: 30px;
+    font-size: 36px;
     color: #ffffff;
     display: flex;
     justify-content: center;
@@ -35,13 +35,13 @@ export const SchedulingSession = styled.div`
 
   @media (max-width: 600px) {
     button {
-      width: 150px;
+      width: 170px;
       height: 40px;
       top: 250px;
     }
 
     h1 {
-      font-size: 18px;
+      font-size: 20px;
       gap: 6px;
     }
   }

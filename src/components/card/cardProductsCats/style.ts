@@ -9,7 +9,7 @@ export const CardSession = styled.div`
   padding: 16px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24),
     1px 1px 5px black;
-  border-radius: 2rem;
+  border-radius: 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,37 +35,41 @@ export const CardSession = styled.div`
   }
 
   h2 {
-    font-size: 1.3rem;
+    font-size: 20px;
     text-align: center;
   }
 
   h3 {
-    font-size: 1.2rem;
+    font-size: 20px;
     margin-top: 5px;
   }
 
   h4 {
-    font-size: 1rem;
+    font-size: 16px;
   }
 
   @media (max-width: 600px) {
     width: 320px;
     height: auto;
 
+    .information {
+      height: auto;
+    }
+
+    .brand {
+      height: auto;
+    }
+
     img {
       padding: 20px;
     }
 
-    h2 {
-      font-size: 1.2rem;
-    }
-
     h3 {
-      font-size: 1.1rem;
+      font-size: 19px;
     }
 
     h4 {
-      font-size: 0.9rem;
+      font-size: 15px;
     }
   }
 `;

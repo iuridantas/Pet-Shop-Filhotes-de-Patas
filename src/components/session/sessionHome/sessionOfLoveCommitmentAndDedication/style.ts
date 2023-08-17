@@ -7,13 +7,13 @@ export const LoveCommitmentAndDedicationSession = styled.div`
   justify-content: space-around;
 
   h2 {
-    font-size: 1.8rem;
+    font-size: 30px;
     margin: 10px 0;
     text-align: center;
   }
 
   p {
-    font-size: 1.4rem;
+    font-size: 20px;
     margin: 10px 0;
     text-align: justify;
   }
@@ -37,13 +37,13 @@ export const LoveCommitmentAndDedicationSession = styled.div`
     flex-direction: column;
 
     h2 {
-      font-size: 1.4rem;
+      font-size: 20px;
       margin: 5px 20px;
     }
 
     p {
       margin: 5px 20px;
-      font-size: 1.2rem;
+      font-size: 16px;
       text-align: justify;
     }
 
@@ -63,24 +63,24 @@ export const TitleSession = styled.div`
   margin: 0 auto;
 
   h1 {
-    font-size: 4rem;
+    font-size: 36px;
     margin: 20px 0;
   }
 
   h2 {
-    font-size: 1.8rem;
+    font-size: 30px;
     margin: 0 0 20px 0;
   }
 
   @media (max-width: 600px) {
     h1 {
-      font-size: 1.8rem;
-      margin: 10px auto;
+      font-size: 30px;
+      margin: 10px 20px;
     }
 
     h2 {
-      font-size: 1.4rem;
-      margin: 5px 10px;
+      font-size: 20px;
+      margin: 5px 20px;
     }
   }
 `;

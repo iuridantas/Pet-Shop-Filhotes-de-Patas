@@ -8,8 +8,7 @@ export const ServiceSession = styled.div`
 
   h2 {
     text-align: center;
-    font-size: 3.1rem;
-    font-weight: 400;
+    font-size: 30px;
     margin: 30px 0;
   }
 
@@ -17,11 +16,12 @@ export const ServiceSession = styled.div`
     max-width: 1100px;
     margin: 0 auto;
     display: flex;
+    justify-content: center;
   }
 
   ul {
     background-color: rgba(221, 144, 148, 0.5);
-    max-width: 780px;
+    max-width: 500px;
     width: 100%;
     border-radius: 35px 35px 10px 10px;
     list-style: none;
@@ -30,7 +30,7 @@ export const ServiceSession = styled.div`
 
   li {
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 20px;
     font-style: italic;
     border-bottom: 1px solid #1f1c6e;
     max-width: 555px;
@@ -60,12 +60,12 @@ export const ServiceSession = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 400px;
+    width: 250px;
     height: 70px;
     background-color: #dd9094;
     color: #1f1c6e;
     border-radius: 35px;
-    font-size: 1.4rem;
+    font-size: 20px;
     text-align: center;
     margin: 0 0 0 15px;
     transition: all 0.3s ease-in-out;
@@ -82,7 +82,7 @@ export const ServiceSession = styled.div`
     height: auto;
 
     h2 {
-      font-size: 1.8rem;
+      font-size: 20px;
       margin: 10px auto;
     }
 
@@ -92,7 +92,7 @@ export const ServiceSession = styled.div`
     }
 
     li {
-      font-size: 1.2rem;
+      font-size: 16px;
     }
 
     .title {
@@ -101,10 +101,11 @@ export const ServiceSession = styled.div`
 
     .info {
       flex-direction: column;
+      margin: 0 20px;
     }
 
     a {
-      font-size: 1.2rem;
+      font-size: 16px;
       height: 50px;
       width: 200px;
       margin: 20px auto;

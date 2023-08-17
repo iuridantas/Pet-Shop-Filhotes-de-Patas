@@ -1,12 +1,16 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
   background-color: #fff8c1;
-  margin: 0 auto;
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1440px;
+  }
 
   img {
     width: 200px;
@@ -24,7 +28,7 @@ export const Container = styled.div`
     background: #dd9094;
     color: #1f1c6e;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 24px;
     border-radius: 8px;
     width: auto;
     padding: 10px;
@@ -46,8 +50,9 @@ export const Container = styled.div`
   }
 
   @media (max-width: 600px) {
-    padding: 32px 16px;
-    justify-content: space-between;
+    div {
+      padding: 32px 16px;
+    }
 
     img {
       width: 160px;
@@ -76,14 +81,14 @@ export const Container = styled.div`
     }
 
     a {
-      font-size: 1.4rem;
+      font-size: 23px;
       padding: 16px 0;
       margin: 16px 0;
     }
 
     button {
       display: flex;
-      font-size: 2rem;
+      font-size: 32px;
       background: none;
       color: #1f1c6e;
       border: none;

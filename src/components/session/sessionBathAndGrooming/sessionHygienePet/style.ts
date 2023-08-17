@@ -16,7 +16,7 @@ export const HygienePetSession = styled.div`
   }
 
   h2 {
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 700;
     margin: 0 auto 10px auto;
     text-align: center;
@@ -27,7 +27,7 @@ export const HygienePetSession = styled.div`
     margin: 0 auto 10px auto;
     text-align: center;
     font-weight: 400;
-    font-size: 23px;
+    font-size: 20px;
   }
 
   .benefits {
@@ -46,7 +46,7 @@ export const HygienePetSession = styled.div`
     align-items: center;
     margin: 16px 0;
     font-weight: 400;
-    font-size: 23px;
+    font-size: 20px;
   }
 
   @media (max-width: 600px) {
@@ -60,7 +60,7 @@ export const HygienePetSession = styled.div`
     }
 
     h2 {
-      font-size: 23px;
+      font-size: 20px;
       margin: 10px auto;
     }
 
@@ -71,6 +71,7 @@ export const HygienePetSession = styled.div`
 
     .benefits {
       margin: 0 20px;
+      padding: 4px 20px;
     }
 
     li {

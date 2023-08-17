@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 
 export const ProductsCats = styled.div`
-  display: flex;
+ display: flex;
   flex-direction: column;
   justify-content: center;
   max-width: 1440px;
   margin: 0 auto;
 
   h1 {
-    font-size: 2rem;
+    font-size: 30px;
     text-align: center;
     margin: 10px auto;
   }
@@ -17,10 +17,10 @@ export const ProductsCats = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 10px 0;
+    margin: 10px auto;
 
     h2 {
-      font-size: 1.3rem;
+      font-size: 20px;
     }
   }
 
@@ -40,7 +40,7 @@ export const ProductsCats = styled.div`
     width: 50%;
     border-radius: 10px;
     border-color: black;
-    font-size: 1.2rem;
+    font-size: 20px;
     text-align: center;
     padding: 5px;
     margin: 10px 0;
@@ -51,7 +51,7 @@ export const ProductsCats = styled.div`
     appearance: none;
     border-radius: 10px;
     border-color: black;
-    font-size: 1.2rem;
+    font-size: 20px;
     margin: 5px 0;
     text-align: center;
     padding: 5px 10px;
@@ -67,8 +67,8 @@ export const ProductsCats = styled.div`
 
   @media (max-width: 600px) {
     h1 {
-      font-size: 1.4rem;
-      margin: 5px auto;
+      font-size: 20px;
+      margin: 5px 20px;
     }
 
     .select {
@@ -77,27 +77,27 @@ export const ProductsCats = styled.div`
 
     .filter {
       display: flex;
-      margin: 10px auto;
+      margin: 10px 20px;
 
       h2 {
-        font-size: 1.1rem;
+        font-size: 16px;
       }
     }
 
     select {
-      font-size: 1rem;
+      font-size: 16px;
     }
 
     input {
       width: 78%;
-      font-size: 1rem;
-      margin: 10px auto;
+      font-size: 16px;
+      margin: 10px 20px;
     }
 
     section {
       display: flex;
       flex-direction: column;
-      margin: 15px auto;
+      margin: 15px 20px;
     }
   }
 `;

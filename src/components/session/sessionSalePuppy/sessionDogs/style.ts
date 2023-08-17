@@ -5,13 +5,13 @@ export const DogsSession = styled.div`
   margin: 20px auto;
 
   h2 {
-    font-size: 2rem;
+    font-size: 30px;
     text-align: center;
     margin-bottom: 20px;
   }
 
   .text {
-    font-size: 1.4rem;
+    font-size: 20px;
     margin: 20px 50px;
     text-align: justify;
   }
@@ -27,13 +27,13 @@ export const DogsSession = styled.div`
     margin: 0 0 10px 0;
 
     h2 {
-      font-size: 1.4rem;
+      font-size: 20px;
       margin-bottom: 20px;
     }
 
     .text {
       margin: 10px 20px;
-      font-size: 1rem;
+      font-size: 16px;
     }
 
     section {

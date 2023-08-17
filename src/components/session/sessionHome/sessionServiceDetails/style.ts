@@ -17,7 +17,7 @@ export const AestheticsandHygieneSession = styled.div`
 
   p {
     margin: 8px 40px;
-    font-size: 1.4rem;
+    font-size: 20px;
     text-align: justify;
   }
 
@@ -29,7 +29,7 @@ export const AestheticsandHygieneSession = styled.div`
 
   h2 {
     margin: 8px auto;
-    font-size: 1.8rem;
+    font-size: 30px;
     text-align: center;
   }
 
@@ -42,8 +42,9 @@ export const AestheticsandHygieneSession = styled.div`
     }
 
     img {
-      width: 370px;
-      margin-bottom: 10px;
+      width: auto;
+      height: auto;
+      margin: 0 20px 10px 20px;
     }
 
     .info {
@@ -52,13 +53,13 @@ export const AestheticsandHygieneSession = styled.div`
     }
 
     h2 {
-      font-size: 1.4rem;
+      font-size: 20px;
       margin: 0 20px;
     }
 
     p {
       margin: 10px 20px;
-      font-size: 1.2rem;
+      font-size: 16px;
     }
   }
 `;
@@ -75,7 +76,7 @@ export const SalePuppySession = styled.div`
 
   p {
     margin: 8px 40px;
-    font-size: 1.4rem;
+    font-size: 20px;
     text-align: justify;
   }
 
@@ -86,7 +87,7 @@ export const SalePuppySession = styled.div`
 
   h2 {
     margin: 8px auto;
-    font-size: 1.8rem;
+    font-size: 30px;
     text-align: center;
   }
 
@@ -95,8 +96,9 @@ export const SalePuppySession = styled.div`
     flex-direction: column-reverse;
 
     img {
-      width: 370px;
-      margin-bottom: 10px;
+      width: auto;
+      height: auto;
+      margin: 0 20px 10px 20px;
     }
 
     .info {
@@ -105,13 +107,13 @@ export const SalePuppySession = styled.div`
     }
 
     h2 {
-      font-size: 1.4rem;
+      font-size: 20px;
       margin: 0 20px;
     }
 
     p {
       margin: 10px 20px;
-      font-size: 1.2rem;
+      font-size: 16px;
     }
   }
 `;
@@ -134,7 +136,7 @@ export const SaleProductSession = styled.div`
 
   p {
     margin: 8px 40px;
-    font-size: 1.4rem;
+    font-size: 20px;
     text-align: justify;
   }
 
@@ -146,7 +148,7 @@ export const SaleProductSession = styled.div`
 
   h2 {
     margin: 8px auto;
-    font-size: 1.8rem;
+    font-size: 30px;
     text-align: center;
   }
 
@@ -159,9 +161,9 @@ export const SaleProductSession = styled.div`
     }
 
     img {
-      width: 370px;
-      height: 220px;
-      margin-bottom: 10px;
+      width: auto;
+      height: auto;
+      margin: 0 20px 10px 20px;
     }
 
     .info {
@@ -170,13 +172,13 @@ export const SaleProductSession = styled.div`
     }
 
     h2 {
-      font-size: 1.4rem;
+      font-size: 20px;
       margin: 0 20px;
     }
 
     p {
       margin: 10px 20px;
-      font-size: 1.2rem;
+      font-size: 16px;
     }
   }
 `;

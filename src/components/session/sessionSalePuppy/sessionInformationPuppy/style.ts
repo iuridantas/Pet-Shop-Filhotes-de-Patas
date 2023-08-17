@@ -5,7 +5,7 @@ export const Title = styled.div`
   margin: 20px auto;
 
   h1 {
-    font-size: 2rem;
+    font-size: 36px;
     text-align: center;
   }
 
@@ -13,7 +13,7 @@ export const Title = styled.div`
     margin: 10px 0;
 
     h1 {
-      font-size: 1.4rem;
+      font-size: 30px;
     }
   }
 `;
@@ -30,20 +30,19 @@ export const InformationPuppySession = styled.div`
   }
 
   p {
-    margin: 8px 30px;
-    font-size: 1.4rem;
+    margin: 20px 30px;
+    font-size: 20px;
     text-align: justify;
   }
 
   div {
-    min-width: 720px;
     padding: 10px 0;
     margin: 0 20px 0 auto;
   }
 
   h2 {
     margin: 8px 30px;
-    font-size: 1.8rem;
+    font-size: 30px;
     text-align: justify;
   }
 
@@ -52,23 +51,23 @@ export const InformationPuppySession = styled.div`
     margin: 10px auto;
 
     img {
-      height: auto;
-      margin-bottom: 10px;
+      height: 400px;
+      margin: 0 auto 10px auto;
     }
 
     div {
       text-align: justify;
-      margin: auto;
+      margin: 10px auto;
     }
 
     h2 {
-      font-size: 1.2rem;
+      font-size: 20px;
       margin: 0 20px;
     }
 
     p {
       margin: 10px 20px;
-      font-size: 1rem;
+      font-size: 16px;
     }
   }
 `;

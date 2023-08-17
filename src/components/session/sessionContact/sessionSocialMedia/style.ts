@@ -7,13 +7,13 @@ export const SocialMediaSession = styled.div`
   justify-content: center;
 
   h2 {
-    font-size: 1.8rem;
+    font-size: 30px;
     margin: 10px 0;
     text-align: center;
   }
 
   p {
-    font-size: 1.4rem;
+    font-size: 20px;
     margin: 10px 0;
     text-align: center;
   }
@@ -47,13 +47,13 @@ export const SocialMediaSession = styled.div`
     display: flex;
     flex-direction: column;
     h2 {
-      font-size: 1.2rem;
+      font-size: 20px;
       margin: 5px 20px;
     }
 
     p {
       margin: 5px 20px;
-      font-size: 1rem;
+      font-size: 16px;
       text-align: justify;
     }
 

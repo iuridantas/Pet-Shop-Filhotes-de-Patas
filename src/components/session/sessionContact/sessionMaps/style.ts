@@ -2,9 +2,15 @@ import styled from 'styled-components';
 
 export const MapsSession = styled.div`
   display: flex;
+  flex-direction: column;
   max-width: 1440px;
   margin: 0 auto;
   justify-content: center;
+
+  h1 {
+    font-size: 36px;
+    margin: 20px auto;
+  }
 
   iframe {
     width: 100%;
@@ -15,6 +21,11 @@ export const MapsSession = styled.div`
   @media (max-width: 600px) {
     iframe {
       height: 250px;
+    }
+
+    h1 {
+      font-size: 30px;
+      margin: 10px auto;
     }
   }
 `;

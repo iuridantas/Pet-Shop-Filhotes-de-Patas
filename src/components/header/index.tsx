@@ -60,6 +60,7 @@ export function Header() {
   return (
     <header>
       <Container aria-label="Menu de navegação principal">
+        <div>
         <img
           src="/img/logo.jpeg"
           alt="logo"
@@ -138,6 +139,7 @@ export function Header() {
             </li>
           </ul>
         </nav>
+        </div>
       </Container>
     </header>
   );

@@ -8,7 +8,7 @@ export const BathStepsSession = styled.div`
   flex-direction: column;
 
   h2 {
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 700;
     text-align: center;
   }
@@ -29,7 +29,7 @@ export const BathStepsSession = styled.div`
 
   @media (max-width: 600px) {
     h2 {
-      font-size: 23px;
+      font-size: 20px;
     }
 
     div {
