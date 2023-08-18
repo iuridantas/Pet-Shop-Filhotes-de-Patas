@@ -8,9 +8,16 @@ export function ProductsCat() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => {
+    const isContentLoaded = sessionStorage.getItem('isContentLoaded');
+
+    if (isContentLoaded) {
       setIsLoading(false);
-    }, 2000);
+    } else {
+      setTimeout(() => {
+        setIsLoading(false);
+        sessionStorage.setItem('isContentLoaded', 'true');
+      }, 2000);
+    }
   }, []);
 
   return (
