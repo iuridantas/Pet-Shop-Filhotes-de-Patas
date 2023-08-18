@@ -9,7 +9,7 @@ export function Contact() {
 
   useEffect(() => {
     const isContentLoaded = sessionStorage.getItem(
-      'isContentLoadedProductsDog',
+      'isContentLoadedContact',
     );
 
     if (isContentLoaded) {
@@ -17,7 +17,7 @@ export function Contact() {
     } else {
       setTimeout(() => {
         setIsLoading(false);
-        sessionStorage.setItem('isContentLoadedProductsDog', 'true');
+        sessionStorage.setItem('isContentLoadedContact', 'true');
       }, 2000);
     }
   }, []);

@@ -10,7 +10,7 @@ export function SalePuppy() {
 
   useEffect(() => {
     const isContentLoaded = sessionStorage.getItem(
-      'isContentLoadedProductsDog',
+      'isContentLoadedSalePuppy',
     );
 
     if (isContentLoaded) {
@@ -18,7 +18,7 @@ export function SalePuppy() {
     } else {
       setTimeout(() => {
         setIsLoading(false);
-        sessionStorage.setItem('isContentLoadedProductsDog', 'true');
+        sessionStorage.setItem('isContentLoadedSalePuppy', 'true');
       }, 2000);
     }
   }, []);

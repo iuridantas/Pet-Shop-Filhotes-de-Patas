@@ -9,7 +9,7 @@ export function ProductsCat() {
 
   useEffect(() => {
     const isContentLoaded = sessionStorage.getItem(
-      'isContentLoadedProductsDog',
+      'isContentLoadedProductsCat',
     );
 
     if (isContentLoaded) {
@@ -17,7 +17,7 @@ export function ProductsCat() {
     } else {
       setTimeout(() => {
         setIsLoading(false);
-        sessionStorage.setItem('isContentLoadedProductsDog', 'true');
+        sessionStorage.setItem('isContentLoadedProductsCat', 'true');
       }, 2000);
     }
   }, []);
