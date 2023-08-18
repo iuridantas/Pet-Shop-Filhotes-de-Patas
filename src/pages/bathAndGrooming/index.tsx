@@ -10,14 +10,16 @@ export function BathAndGrooming() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const isContentLoaded = sessionStorage.getItem('isContentLoaded');
+    const isContentLoaded = sessionStorage.getItem(
+      'isContentLoadedProductsDog',
+    );
 
     if (isContentLoaded) {
       setIsLoading(false);
     } else {
       setTimeout(() => {
         setIsLoading(false);
-        sessionStorage.setItem('isContentLoaded', 'true');
+        sessionStorage.setItem('isContentLoadedProductsDog', 'true');
       }, 2000);
     }
   }, []);
