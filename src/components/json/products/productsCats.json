@@ -538,9 +538,16 @@
   },
   {
     "id": 58,
-    "photo": "/img/arranhador_obstaculo.png",
-    "name": "Arranhador Com Obstáculo",
+    "name": "Arranhador Com Arco",
     "brand": "LD Pet",
+    "colors": [
+      {
+        "photo": "/img/arranhador_obstaculo.png"
+      },
+      {
+        "photo": "/img/arranhador1_obstaculo.png"
+      }
+    ],
     "price": 100.0,
     "installments": "ou 2x de 50,00",
     "category": "Brinquedos"
