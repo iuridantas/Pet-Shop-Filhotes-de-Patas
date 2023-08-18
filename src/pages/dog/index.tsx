@@ -1,12 +1,28 @@
+import { useEffect, useState } from 'react';
 import { SessionBannerDog } from '../../components/session/sessionProductsForDogs/sessionBanner';
 import { SessionProductsDogs } from '../../components/session/sessionProductsForDogs/sessionProductsDogs';
 import { Container } from './style';
+import { Loader } from '../../components/loader';
 
 export function ProductsDog() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+  }, []);
+
   return (
     <Container aria-label="Página dos produtos que a Filhotes de Patas vende para cachorro">
-      <SessionBannerDog />
-      <SessionProductsDogs />
+      {isLoading ? (
+        <Loader />
+      ) : (
+        <>
+          <SessionBannerDog />
+          <SessionProductsDogs />
+        </>
+      )}
     </Container>
   );
 }
