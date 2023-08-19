@@ -777,5 +777,186 @@
     "price": 100.0,
     "installments": "ou 2x de 50,00",
     "category": "Cobertores"
+  },
+  {
+    "id": 76,
+    "photo": "/img/lenço_umedecido_myhug.png",
+    "name": "Lenço Umedecido",
+    "brand": "MyHug",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Beleza e Limpeza"
+  },
+  {
+    "id": 77,
+    "photo": "/img/lenço_umedecido2_powerpets.png",
+    "name": "Lenço Umedecido",
+    "brand": "Power Pet's",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Beleza e Limpeza"
+  },
+  {
+    "id": 78,
+    "name": "Tapete Anteaderente",
+    "brand": "Elo Imports",
+    "colors": [
+      {
+        "photo": "/img/tapete_anteaderente_beje.png"
+      },
+      {
+        "photo": "/img/tapete_anteaderente_verdeclaro.png"
+      },
+      {
+        "photo": "/img/tapete_anteaderente_verdeescuro.png"
+      },
+      {
+        "photo": "/img/tapete_anteaderente_rosa.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Tapetes, Fraldas e Banheiros"
+  },
+  {
+    "id": 79,
+    "name": "Coleira e Guia",
+    "brand": "",
+    "colors": [
+      {
+        "photo": "/img/coleira_verde.png"
+      },
+      {
+        "photo": "/img/coleira_preta.png"
+      },
+      {
+        "photo": "/img/coleira_amarelo.png"
+      },
+      {
+        "photo": "/img/coleira_laranja.png"
+      },
+      {
+        "photo": "/img/coleira_vermelho.png"
+      },
+      {
+        "photo": "/img/coleira_azul.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Coleiras, Guias e Peitorais"
+  },
+  {
+    "id": 80,
+    "name": "Coleira",
+    "brand": "Caracol",
+    "colors": [
+      {
+        "photo": "/img/coleira_caracol_preta.png"
+      },
+      {
+        "photo": "/img/coleira_caracol_azul1.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Coleiras, Guias e Peitorais"
+  },
+  {
+    "id": 81,
+    "name": "Peitoral e Guia",
+    "brand": "Bomei Pet",
+    "colors": [
+      {
+        "photo": "/img/peitoraleguia_bomeipet_rosa.png"
+      },
+      {
+        "photo": "/img/peitoraleguia_bomeipet_rosa1.png"
+      },
+      {
+        "photo": "/img/peitoraleguia_bomeipet_roxo.png"
+      },
+      {
+        "photo": "/img/peitoraleguia_bomeipet_amarelo.png"
+      },
+      {
+        "photo": "/img/peitoraleguia_bomeipet_verde.png"
+      },
+      {
+        "photo": "/img/peitoraleguia_bomeipet_azul.png"
+      },
+      {
+        "photo": "/img/peitoraleguia_bomeipet_vermelho.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Coleiras, Guias e Peitorais"
+  },
+  {
+    "id": 82,
+    "name": "Peitoral e Guia",
+    "brand": "",
+    "colors": [
+      {
+        "photo": "/img/peitoraleguia_marron.png"
+      },
+      {
+        "photo": "/img/peitoraleguia_azul.png"
+      },
+      {
+        "photo": "/img/peitoraleguia_azul1.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Coleiras, Guias e Peitorais"
+  },
+  {
+    "id": 83,
+    "name": "Peitoral e Guia",
+    "brand": "Pet Ninho",
+    "colors": [
+      {
+        "photo": "/img/peitoraleguia_petninho_azul.png"
+      },
+      {
+        "photo": "/img/peitoraleguia_petninho_verde.png"
+      },
+      {
+        "photo": "/img/peitoraleguia_petninho_vermelho.png"
+      },
+      {
+        "photo": "/img/peitoraleguia_petninho_rosa.png"
+      },
+      {
+        "photo": "/img/peitoraleguia_petninho_preto.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Coleiras, Guias e Peitorais"
+  },
+  {
+    "id": 84,
+    "name": "Peitoral e Guia",
+    "brand": "Pet Ninho",
+    "colors": [
+      {
+        "photo": "/img/peitoraleguia_petninho_marron.png"
+      },
+      {
+        "photo": "/img/peitoraleguia_petninho_cinza.png"
+      },
+      {
+        "photo": "/img/peitoraleguia_petninho_vermelho1.png"
+      },
+      {
+        "photo": "/img/peitoraleguia_petninho_rosa1.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Coleiras, Guias e Peitorais"
   }
 ]
