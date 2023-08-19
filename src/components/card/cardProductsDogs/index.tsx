@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import {
   ButtonIcon,
   CardSession,
+  CardSessionError,
   FullScreenCard,
   IconLeft,
   IconMagnifyingGlass,
@@ -102,6 +103,14 @@ export function CardProductsForDogs({
     setSelectedCardIndex(null);
   };
 
+  const filteredProducts = sortProducts(shuffledProducts).filter(
+    (product) =>
+      (searchTerm === '' ||
+        product.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        product.brand.toLowerCase().includes(searchTerm.toLowerCase())) &&
+      (selectedCategory === '' || product.category === selectedCategory),
+  );
+
   const formatPrice = (price: number) => {
     return price.toLocaleString('pt-BR', {
       style: 'currency',
@@ -144,61 +153,61 @@ export function CardProductsForDogs({
 
   return (
     <section aria-label="card sobre produtos para cachorro disponível para venda">
-      {sortProducts(shuffledProducts)
-        .filter(
-          (product) =>
-            (searchTerm === '' ||
-              product.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-              product.brand.toLowerCase().includes(searchTerm.toLowerCase())) &&
-            (selectedCategory === '' || product.category === selectedCategory),
-        )
-        .map((product) => (
-          <CardSession key={product.id}>
-            <h2>{product.name}</h2>
-            <h2 className="brand">{product.brand}</h2>
-            <ImageContainer>
-              {product.colors &&
-              Array.isArray(product.colors) &&
-              product.colors.length > 0 ? (
-                <>
-                  <img
-                    src={
-                      product.colors[
-                        productColors.find((p) => p.productId === product.id)
-                          ?.currentColorIndex || 0
-                      ]?.photo
-                    }
-                    alt={product.name}
-                  />
-                  <IconMagnifyingGlass
-                    onClick={() => handleCardClick(product.id)}
-                  />
-                  <IconLeft
-                    onClick={() =>
-                      handlePreviousColor(product.id, product.colors!.length)
-                    }
-                  />
-                  <IconRight
-                    onClick={() =>
-                      handleNextColor(product.id, product.colors!.length)
-                    }
-                  />
-                </>
-              ) : (
-                <>
-                  <img src={product.photo} alt={product.name} />
-                  <IconMagnifyingGlass
-                    onClick={() => handleCardClick(product.id)}
-                  />
-                </>
-              )}
-            </ImageContainer>
-            <div className="information">
-              <h3>{formatPrice(product.price)}</h3>
-              <h4>{product.installments}</h4>
-            </div>
-          </CardSession>
-        ))}
+      {filteredProducts.length === 0 && (
+        <CardSessionError>
+          <img
+            src="/img/no-product.png"
+            alt="Imagem do erro de produto não encontrado"
+          />
+        </CardSessionError>
+      )}
+      {filteredProducts.map((product) => (
+        <CardSession key={product.id}>
+          <h2>{product.name}</h2>
+          <h2 className="brand">{product.brand}</h2>
+          <ImageContainer>
+            {product.colors &&
+            Array.isArray(product.colors) &&
+            product.colors.length > 0 ? (
+              <>
+                <img
+                  src={
+                    product.colors[
+                      productColors.find((p) => p.productId === product.id)
+                        ?.currentColorIndex || 0
+                    ]?.photo
+                  }
+                  alt={product.name}
+                />
+                <IconMagnifyingGlass
+                  onClick={() => handleCardClick(product.id)}
+                />
+                <IconLeft
+                  onClick={() =>
+                    handlePreviousColor(product.id, product.colors!.length)
+                  }
+                />
+                <IconRight
+                  onClick={() =>
+                    handleNextColor(product.id, product.colors!.length)
+                  }
+                />
+              </>
+            ) : (
+              <>
+                <img src={product.photo} alt={product.name} />
+                <IconMagnifyingGlass
+                  onClick={() => handleCardClick(product.id)}
+                />
+              </>
+            )}
+          </ImageContainer>
+          <div className="information">
+            <h3>{formatPrice(product.price)}</h3>
+            <h4>{product.installments}</h4>
+          </div>
+        </CardSession>
+      ))}
       {selectedCardIndex !== null && (
         <FullScreenCard>
           <img

@@ -97,7 +97,7 @@ export const ProductsDogs = styled.div`
     section {
       display: flex;
       flex-direction: column;
-      margin: 15px 20px;
+      margin: 15px auto;
     }
   }
 `;

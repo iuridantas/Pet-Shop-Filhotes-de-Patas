@@ -150,3 +150,21 @@ export const ButtonIcon = styled(AiOutlineClose)`
     top: 150px;
   }
 `;
+
+export const CardSessionError = styled.div`
+  width: auto;
+  height: auto;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24),
+    1px 1px 5px black;
+  border-radius: 32px;
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 600px) {
+    img {
+      height: 200px;
+      width: 200px;
+      padding: 10px;
+    }
+  }
+`;

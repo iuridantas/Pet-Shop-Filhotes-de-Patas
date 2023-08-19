@@ -49,7 +49,7 @@ export const CardSession = styled.div`
   }
 
   @media (max-width: 600px) {
-    width: 320px;
+    width: 310px;
     height: auto;
 
     .information {
@@ -148,5 +148,22 @@ export const ButtonIcon = styled(AiOutlineClose)`
     color: red;
     right: 50px;
     top: 150px;
+  }
+`;
+
+export const CardSessionError = styled.div`
+  width: auto;
+  height: auto;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24),
+    1px 1px 5px black;
+  border-radius: 32px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+
+  @media (max-width: 600px) {
+    img {
+      width: 300px;
+    }
   }
 `;
