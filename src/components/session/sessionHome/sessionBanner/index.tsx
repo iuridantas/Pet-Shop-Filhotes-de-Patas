@@ -8,12 +8,14 @@ export function SessionBannersHome() {
     '/img/venda_filhotes.png',
     '/img/gato.png',
   ];
+
   const imagesPhone = [
     '/img/cachorro_cel.png',
     '/img/banho_tosa_cel.png',
     '/img/venda_filhotes_cel.png',
     '/img/gato_cel.png',
   ];
+
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
@@ -26,43 +28,27 @@ export function SessionBannersHome() {
     };
   }, []);
 
-  useEffect(() => {
-    const handleResize = () => {
-      const isMobile = window.innerWidth <= 600;
-      setCurrentImageIndex(0);
-
-      const links = document.querySelectorAll('link[rel="preload"]');
-      links.forEach((link) => link.remove());
-
-      const preloadImages = isMobile ? imagesPhone : images;
-      preloadImages.forEach((src) => {
-        const link = document.createElement('link');
-        link.rel = 'preload';
-        link.as = 'image';
-        link.href = src;
-        document.head.appendChild(link);
-      });
-    };
-
-    window.addEventListener('resize', handleResize);
-    handleResize();
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
   return (
     <section aria-label="Banner sobre venda de filhotes e sobre banho e tosa">
       <BannersSession>
-        {(window.innerWidth <= 600 ? imagesPhone : images).map((src, index) => (
+        <div className="carousel-container">
           <div
-            key={index}
-            style={{ display: index === currentImageIndex ? 'block' : 'none' }}
+            className="carousel-content"
+            style={{
+              transform: `translateX(${-currentImageIndex * 100}%)`,
+              display: 'flex',
+              transition: 'transform 1s ease-in-out',
+            }}
           >
-            <img src={src} alt="Foto dos banners" />
+            {(window.innerWidth <= 600 ? imagesPhone : images).map(
+              (src, index) => (
+                <div key={index} style={{ flex: `0 0 100%` }}>
+                  <img src={src} alt={`Foto do banner ${index}`} />
+                </div>
+              ),
+            )}
           </div>
-        ))}
+        </div>
       </BannersSession>
     </section>
   );
