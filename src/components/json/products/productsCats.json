@@ -958,5 +958,435 @@
     "price": 100.0,
     "installments": "ou 2x de 50,00",
     "category": "Coleiras, Guias e Peitorais"
+  },
+  {
+    "id": 85,
+    "name": "Cama Retangular",
+    "brand": "",
+    "colors": [
+      {
+        "photo": "/img/cama_1.1.png"
+      },
+      {
+        "photo": "/img/cama_1.2.png"
+      },
+      {
+        "photo": "/img/cama_1.3.png"
+      },
+      {
+        "photo": "/img/cama_1.4.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Camas"
+  },
+  {
+    "id": 86,
+    "name": "Cama Retangular",
+    "brand": "",
+    "colors": [
+      {
+        "photo": "/img/cama_2.1.png"
+      },
+      {
+        "photo": "/img/cama_2.2.png"
+      },
+      {
+        "photo": "/img/cama_2.3.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Camas"
+  },
+  {
+    "id": 87,
+    "name": "Cama Retangular",
+    "brand": "",
+    "colors": [
+      {
+        "photo": "/img/cama_2.1.png"
+      },
+      {
+        "photo": "/img/cama_2.2.png"
+      },
+      {
+        "photo": "/img/cama_2.3.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Camas"
+  },
+  {
+    "id": 88,
+    "name": "Cama Retangular",
+    "brand": "",
+    "colors": [
+      {
+        "photo": "/img/cama_3.1.png"
+      },
+      {
+        "photo": "/img/cama_3.2.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Camas"
+  },
+  {
+    "id": 89,
+    "name": "Cama Retangular",
+    "brand": "",
+    "colors": [
+      {
+        "photo": "/img/cama_4.1.png"
+      },
+      {
+        "photo": "/img/cama_4.2.png"
+      },
+      {
+        "photo": "/img/cama_4.3.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Camas"
+  },
+  {
+    "id": 90,
+    "name": "Cama Retangular",
+    "brand": "",
+    "colors": [
+      {
+        "photo": "/img/cama_5.1.png"
+      },
+      {
+        "photo": "/img/cama_5.2.png"
+      },
+      {
+        "photo": "/img/cama_5.3.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Camas"
+  },
+  {
+    "id": 91,
+    "name": "Cama Retangular",
+    "brand": "",
+    "colors": [
+      {
+        "photo": "/img/cama_6.1.png"
+      },
+      {
+        "photo": "/img/cama_6.2.png"
+      },
+      {
+        "photo": "/img/cama_6.3.png"
+      },
+      {
+        "photo": "/img/cama_6.4.png"
+      },
+      {
+        "photo": "/img/cama_6.5.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Camas"
+  },
+  {
+    "id": 92,
+    "name": "Cama Retangular",
+    "brand": "",
+    "colors": [
+      {
+        "photo": "/img/cama_7.1.png"
+      },
+      {
+        "photo": "/img/cama_7.2.png"
+      },
+      {
+        "photo": "/img/cama_7.3.png"
+      },
+      {
+        "photo": "/img/cama_7.4.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Camas"
+  },
+  {
+    "id": 93,
+    "name": "Cama Retangular",
+    "brand": "",
+    "colors": [
+      {
+        "photo": "/img/cama_8.1.png"
+      },
+      {
+        "photo": "/img/cama_8.2.png"
+      },
+      {
+        "photo": "/img/cama_8.3.png"
+      },
+      {
+        "photo": "/img/cama_8.4.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Camas"
+  },
+  {
+    "id": 94,
+    "name": "Cama Retangular",
+    "brand": "",
+    "colors": [
+      {
+        "photo": "/img/cama_9.1.png"
+      },
+      {
+        "photo": "/img/cama_9.2.png"
+      },
+      {
+        "photo": "/img/cama_9.3.png"
+      },
+      {
+        "photo": "/img/cama_9.4.png"
+      },
+      {
+        "photo": "/img/cama_9.5.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Camas"
+  },
+  {
+    "id": 95,
+    "name": "Cama Retangular",
+    "brand": "",
+    "colors": [
+      {
+        "photo": "/img/cama_10.1.png"
+      },
+      {
+        "photo": "/img/cama_10.2.png"
+      },
+      {
+        "photo": "/img/cama_10.3.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Camas"
+  },
+  {
+    "id": 96,
+    "photo": "/img/cama_11.png",
+    "name": "Cama Retangular",
+    "brand": "",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Camas"
+  },
+  {
+    "id": 97,
+    "name": "Cama Nuvem",
+    "brand": "",
+    "colors": [
+      {
+        "photo": "/img/cama_12.1.png"
+      },
+      {
+        "photo": "/img/cama_12.2.png"
+      },
+      {
+        "photo": "/img/cama_12.3.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Camas"
+  },
+  {
+    "id": 98,
+    "name": "Cama Pata",
+    "brand": "",
+    "colors": [
+      {
+        "photo": "/img/cama_13.1.png"
+      },
+      {
+        "photo": "/img/cama_13.2.png"
+      },
+      {
+        "photo": "/img/cama_13.3.png"
+      },
+      {
+        "photo": "/img/cama_13.4.png"
+      },
+      {
+        "photo": "/img/cama_13.5.png"
+      },
+      {
+        "photo": "/img/cama_13.6.png"
+      },
+      {
+        "photo": "/img/cama_13.7.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Camas"
+  },
+  {
+    "id": 99,
+    "name": "Cama Retangular",
+    "brand": "",
+    "colors": [
+      {
+        "photo": "/img/cama_14.1.png"
+      },
+      {
+        "photo": "/img/cama_14.2.png"
+      },
+      {
+        "photo": "/img/cama_14.3.png"
+      },
+      {
+        "photo": "/img/cama_14.4.png"
+      },
+      {
+        "photo": "/img/cama_14.5.png"
+      },
+      {
+        "photo": "/img/cama_14.6.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Camas"
+  },
+  {
+    "id": 100,
+    "name": "Cama Retangular",
+    "brand": "",
+    "colors": [
+      {
+        "photo": "/img/cama_15.1.png"
+      },
+      {
+        "photo": "/img/cama_15.2.png"
+      },
+      {
+        "photo": "/img/cama_15.3.png"
+      },
+      {
+        "photo": "/img/cama_15.4.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Camas"
+  },
+  {
+    "id": 101,
+    "name": "Cama Retangular",
+    "brand": "",
+    "colors": [
+      {
+        "photo": "/img/cama_16.1.png"
+      },
+      {
+        "photo": "/img/cama_16.2.png"
+      },
+      {
+        "photo": "/img/cama_16.3.png"
+      },
+      {
+        "photo": "/img/cama_16.4.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Camas"
+  },
+  {
+    "id": 102,
+    "photo": "/img/cama_17.png",
+    "name": "Cama Nó",
+    "brand": "",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Camas"
+  },
+  {
+    "id": 103,
+    "name": "Cama Europa",
+    "brand": "",
+    "colors": [
+      {
+        "photo": "/img/cama_18.1.png"
+      },
+      {
+        "photo": "/img/cama_18.2.png"
+      },
+      {
+        "photo": "/img/cama_18.3.png"
+      },
+      {
+        "photo": "/img/cama_18.4.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Camas"
+  },
+  {
+    "id": 104,
+    "name": "Colchonete",
+    "brand": "",
+    "colors": [
+      {
+        "photo": "/img/cama_19.1.png"
+      },
+      {
+        "photo": "/img/cama_19.2.png"
+      },
+      {
+        "photo": "/img/cama_19.3.png"
+      },
+      {
+        "photo": "/img/cama_19.4.png"
+      },
+      {
+        "photo": "/img/cama_19.5.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Camas"
+  },
+  {
+    "id": 105,
+    "name": "Colchonete",
+    "brand": "",
+    "colors": [
+      {
+        "photo": "/img/cama_20.1.png"
+      },
+      {
+        "photo": "/img/cama_20.2.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Camas"
   }
 ]
