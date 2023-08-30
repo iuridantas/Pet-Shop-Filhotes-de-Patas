@@ -62,6 +62,29 @@ export function CardProductsForCats({
     setShuffledProducts(shuffleArray(productsCats));
   }, []);
 
+  useEffect(() => {
+    const preloadImages = (imageUrls: string[]) => {
+      imageUrls.forEach((url) => {
+        const img = new Image();
+        img.src = url;
+      });
+    };
+
+    const imageUrls = shuffledProducts.reduce<string[]>((urls, product) => {
+      if (product.colors) {
+        urls.push(
+          ...product.colors.map((color) => color.photo)
+        );
+      } else if (product.photo) {
+        urls.push(product.photo);
+      }
+      return urls;
+    }, []);
+
+    preloadImages(imageUrls);
+
+  }, [selectedFilter, selectedCategory, shuffledProducts]);
+
   const sortProducts = (products: any[]) => {
     let sortedProducts = [...products];
     switch (selectedFilter) {
