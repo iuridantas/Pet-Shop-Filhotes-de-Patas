@@ -19,7 +19,7 @@ export function SalePuppy() {
       setTimeout(() => {
         setIsLoading(false);
         sessionStorage.setItem('isContentLoadedSalePuppy', 'true');
-      }, 2000);
+      }, 4000);
     }
   }, []);
 

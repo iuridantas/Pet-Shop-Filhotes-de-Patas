@@ -18,7 +18,7 @@ export function ProductsDog() {
       setTimeout(() => {
         setIsLoading(false);
         sessionStorage.setItem('isContentLoadedProductsDog', 'true');
-      }, 2000);
+      }, 4000);
     }
   }, []);
 

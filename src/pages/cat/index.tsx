@@ -18,7 +18,7 @@ export function ProductsCat() {
       setTimeout(() => {
         setIsLoading(false);
         sessionStorage.setItem('isContentLoadedProductsCat', 'true');
-      }, 2000);
+      }, 4000);
     }
   }, []);
 

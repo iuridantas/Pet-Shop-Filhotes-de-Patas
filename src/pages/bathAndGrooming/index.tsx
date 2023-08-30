@@ -20,7 +20,7 @@ export function BathAndGrooming() {
       setTimeout(() => {
         setIsLoading(false);
         sessionStorage.setItem('isContentLoadedBathAndGrooming', 'true');
-      }, 2000);
+      }, 4000);
     }
   }, []);
 
