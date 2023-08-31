@@ -31,7 +31,7 @@ export const ProductsDogs = styled.div`
     margin: 0 100px;
   }
 
-  .input {
+  .center {
     display: flex;
     justify-content: center;
   }

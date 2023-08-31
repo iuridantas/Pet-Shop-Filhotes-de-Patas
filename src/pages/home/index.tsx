@@ -19,7 +19,7 @@ export function Home() {
       setTimeout(() => {
         setIsLoading(false);
         sessionStorage.setItem('isContentLoaded', 'true');
-      }, 4000);
+      }, 2000);
     }
   }, []);
 

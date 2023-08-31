@@ -18,7 +18,7 @@ export function Contact() {
       setTimeout(() => {
         setIsLoading(false);
         sessionStorage.setItem('isContentLoadedContact', 'true');
-      }, 4000);
+      }, 2000);
     }
   }, []);
 

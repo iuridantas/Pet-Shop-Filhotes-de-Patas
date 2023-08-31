@@ -84,7 +84,7 @@ export function SessionProductsDogs() {
             </select>
           </div>
         </div>
-        <div className="input">
+        <div className="center">
           <input
             className="search"
             type="text"
