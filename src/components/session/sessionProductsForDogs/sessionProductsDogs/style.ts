@@ -24,6 +24,21 @@ export const ProductsDogs = styled.div`
     }
   }
 
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #dd9094;
+    color: #1f1c6e;
+    border: none;
+    border-radius: 8px;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
   .select {
     display: flex;
     align-items: center;
@@ -82,6 +97,13 @@ export const ProductsDogs = styled.div`
       h2 {
         font-size: 16px;
       }
+    }
+
+    button {
+      width: 70px;
+      height: 30px;
+      font-size: 16px;
+      margin-bottom: 10px;
     }
 
     select {

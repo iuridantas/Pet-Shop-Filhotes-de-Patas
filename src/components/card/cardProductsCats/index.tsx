@@ -28,10 +28,12 @@ export function CardProductsForCats({
   searchTerm,
   selectedFilter,
   selectedCategory,
+   itemsToShow,
 }: {
   searchTerm: string;
   selectedFilter: string;
   selectedCategory: string;
+  itemsToShow: number; 
 }) {
   const [productColors, setProductColors] = useState(
     productsCats.map((product) => ({
@@ -184,7 +186,7 @@ export function CardProductsForCats({
           />
         </CardSessionError>
       )}
-      {filteredProducts.map((product) => (
+      {filteredProducts.slice(0, itemsToShow).map((product) => (
         <CardSession key={product.id}>
           <h2>{product.name}</h2>
           <h2 className="brand">{product.brand}</h2>

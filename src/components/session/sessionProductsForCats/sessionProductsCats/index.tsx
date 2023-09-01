@@ -9,6 +9,38 @@ export function SessionProductsCats() {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedFilter, setSelectedFilter] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('');
+  const [itemsToShow, setItemsToShow] = useState(12);
+  const totalItems = 104;
+
+  const categoryItemCounts: { [category: string]: number } = {
+    'Tapetes, Fraldas e Banheiros': 5,
+    'Farmácia': 8,
+    'Brinquedos': 8,
+    'Beleza e Limpeza': 41,
+    'Coleiras, Guias e Peitorais': 6,
+    'Camas': 20,
+    'Cobertores': 1,
+    'Comedouros e Bebedouros': 30,
+    'Acessórios de Transporte': 3,
+  };
+
+  const handleSeeMoreClick = () => {
+    const itemsInCategory =
+      selectedCategory === ''
+        ? totalItems
+        : categoryItemCounts[selectedCategory] || 0;
+    const remainingItems = itemsInCategory - itemsToShow;
+    const additionalItems = Math.min(12, remainingItems);
+
+    if (additionalItems > 0) {
+      setItemsToShow(itemsToShow + additionalItems);
+    }
+  };
+
+  useEffect(() => {
+    const itemsInCategory = categoryItemCounts[selectedCategory] || totalItems;
+    setItemsToShow(Math.min(12, itemsInCategory));
+  }, [selectedCategory]);
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearchTerm(event.target.value);
@@ -78,7 +110,7 @@ export function SessionProductsCats() {
             </select>
           </div>
         </div>
-        <div className="input">
+        <div className="center">
           <input
             className="search"
             type="text"
@@ -91,7 +123,16 @@ export function SessionProductsCats() {
           searchTerm={searchTerm}
           selectedFilter={selectedFilter}
           selectedCategory={selectedCategory}
+          itemsToShow={itemsToShow}
         />
+        <div className="center">
+          {itemsToShow <
+            (selectedCategory === ''
+              ? totalItems
+              : categoryItemCounts[selectedCategory]) && (
+            <button onClick={handleSeeMoreClick}>ver mais</button>
+          )}
+        </div>
       </ProductsCats>
     </section>
   );
