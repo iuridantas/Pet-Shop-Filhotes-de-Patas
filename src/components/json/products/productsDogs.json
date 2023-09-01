@@ -3050,5 +3050,32 @@
     "price": 100.0,
     "installments": "ou 2x de 50,00",
     "category": "Camas"
+  },
+  {
+    "id": 225,
+    "photo": "/img/petdog_crock1.png",
+    "name": "Biscoito",
+    "brand": "Pet Dog Crock",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Petiscos e Ossos"
+  },
+  {
+    "id": 226,
+    "photo": "/img/petdog_crock2.png",
+    "name": "Biscoito",
+    "brand": "Pet Dog Crock",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Petiscos e Ossos"
+  },
+  {
+    "id": 227,
+    "photo": "/img/petdog_crock3.png",
+    "name": "Biscoito",
+    "brand": "Pet Dog Crock",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Petiscos e Ossos"
   }
 ]

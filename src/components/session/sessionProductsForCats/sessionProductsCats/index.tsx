@@ -10,7 +10,7 @@ export function SessionProductsCats() {
   const [selectedFilter, setSelectedFilter] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('');
   const [itemsToShow, setItemsToShow] = useState(12);
-  const totalItems = 104;
+  const totalItems = 112;
 
   const categoryItemCounts: { [category: string]: number } = {
     'Tapetes, Fraldas e Banheiros': 5,
@@ -20,7 +20,7 @@ export function SessionProductsCats() {
     'Coleiras, Guias e Peitorais': 6,
     'Camas': 20,
     'Cobertores': 1,
-    'Comedouros e Bebedouros': 30,
+    'Comedouros e Bebedouros': 23,
     'Acessórios de Transporte': 3,
   };
 
@@ -39,8 +39,10 @@ export function SessionProductsCats() {
 
   useEffect(() => {
     const itemsInCategory = categoryItemCounts[selectedCategory] || totalItems;
-    setItemsToShow(Math.min(12, itemsInCategory));
-  }, [selectedCategory]);
+    setItemsToShow(
+      searchTerm === '' ? Math.min(12, itemsInCategory) : itemsInCategory,
+    );
+  }, [selectedCategory, searchTerm]);
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearchTerm(event.target.value);
@@ -126,12 +128,13 @@ export function SessionProductsCats() {
           itemsToShow={itemsToShow}
         />
         <div className="center">
-          {itemsToShow <
-            (selectedCategory === ''
-              ? totalItems
-              : categoryItemCounts[selectedCategory]) && (
-            <button onClick={handleSeeMoreClick}>ver mais</button>
-          )}
+          {searchTerm === '' &&
+            itemsToShow <
+              (selectedCategory === ''
+                ? totalItems
+                : categoryItemCounts[selectedCategory]) && (
+              <button onClick={handleSeeMoreClick}>ver mais</button>
+            )}
         </div>
       </ProductsCats>
     </section>

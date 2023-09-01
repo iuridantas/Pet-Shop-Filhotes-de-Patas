@@ -10,11 +10,11 @@ export function SessionProductsDogs() {
   const [selectedFilter, setSelectedFilter] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('');
   const [itemsToShow, setItemsToShow] = useState(12);
-  const totalItems = 224;
+  const totalItems = 227;
 
   const categoryItemCounts: { [category: string]: number } = {
     'Ração': 4,
-    'Petiscos e Ossos': 1,
+    'Petiscos e Ossos': 4,
     'Tapetes, Fraldas e Banheiros': 5,
     'Farmácia': 8,
     'Brinquedos': 44,
@@ -43,8 +43,8 @@ export function SessionProductsDogs() {
 
   useEffect(() => {
     const itemsInCategory = categoryItemCounts[selectedCategory] || totalItems;
-    setItemsToShow(Math.min(12, itemsInCategory));
-  }, [selectedCategory]);
+    setItemsToShow(searchTerm === '' ? Math.min(12, itemsInCategory) : itemsInCategory);
+  }, [selectedCategory, searchTerm]);
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearchTerm(event.target.value);
@@ -136,12 +136,13 @@ export function SessionProductsDogs() {
           itemsToShow={itemsToShow}
         />
         <div className="center">
-          {itemsToShow <
-            (selectedCategory === ''
-              ? totalItems
-              : categoryItemCounts[selectedCategory]) && (
-            <button onClick={handleSeeMoreClick}>ver mais</button>
-          )}
+          {searchTerm === '' &&
+            itemsToShow <
+              (selectedCategory === ''
+                ? totalItems
+                : categoryItemCounts[selectedCategory]) && (
+              <button onClick={handleSeeMoreClick}>ver mais</button>
+            )}
         </div>
       </ProductsDogs>
     </section>

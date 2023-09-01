@@ -1369,5 +1369,143 @@
     "price": 100.0,
     "installments": "ou 2x de 50,00",
     "category": "Camas"
+  },
+  {
+    "id": 105,
+    "photo": "/img/comedouro_petitems.png",
+    "name": "Comedouro",
+    "brand": "Pet Itens",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Comedouros e Bebedouros"
+  },
+  {
+    "id": 106,
+    "name": "Comedouro 300mL",
+    "brand": "Plast Pet",
+    "colors": [
+      {
+        "photo": "/img/comedouro_petinjet_vermelho.png"
+      },
+      {
+        "photo": "/img/comedouro_petinjet_rosa.png"
+      },
+      {
+        "photo": "/img/comedouro_petinjet_roxo.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Comedouros e Bebedouros"
+  },
+  {
+    "id": 107,
+    "name": "Bebedouro 350mL",
+    "brand": "Plast Pet",
+    "colors": [
+      {
+        "photo": "/img/bebedouro_plastpet_vermelho.png"
+      },
+      {
+        "photo": "/img/bebedouro_plastpet_azul.png"
+      },
+      {
+        "photo": "/img/bebedouro_plastpet_roxo.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Comedouros e Bebedouros"
+  },
+  {
+    "id": 108,
+    "name": "Comedouro 300mL",
+    "brand": "Erca Plast",
+    "colors": [
+      {
+        "photo": "/img/comedouro_ercaplast_verde1.png"
+      },
+      {
+        "photo": "/img/comedouro_ercaplast_verde.png"
+      },
+      {
+        "photo": "/img/comedouro_ercaplast_vermelho.png"
+      },
+      {
+        "photo": "/img/comedouro_ercaplast_rosa.png"
+      },
+      {
+        "photo": "/img/comedouro_ercaplast_azul.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Comedouros e Bebedouros"
+  },
+  {
+    "id": 109,
+    "name": "Comedouro Retrátil",
+    "brand": "Maylon Pet",
+    "colors": [
+      {
+        "photo": "/img/comedouro_retratil_maylonpet_laranja.png"
+      },
+      {
+        "photo": "/img/comedouro_retratil_maylonpet_verde.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Comedouros e Bebedouros"
+  },
+  {
+    "id": 110,
+    "photo": "/img/comedouro_bbbpet.png",
+    "name": "Comedouro 160mL",
+    "brand": "BBB Pet",
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Comedouros e Bebedouros"
+  },
+  {
+    "id": 111,
+    "name": "Comedouro",
+    "brand": "Rio Tijucas",
+    "colors": [
+      {
+        "photo": "/img/comedouro3.png"
+      },
+      {
+        "photo": "/img/comedouro4.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Comedouros e Bebedouros"
+  },
+  {
+    "id": 112,
+    "name": "Comedouro",
+    "brand": "Rio Tijucas",
+    "colors": [
+      {
+        "photo": "/img/comedouro_riotijucas.png"
+      },
+      {
+        "photo": "/img/comedouro1_riotijucas.png"
+      },
+      {
+        "photo": "/img/comedouro2_riotijucas.png"
+      },
+      {
+        "photo": "/img/comedouro3_riotijucas.png"
+      },
+      {
+        "photo": "/img/comedouro4_riotijucas.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Comedouros e Bebedouros"
   }
 ]
