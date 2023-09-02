@@ -223,24 +223,20 @@ export function CardProductsForCats({
             Array.isArray(product.colors) &&
             product.colors.length > 0 ? (
               <>
-                {imagesLoaded ? (
-                  <img
-                    src={
-                      product.colors &&
-                      Array.isArray(product.colors) &&
-                      product.colors.length > 0
-                        ? product.colors[
-                            productColors.find(
-                              (p) => p.productId === product.id,
-                            )?.currentColorIndex || 0
-                          ]?.photo
-                        : product.photo
-                    }
-                    alt={product.name}
-                  />
-                ) : (
-                  <div className="image-placeholder">Loading...</div>
-                )}
+                <img
+                  src={
+                    product.colors &&
+                    Array.isArray(product.colors) &&
+                    product.colors.length > 0
+                      ? product.colors[
+                          productColors.find((p) => p.productId === product.id)
+                            ?.currentColorIndex || 0
+                        ]?.photo
+                      : product.photo
+                  }
+                  alt={product.name}
+                  className={`${imagesLoaded ? '' : 'image-loading'}`}
+                />
                 <IconMagnifyingGlass
                   onClick={() => handleCardClick(product.id)}
                 />
@@ -257,11 +253,11 @@ export function CardProductsForCats({
               </>
             ) : (
               <>
-                {imagesLoaded ? (
-                  <img src={product.photo} alt={product.name} />
-                ) : (
-                  <div className="image-placeholder">Loading...</div>
-                )}
+                <img
+                  src={product.photo}
+                  alt={product.name}
+                  className={`${imagesLoaded ? '' : 'image-loading'}`}
+                />
                 <IconMagnifyingGlass
                   onClick={() => handleCardClick(product.id)}
                 />

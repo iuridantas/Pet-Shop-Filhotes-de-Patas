@@ -34,17 +34,9 @@ export const CardSession = styled.div`
     height: 26px;
   }
 
-  .image-placeholder {
-    width: 100%;
-    height: 100%;
-    padding-bottom: 100%;
-    background: #ccc;
+  .image-loading {
     filter: blur(10px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    font-weight: bold;
+    transition: filter 0.3s;
   }
 
   h2 {
