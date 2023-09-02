@@ -24,6 +24,11 @@ export const LoveCommitmentAndDedicationSession = styled.div`
     margin: 0 auto;
   }
 
+  .image-loading {
+    filter: blur(10px);
+    transition: filter 0.3s;
+  }
+
   div {
     max-width: 400px;
     display: flex;

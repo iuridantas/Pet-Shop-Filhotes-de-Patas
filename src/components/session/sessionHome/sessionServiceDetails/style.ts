@@ -15,6 +15,11 @@ export const AestheticsandHygieneSession = styled.div`
     margin: 0 auto;
   }
 
+  .image-loading {
+    filter: blur(10px);
+    transition: filter 0.3s;
+  }
+
   p {
     margin: 8px 40px;
     font-size: 20px;

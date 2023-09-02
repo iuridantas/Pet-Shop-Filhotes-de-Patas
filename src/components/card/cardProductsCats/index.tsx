@@ -59,7 +59,6 @@ export function CardProductsForCats({
       img.onload = () => {
         loadedImages.add(url);
         if (loadedImages.size === imageUrls.length) {
-          // All images are loaded
           setImagesLoaded(true);
         }
       };

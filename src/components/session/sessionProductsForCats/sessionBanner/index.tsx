@@ -5,6 +5,7 @@ export function SessionBannerCat() {
   const images = ['/img/gato.png'];
   const imagesPhone = ['/img/gato_cel.png'];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [imagesLoaded, setImagesLoaded] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -32,6 +33,10 @@ export function SessionBannerCat() {
     };
   }, []);
 
+  const handleImageLoad = () => {
+    setImagesLoaded(true);
+  };
+
   return (
     <section aria-label="Banner dos produtos a venda para gato">
       <BannerSession>
@@ -43,6 +48,8 @@ export function SessionBannerCat() {
             <img
               src={src}
               alt="Foto do Banner dos produtos a venda para gato"
+              onLoad={handleImageLoad}
+              className={`${imagesLoaded ? '' : 'image-loading'}`}
             />
           </div>
         ))}

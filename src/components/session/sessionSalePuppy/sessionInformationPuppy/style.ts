@@ -29,6 +29,11 @@ export const InformationPuppySession = styled.div`
     margin: 0 auto 0 50px;
   }
 
+  .image-loading {
+    filter: blur(10px);
+    transition: filter 0.3s;
+  }
+
   p {
     margin: 20px 30px;
     font-size: 20px;

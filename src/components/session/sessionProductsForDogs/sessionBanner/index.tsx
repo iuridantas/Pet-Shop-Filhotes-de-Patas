@@ -5,6 +5,7 @@ export function SessionBannerDog() {
   const images = ['/img/cachorro.png'];
   const imagesPhone = ['/img/cachorro_cel.png'];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [imagesLoaded, setImagesLoaded] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -32,6 +33,10 @@ export function SessionBannerDog() {
     };
   }, []);
 
+  const handleImageLoad = () => {
+    setImagesLoaded(true);
+  };
+
   return (
     <section aria-label="Banner dos produtos a venda para cachorro">
       <BannerSession>
@@ -43,6 +48,8 @@ export function SessionBannerDog() {
             <img
               src={src}
               alt="Foto do Banner dos produtos a venda para cachorro"
+              onLoad={handleImageLoad}
+              className={`${imagesLoaded ? '' : 'image-loading'}`}
             />
           </div>
         ))}

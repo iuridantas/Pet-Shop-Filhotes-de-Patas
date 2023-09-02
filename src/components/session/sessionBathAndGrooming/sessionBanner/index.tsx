@@ -5,6 +5,7 @@ export function SessionBannerBathAndGrooming() {
   const images = ['/img/banho_tosa.png'];
   const imagesPhone = ['/img/banho_tosa_cel.png'];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [imagesLoaded, setImagesLoaded] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -32,6 +33,10 @@ export function SessionBannerBathAndGrooming() {
     };
   }, []);
 
+  const handleImageLoad = () => {
+    setImagesLoaded(true);
+  };
+
   return (
     <section aria-label="Banner sobre banho e tosa">
       <BannerSession>
@@ -40,7 +45,12 @@ export function SessionBannerBathAndGrooming() {
             key={index}
             style={{ display: index === currentImageIndex ? 'block' : 'none' }}
           >
-            <img src={src} alt="Foto do Banner sobre banho e tosa" />
+            <img
+              src={src}
+              alt="Foto do Banner sobre banho e tosa"
+              onLoad={handleImageLoad}
+              className={`${imagesLoaded ? '' : 'image-loading'}`}
+            />
           </div>
         ))}
       </BannerSession>

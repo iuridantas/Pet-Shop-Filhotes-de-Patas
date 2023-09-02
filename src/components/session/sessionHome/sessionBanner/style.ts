@@ -12,6 +12,11 @@ export const BannersSession = styled.div`
     transition: transform 1s ease-in-out;
   }
 
+  .image-loading {
+    filter: blur(10px);
+    transition: filter 0.3s;
+  }
+
   img {
     width: 100%;
   }

@@ -18,6 +18,11 @@ export const MapsSession = styled.div`
     border: 0;
   }
 
+  .map-loading {
+    filter: blur(10px);
+    transition: filter 0.3s;
+  }
+
   @media (max-width: 600px) {
     iframe {
       height: 250px;

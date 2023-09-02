@@ -5,6 +5,7 @@ export function SessionBannerSalePuppy() {
   const images = ['/img/venda_filhotes.png'];
   const imagesPhone = ['/img/venda_filhotes_cel.png'];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [imagesLoaded, setImagesLoaded] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -32,6 +33,10 @@ export function SessionBannerSalePuppy() {
     };
   }, []);
 
+  const handleImageLoad = () => {
+    setImagesLoaded(true);
+  };
+
   return (
     <section aria-label="Banner sobre venda de filhotes">
       <BannerSession>
@@ -40,7 +45,12 @@ export function SessionBannerSalePuppy() {
             key={index}
             style={{ display: index === currentImageIndex ? 'block' : 'none' }}
           >
-            <img src={src} alt="Foto do Banner sobre venda de filhotes" />
+            <img
+              src={src}
+              alt="Foto do Banner sobre venda de filhotes"
+              onLoad={handleImageLoad}
+              className={`${imagesLoaded ? '' : 'image-loading'}`}
+            />
           </div>
         ))}
       </BannerSession>

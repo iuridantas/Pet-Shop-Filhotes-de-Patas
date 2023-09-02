@@ -17,6 +17,7 @@ export function SessionBannersHome() {
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [imagesLoaded, setImagesLoaded] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -27,6 +28,10 @@ export function SessionBannersHome() {
       clearInterval(interval);
     };
   }, []);
+
+  const handleImageLoad = () => {
+    setImagesLoaded(true);
+  };
 
   return (
     <section aria-label="Banner sobre venda de filhotes e sobre banho e tosa">
@@ -43,7 +48,12 @@ export function SessionBannersHome() {
             {(window.innerWidth <= 600 ? imagesPhone : images).map(
               (src, index) => (
                 <div key={index} style={{ flex: `0 0 100%` }}>
-                  <img src={src} alt={`Foto do banner ${index}`} />
+                  <img
+                    src={src}
+                    alt={`Foto do banner ${index}`}
+                    onLoad={handleImageLoad}
+                    className={`${imagesLoaded ? '' : 'image-loading'}`}
+                  />
                 </div>
               ),
             )}

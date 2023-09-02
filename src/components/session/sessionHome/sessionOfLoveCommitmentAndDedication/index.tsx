@@ -1,6 +1,13 @@
+import { useState } from 'react';
 import { LoveCommitmentAndDedicationSession, TitleSession } from './style';
 
 export function SessionOfLoveCommitmentAndDedication() {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  const handleImageLoad = () => {
+    setImageLoaded(true);
+  };
+
   return (
     <section aria-label="Explicação Sobre os valores: amor, compromisso e dedicação">
       <TitleSession>
@@ -12,7 +19,12 @@ export function SessionOfLoveCommitmentAndDedication() {
       </TitleSession>
       <LoveCommitmentAndDedicationSession>
         <div>
-          <img src="/img/amor.png" alt="Foto sobre amor" />
+          <img
+            src="/img/amor.png"
+            alt="Foto sobre amor"
+            onLoad={handleImageLoad}
+            className={`${imageLoaded ? '' : 'image-loading'}`}
+          />
           <h2>Amor</h2>
           <p>
             Amamos e cuidamos de cada pet como se fossem da nossa família. Aqui,
@@ -20,7 +32,12 @@ export function SessionOfLoveCommitmentAndDedication() {
           </p>
         </div>
         <div>
-          <img src="/img/compromisso.png" alt="Foto sobre compromisso" />
+          <img
+            src="/img/compromisso.png"
+            alt="Foto sobre compromisso"
+            onLoad={handleImageLoad}
+            className={`${imageLoaded ? '' : 'image-loading'}`}
+          />
           <h2>Compromisso</h2>
           <p>
             Nos comprometemos em oferecer serviços de qualidade, filhotes
@@ -29,7 +46,12 @@ export function SessionOfLoveCommitmentAndDedication() {
           </p>
         </div>
         <div>
-          <img src="/img/dedicacao.png" alt="Foto sobre dedicação" />
+          <img
+            src="/img/dedicacao.png"
+            alt="Foto sobre dedicação"
+            onLoad={handleImageLoad}
+            className={`${imageLoaded ? '' : 'image-loading'}`}
+          />
           <h2>Dedicação</h2>
           <p>
             Somos dedicados em proporcionar o melhor atendimento e cuidados

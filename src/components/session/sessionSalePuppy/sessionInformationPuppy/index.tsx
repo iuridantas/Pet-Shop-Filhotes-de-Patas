@@ -1,6 +1,13 @@
+import { useState } from 'react';
 import { Title, InformationPuppySession } from './style';
 
 export function SessionInformationPuppy() {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  const handleImageLoad = () => {
+    setImageLoaded(true);
+  };
+
   return (
     <section aria-label="Informações sobre a venda de filhotes do Pet Shop Filhotes de Patas">
       <Title>
@@ -11,6 +18,8 @@ export function SessionInformationPuppy() {
           src="/img/checklist.png"
           alt="Checklist sobre venda de filhotes"
           aria-label="Checklist sobre venda de filhotes"
+          onLoad={handleImageLoad}
+          className={`${imageLoaded ? '' : 'image-loading'}`}
         />
         <div>
           <p>

@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import {
   SaleProductSession,
   AestheticsandHygieneSession,
@@ -5,6 +6,12 @@ import {
 } from './style';
 
 export function SessionServiceDetails() {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  const handleImageLoad = () => {
+    setImageLoaded(true);
+  };
+
   return (
     <section aria-label="Sobre Serviços de Estética e Higiene, venda de filhotes e venda de produtos">
       <AestheticsandHygieneSession aria-label="Sobre Serviços de Estética e Higiene">
@@ -13,6 +20,8 @@ export function SessionServiceDetails() {
             src="/img/cachorro_banho.png"
             alt="Cachorro tomando banho"
             aria-label="Cachorro tomando banho"
+            onLoad={handleImageLoad}
+            className={`${imageLoaded ? '' : 'image-loading'}`}
           />
           <div className="info">
             <h2>Serviços de Estética e Higiene</h2>
@@ -45,7 +54,13 @@ export function SessionServiceDetails() {
             com seu novo companheiro comece da melhor maneira possível.
           </p>
         </div>
-        <img src="/img/filhotes.png" alt="Filhote" aria-label="Filhote" />
+        <img
+          src="/img/filhotes.png"
+          alt="Filhote"
+          aria-label="Filhote"
+          onLoad={handleImageLoad}
+          className={`${imageLoaded ? '' : 'image-loading'}`}
+        />
       </SalePuppySession>
       <SaleProductSession aria-label="Sobre Venda de Produtos">
         <div>
@@ -53,6 +68,8 @@ export function SessionServiceDetails() {
             src="/img/produtos.png"
             alt="Produtos pet"
             aria-label="Produtos pet"
+            onLoad={handleImageLoad}
+            className={`${imageLoaded ? '' : 'image-loading'}`}
           />
           <div className="info">
             <h2>Serviço de Venda de Produtos para Cachorro e Gato</h2>

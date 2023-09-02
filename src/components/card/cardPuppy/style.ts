@@ -13,6 +13,11 @@ export const CardSession = styled.div`
     border-radius: 16px;
   }
 
+  .image-loading {
+    filter: blur(10px);
+    transition: filter 0.3s;
+  }
+
   h2 {
     font-size: 30px;
   }
