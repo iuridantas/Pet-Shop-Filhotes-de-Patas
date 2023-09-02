@@ -33,7 +33,7 @@ export function CardProductsForDogs({
   searchTerm: string;
   selectedFilter: string;
   selectedCategory: string;
-  itemsToShow: number; 
+  itemsToShow: number;
 }) {
   const [productColors, setProductColors] = useState(
     productsDogs.map((product) => ({
@@ -47,6 +47,37 @@ export function CardProductsForDogs({
   );
 
   const [shuffledProducts, setShuffledProducts] = useState<Product[]>([]);
+
+  const [imagesLoaded, setImagesLoaded] = useState(false);
+
+  const preloadImages = (imageUrls: string[]) => {
+    const loadedImages = new Set<string>();
+
+    imageUrls.forEach((url) => {
+      const img = new Image();
+      img.src = url;
+      img.onload = () => {
+        loadedImages.add(url);
+        if (loadedImages.size === imageUrls.length) {
+          // All images are loaded
+          setImagesLoaded(true);
+        }
+      };
+    });
+  };
+
+  useEffect(() => {
+    const imageUrls = shuffledProducts.reduce<string[]>((urls, product) => {
+      if (product.colors) {
+        urls.push(...product.colors.map((color) => color.photo));
+      } else if (product.photo) {
+        urls.push(product.photo);
+      }
+      return urls;
+    }, []);
+
+    preloadImages(imageUrls);
+  }, [selectedFilter, selectedCategory, shuffledProducts]);
 
   useEffect(() => {
     const shuffleArray = (array: Product[]) => {
@@ -74,9 +105,7 @@ export function CardProductsForDogs({
 
     const imageUrls = shuffledProducts.reduce<string[]>((urls, product) => {
       if (product.colors) {
-        urls.push(
-          ...product.colors.map((color) => color.photo)
-        );
+        urls.push(...product.colors.map((color) => color.photo));
       } else if (product.photo) {
         urls.push(product.photo);
       }
@@ -84,7 +113,6 @@ export function CardProductsForDogs({
     }, []);
 
     preloadImages(imageUrls);
-
   }, [selectedFilter, selectedCategory, shuffledProducts]);
 
   const sortProducts = (products: any[]) => {
@@ -195,15 +223,24 @@ export function CardProductsForDogs({
             Array.isArray(product.colors) &&
             product.colors.length > 0 ? (
               <>
-                <img
-                  src={
-                    product.colors[
-                      productColors.find((p) => p.productId === product.id)
-                        ?.currentColorIndex || 0
-                    ]?.photo
-                  }
-                  alt={product.name}
-                />
+                {imagesLoaded ? (
+                  <img
+                    src={
+                      product.colors &&
+                      Array.isArray(product.colors) &&
+                      product.colors.length > 0
+                        ? product.colors[
+                            productColors.find(
+                              (p) => p.productId === product.id,
+                            )?.currentColorIndex || 0
+                          ]?.photo
+                        : product.photo
+                    }
+                    alt={product.name}
+                  />
+                ) : (
+                  <div className="image-placeholder">Loading...</div>
+                )}
                 <IconMagnifyingGlass
                   onClick={() => handleCardClick(product.id)}
                 />
@@ -220,7 +257,11 @@ export function CardProductsForDogs({
               </>
             ) : (
               <>
-                <img src={product.photo} alt={product.name} />
+                {imagesLoaded ? (
+                  <img src={product.photo} alt={product.name} />
+                ) : (
+                  <div className="image-placeholder">Loading...</div>
+                )}
                 <IconMagnifyingGlass
                   onClick={() => handleCardClick(product.id)}
                 />

@@ -34,6 +34,19 @@ export const CardSession = styled.div`
     height: 26px;
   }
 
+  .image-placeholder {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 100%;
+    background: #ccc;
+    filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+  }
+
   h2 {
     font-size: 20px;
     text-align: center;
