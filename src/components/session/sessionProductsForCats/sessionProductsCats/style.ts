@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ProductsCats = styled.div`
- display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   max-width: 1440px;
@@ -106,7 +106,6 @@ export const ProductsCats = styled.div`
       margin-bottom: 10px;
     }
 
-
     select {
       font-size: 16px;
     }
@@ -121,6 +120,16 @@ export const ProductsCats = styled.div`
       display: flex;
       flex-direction: column;
       margin: 15px auto;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .select {
+      margin: 0 auto;
+    }
+
+    select {
+      margin: 5px 50px;
     }
   }
 `;

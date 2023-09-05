@@ -122,4 +122,14 @@ export const ProductsDogs = styled.div`
       margin: 15px auto;
     }
   }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .select {
+      margin: 0 auto;
+    }
+
+    select {
+      margin: 5px 50px;
+    }
+  }
 `;

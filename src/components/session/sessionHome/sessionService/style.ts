@@ -111,6 +111,22 @@ export const ServiceSession = styled.div`
       margin: 20px auto;
     }
   }
+
+  @media (min-width: 768px) and (max-width: 820px) {
+    height: auto;
+
+    .info {
+      flex-direction: column;
+    }
+
+    ul {
+      margin: 0 auto;
+    }
+
+    a {
+      margin: 20px auto;
+    }
+  }
 `;
 
 export const IconWhatsapp = styled(BsWhatsapp)`

@@ -79,6 +79,33 @@ export const HygienePetSession = styled.div`
       text-align: justify;
     }
   }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    padding: 16px 0;
+    flex-direction: column;
+
+    img {
+      position: initial;
+      margin: 0 auto;
+    }
+
+    h2 {
+      margin: 10px auto;
+    }
+
+    p {
+      margin: 10px auto;
+    }
+
+    .benefits {
+      margin: 0 20px;
+      padding: 4px 20px;
+    }
+
+    li {
+      text-align: justify;
+    }
+  }
 `;
 
 export const IconWrapper = styled.div`

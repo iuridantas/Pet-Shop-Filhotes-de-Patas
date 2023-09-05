@@ -75,4 +75,15 @@ export const InformationPuppySession = styled.div`
       font-size: 16px;
     }
   }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    flex-direction: column;
+    margin: 10px auto;
+
+    img {
+      height: auto;
+      width: 500px;
+      margin: 0 auto 10px auto;
+    }
+  }
 `;

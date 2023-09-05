@@ -67,6 +67,45 @@ export const AestheticsandHygieneSession = styled.div`
       font-size: 16px;
     }
   }
+
+  @media (min-width: 768px) and (max-width: 820px) {
+    margin: 10px auto;
+
+    div {
+      flex-direction: column;
+    }
+
+    img {
+      width: auto;
+      height: auto;
+      margin: 0 20px 10px 20px;
+    }
+
+    .info {
+      text-align: justify;
+      margin: auto;
+    }
+
+    h2 {
+      margin: 0 20px;
+    }
+
+    p {
+      margin: 10px 20px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    img {
+      width: 500px;
+      height: auto;
+      margin-left: 40px;
+    }
+
+    .info {
+      margin: 40px auto;
+    }   
+  }
 `;
 
 export const SalePuppySession = styled.div`
@@ -120,6 +159,42 @@ export const SalePuppySession = styled.div`
       margin: 10px 20px;
       font-size: 16px;
     }
+  }
+
+  @media (min-width: 768px) and (max-width: 820px) {
+    margin: 10px auto;
+    flex-direction: column-reverse;
+
+    img {
+      width: auto;
+      height: auto;
+      margin: 0 20px 10px 20px;
+    }
+
+    .info {
+      text-align: justify;
+      margin: auto;
+    }
+
+    h2 {
+      margin: 0 20px;
+    }
+
+    p {
+      margin: 10px 20px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    img {
+      width: 450px;
+      height: auto;
+      margin-right: 40px;
+    }
+
+    .info {
+      margin: 40px auto;
+    }   
   }
 `;
 
@@ -184,6 +259,45 @@ export const SaleProductSession = styled.div`
     p {
       margin: 10px 20px;
       font-size: 16px;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 820px) {
+    margin: 10px auto;
+
+    div {
+      flex-direction: column;
+    }
+
+    img {
+      width: auto;
+      height: auto;
+      margin: 0 20px 10px 20px;
+    }
+
+    .info {
+      text-align: justify;
+      margin: auto;
+    }
+
+    h2 {
+      margin: 0 20px;
+    }
+
+    p {
+      margin: 10px 20px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    img {
+      width: 500px;
+      height: auto;
+      margin-left: 40px;
+    }
+
+    .info {
+      margin: 40px auto;
     }
   }
 `;

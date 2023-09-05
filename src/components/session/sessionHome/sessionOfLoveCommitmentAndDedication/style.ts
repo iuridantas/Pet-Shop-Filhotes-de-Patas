@@ -58,6 +58,16 @@ export const LoveCommitmentAndDedicationSession = styled.div`
       margin: 10px auto;
     }
   }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    div {
+      margin: 10px auto;
+    }
+  }
 `;
 
 export const TitleSession = styled.div`

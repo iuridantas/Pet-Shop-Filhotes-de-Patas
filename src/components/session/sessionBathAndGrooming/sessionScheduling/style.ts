@@ -45,4 +45,31 @@ export const SchedulingSession = styled.div`
       gap: 6px;
     }
   }
+
+  @media (min-width: 768px) and (max-width: 820px) {
+    button {
+      width: 170px;
+      height: 40px;
+      top: 310px;
+    }
+
+    h1 {
+      font-size: 20px;
+      gap: 6px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    button {
+      width: 170px;
+      height: 40px;
+      top: 350px;
+    }
+
+    h1 {
+      font-size: 20px;
+      gap: 6px;
+    }
+  }
 `;
+

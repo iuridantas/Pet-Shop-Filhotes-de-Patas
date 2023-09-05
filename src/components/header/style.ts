@@ -95,4 +95,50 @@ export const Container = styled.div`
       cursor: pointer;
     }
   }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+  div {
+    padding: 32px 16px;
+  }
+
+  img {
+    width: 200px;
+    height: 100px;
+  }
+
+  ul {
+    padding: 0 20px;
+    display: block;
+    position: absolute;
+    background-color: #fff8c1;
+    width: 100%;
+    top: 164px;
+    right: 0;
+    height: 0;
+    transition: 0.6s;
+    z-index: 1000;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+
+  nav.active ul {
+    height: calc(100vh - 164px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+
+  a {
+    padding: 16px 0;
+    margin: 16px 0;
+  }
+
+  button {
+    display: flex;
+    font-size: 40px;
+    background: none;
+    color: #1f1c6e;
+    border: none;
+    cursor: pointer;
+  }
+}
 `;

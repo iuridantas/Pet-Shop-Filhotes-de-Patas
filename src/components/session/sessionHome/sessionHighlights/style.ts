@@ -65,4 +65,21 @@ export const HighlightsSession = styled.div`
       margin: 10px auto;
     }
   }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    margin: 5px auto;
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 10px auto;
+    }
+
+    li {
+      margin: 10px auto;
+    }
+  }
 `;
