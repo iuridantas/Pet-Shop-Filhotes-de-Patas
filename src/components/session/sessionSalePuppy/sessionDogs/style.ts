@@ -23,7 +23,7 @@ export const DogsSession = styled.div`
     gap: 24px;
   }
 
-  @media (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     margin: 0 0 10px 0;
 
     h2 {

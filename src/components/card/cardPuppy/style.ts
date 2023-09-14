@@ -28,7 +28,7 @@ export const CardSession = styled.div`
     padding: 5px;
   }
 
-  @media (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     width: 370px;
     height: auto;
     margin: 0 auto;

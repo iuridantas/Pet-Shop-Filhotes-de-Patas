@@ -27,7 +27,7 @@ export const BathStepsSession = styled.div`
     border-radius: 24px;
   }
 
-  @media (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     h2 {
       font-size: 20px;
     }

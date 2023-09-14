@@ -9,7 +9,7 @@ export const Title = styled.div`
     text-align: center;
   }
 
-  @media (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     margin: 10px 0;
 
     h1 {
@@ -51,7 +51,7 @@ export const InformationPuppySession = styled.div`
     text-align: justify;
   }
 
-  @media (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     flex-direction: column;
     margin: 10px auto;
 
@@ -76,7 +76,7 @@ export const InformationPuppySession = styled.div`
     }
   }
 
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media only screen and(min-width: 768px) and (max-width: 1024px) {
     flex-direction: column;
     margin: 10px auto;
 

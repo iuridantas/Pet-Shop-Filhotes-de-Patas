@@ -33,7 +33,7 @@ export const SchedulingSession = styled.div`
     gap: 12px;
   }
 
-  @media (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     button {
       width: 170px;
       height: 40px;
@@ -46,7 +46,7 @@ export const SchedulingSession = styled.div`
     }
   }
 
-  @media (min-width: 768px) and (max-width: 820px) {
+  @media only screen and (min-width: 768px) and (max-width: 900px) {
     button {
       width: 170px;
       height: 40px;
@@ -59,7 +59,7 @@ export const SchedulingSession = styled.div`
     }
   }
 
-  @media (min-width: 1024px) {
+  @media only screen and (min-width: 901px) and (max-width: 1024px) {
     button {
       width: 170px;
       height: 40px;

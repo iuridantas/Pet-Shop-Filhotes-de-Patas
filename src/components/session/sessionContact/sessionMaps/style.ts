@@ -23,7 +23,7 @@ export const MapsSession = styled.div`
     transition: filter 0.3s;
   }
 
-  @media (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     iframe {
       height: 250px;
     }

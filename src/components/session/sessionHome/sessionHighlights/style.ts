@@ -45,7 +45,7 @@ export const HighlightsSession = styled.div`
     border-radius: 80px;
   }
 
-  @media (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     display: flex;
     flex-direction: column;
     margin: 5px auto;
@@ -66,7 +66,7 @@ export const HighlightsSession = styled.div`
     }
   }
 
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
     display: flex;
     flex-direction: column;
     margin: 5px auto;

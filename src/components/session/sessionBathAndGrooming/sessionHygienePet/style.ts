@@ -49,7 +49,7 @@ export const HygienePetSession = styled.div`
     font-size: 20px;
   }
 
-  @media (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     padding: 16px 0;
     flex-direction: column;
 
@@ -80,7 +80,7 @@ export const HygienePetSession = styled.div`
     }
   }
 
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
     padding: 16px 0;
     flex-direction: column;
 

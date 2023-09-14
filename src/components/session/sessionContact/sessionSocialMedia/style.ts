@@ -43,7 +43,7 @@ export const SocialMediaSession = styled.div`
     margin: 0 10px;
   }
 
-  @media (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     display: flex;
     flex-direction: column;
     h2 {

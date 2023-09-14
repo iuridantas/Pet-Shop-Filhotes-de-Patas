@@ -53,7 +53,7 @@ export const CardSession = styled.div`
     font-size: 16px;
   }
 
-  @media (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     width: 310px;
     height: auto;
 
@@ -110,7 +110,7 @@ export const IconMagnifyingGlass = styled(PiMagnifyingGlassPlus)`
   font-size: 25px;
   cursor: pointer;
 
-  @media (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     top: 15%;
   }
 `;
@@ -149,7 +149,7 @@ export const ButtonIcon = styled(AiOutlineClose)`
     color: red;
   }
 
-  @media (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     color: red;
     right: 50px;
     top: 150px;
@@ -166,7 +166,7 @@ export const CardSessionError = styled.div`
   align-items: center;
   margin: 0 auto;
 
-  @media (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     img {
       width: 300px;
     }

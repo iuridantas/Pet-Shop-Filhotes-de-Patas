@@ -38,7 +38,7 @@ export const AestheticsandHygieneSession = styled.div`
     text-align: center;
   }
 
-  @media (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     flex-direction: column;
     margin: 10px auto;
 
@@ -68,7 +68,7 @@ export const AestheticsandHygieneSession = styled.div`
     }
   }
 
-  @media (min-width: 768px) and (max-width: 820px) {
+  @media only screen and (min-width: 768px) and (max-width: 900px) {
     margin: 10px auto;
 
     div {
@@ -95,7 +95,7 @@ export const AestheticsandHygieneSession = styled.div`
     }
   }
 
-  @media (min-width: 1024px) {
+  @media only screen and (min-width: 901px) and (max-width: 1024px) {
     img {
       width: 500px;
       height: auto;
@@ -104,7 +104,7 @@ export const AestheticsandHygieneSession = styled.div`
 
     .info {
       margin: 40px auto;
-    }   
+    }
   }
 `;
 
@@ -135,7 +135,7 @@ export const SalePuppySession = styled.div`
     text-align: center;
   }
 
-  @media (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     margin: 10px auto;
     flex-direction: column-reverse;
 
@@ -161,7 +161,7 @@ export const SalePuppySession = styled.div`
     }
   }
 
-  @media (min-width: 768px) and (max-width: 820px) {
+  @media only screen and (min-width: 768px) and (max-width: 900px) {
     margin: 10px auto;
     flex-direction: column-reverse;
 
@@ -185,7 +185,7 @@ export const SalePuppySession = styled.div`
     }
   }
 
-  @media (min-width: 1024px) {
+  @media only screen and (min-width: 901px) and (max-width: 1024px) {
     img {
       width: 450px;
       height: auto;
@@ -194,7 +194,7 @@ export const SalePuppySession = styled.div`
 
     .info {
       margin: 40px auto;
-    }   
+    }
   }
 `;
 
@@ -232,7 +232,7 @@ export const SaleProductSession = styled.div`
     text-align: center;
   }
 
-  @media (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     flex-direction: column;
     margin: 10px auto;
 
@@ -262,7 +262,7 @@ export const SaleProductSession = styled.div`
     }
   }
 
-  @media (min-width: 768px) and (max-width: 820px) {
+  @media only screen and (min-width: 768px) and (max-width: 900px) {
     margin: 10px auto;
 
     div {
@@ -289,7 +289,7 @@ export const SaleProductSession = styled.div`
     }
   }
 
-  @media (min-width: 1024px) {
+  @media only screen and (min-width: 901px) and (max-width: 1024px) {
     img {
       width: 500px;
       height: auto;

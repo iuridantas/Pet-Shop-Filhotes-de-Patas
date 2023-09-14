@@ -78,7 +78,7 @@ export const ServiceSession = styled.div`
     color: #dd9094;
   }
 
-  @media (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     height: auto;
 
     h2 {
@@ -112,7 +112,7 @@ export const ServiceSession = styled.div`
     }
   }
 
-  @media (min-width: 768px) and (max-width: 820px) {
+  @media only screen and (min-width: 768px) and (max-width: 900px) {
     height: auto;
 
     .info {
@@ -134,7 +134,7 @@ export const IconWhatsapp = styled(BsWhatsapp)`
   height: 30px;
   margin: 0 0 0 5px;
 
-  @media (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     width: 25px;
     height: 26px;
   }
@@ -150,7 +150,7 @@ export const IconArrowDown = styled(MdOutlineKeyboardArrowDown)`
   color: #1f1c6e;
   position: absolute;
 
-  @media (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     width: 25px;
     height: 25px;
   }

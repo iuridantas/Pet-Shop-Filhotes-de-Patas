@@ -37,7 +37,7 @@ export const LoveCommitmentAndDedicationSession = styled.div`
     margin: 0 10px;
   }
 
-  @media (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     display: flex;
     flex-direction: column;
 
@@ -59,7 +59,7 @@ export const LoveCommitmentAndDedicationSession = styled.div`
     }
   }
 
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -87,7 +87,7 @@ export const TitleSession = styled.div`
     margin: 0 0 20px 0;
   }
 
-  @media (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     h1 {
       font-size: 30px;
       margin: 10px 20px;

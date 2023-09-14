@@ -80,7 +80,7 @@ export const ProductsCats = styled.div`
     margin: 20px auto;
   }
 
-  @media (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     h1 {
       font-size: 20px;
       margin: 5px 20px;
@@ -123,7 +123,7 @@ export const ProductsCats = styled.div`
     }
   }
 
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .select {
       margin: 0 auto;
     }
