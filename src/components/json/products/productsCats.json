@@ -1507,5 +1507,21 @@
     "price": 100.0,
     "installments": "ou 2x de 50,00",
     "category": "Comedouros e Bebedouros"
+  },
+  {
+    "id": 113,
+    "name": "Cama Iglu",
+    "brand": "",
+    "colors": [
+      {
+        "photo": "/img/cama_iglu1.png"
+      },
+      {
+        "photo": "/img/cama_iglu2.png"
+      }
+    ],
+    "price": 100.0,
+    "installments": "ou 2x de 50,00",
+    "category": "Camas"
   }
 ]
