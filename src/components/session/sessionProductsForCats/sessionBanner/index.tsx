@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react';
 import { BannerSession } from './style';
 
 export function SessionBannerCat() {
-  const images = ['/img/gato.png'];
-  const imagesPhone = ['/img/gato_cel.png'];
+  const desktopImages = ['/img/gato.png'];
+  const mobileImages = ['/img/gato_cel.png'];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [imagesLoaded, setImagesLoaded] = useState(false);
 
@@ -15,7 +15,7 @@ export function SessionBannerCat() {
       const links = document.querySelectorAll('link[rel="preload"]');
       links.forEach((link) => link.remove());
 
-      const preloadImages = isMobile ? imagesPhone : images;
+      const preloadImages = isMobile ? mobileImages : desktopImages;
       preloadImages.forEach((src) => {
         const link = document.createElement('link');
         link.rel = 'preload';
@@ -37,10 +37,13 @@ export function SessionBannerCat() {
     setImagesLoaded(true);
   };
 
+  const isMobile = window.innerWidth <= 600;
+  const images = isMobile ? mobileImages : desktopImages;
+
   return (
     <section aria-label="Banner dos produtos a venda para gato">
       <BannerSession>
-        {(window.innerWidth <= 600 ? imagesPhone : images).map((src, index) => (
+        {images.map((src, index) => (
           <div
             key={index}
             style={{ display: index === currentImageIndex ? 'block' : 'none' }}

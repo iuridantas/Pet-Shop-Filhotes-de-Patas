@@ -20,22 +20,22 @@ export function CardDogsInformation() {
       });
     };
 
-    const imageUrls = puppyDogs.map((dogsInformation) => dogsInformation.photo);
+    const imageUrls = puppyDogs.map((dogInfo) => dogInfo.photo);
 
     preloadImages(imageUrls);
   }, []);
 
   return (
     <section aria-label="card sobre os cachorros disponível para venda">
-      {puppyDogs.map((dogsInformation, index) => (
+      {puppyDogs.map((dogInfo, index) => (
         <CardSession key={index}>
-          <h2>{dogsInformation.name}</h2>
+          <h2>{dogInfo.name}</h2>
           <img
-            src={dogsInformation.photo}
-            alt={dogsInformation.name}
+            src={dogInfo.photo}
+            alt={dogInfo.name}
             className={`${imagesLoaded ? '' : 'image-loading'}`}
           />
-          <p>{dogsInformation.description}</p>
+          <p>{dogInfo.description}</p>
         </CardSession>
       ))}
     </section>

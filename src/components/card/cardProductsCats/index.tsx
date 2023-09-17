@@ -15,9 +15,7 @@ interface Product {
   id: number;
   name: string;
   brand: string;
-  colors?: {
-    photo: string;
-  }[];
+  colors?: { photo: string }[];
   price: number;
   installments: string;
   photo?: string;
@@ -41,6 +39,13 @@ export function CardProductsForCats({
       currentColorIndex: 0,
     })),
   );
+
+  const FilterTypes = {
+    NAME_ASCENDING: 'NameAscending',
+    NAME_DESCENDING: 'NameDescending',
+    PRICE_ASCENDING: 'PriceAscending',
+    PRICE_DESCENDING: 'PriceDescending',
+  };
 
   const [selectedCardIndex, setSelectedCardIndex] = useState<number | null>(
     null,
@@ -66,19 +71,6 @@ export function CardProductsForCats({
   };
 
   useEffect(() => {
-    const imageUrls = shuffledProducts.reduce<string[]>((urls, product) => {
-      if (product.colors) {
-        urls.push(...product.colors.map((color) => color.photo));
-      } else if (product.photo) {
-        urls.push(product.photo);
-      }
-      return urls;
-    }, []);
-
-    preloadImages(imageUrls);
-  }, [selectedFilter, selectedCategory, shuffledProducts]);
-
-  useEffect(() => {
     const shuffleArray = (array: Product[]) => {
       const shuffledArray = [...array];
       for (let i = shuffledArray.length - 1; i > 0; i--) {
@@ -95,13 +87,6 @@ export function CardProductsForCats({
   }, []);
 
   useEffect(() => {
-    const preloadImages = (imageUrls: string[]) => {
-      imageUrls.forEach((url) => {
-        const img = new Image();
-        img.src = url;
-      });
-    };
-
     const imageUrls = shuffledProducts.reduce<string[]>((urls, product) => {
       if (product.colors) {
         urls.push(...product.colors.map((color) => color.photo));
@@ -117,20 +102,20 @@ export function CardProductsForCats({
   const sortProducts = (products: any[]) => {
     let sortedProducts = [...products];
     switch (selectedFilter) {
-      case 'NameAscending':
+      case FilterTypes.NAME_ASCENDING:
         sortedProducts = sortedProducts.sort((a, b) =>
           a.name.localeCompare(b.name),
         );
         break;
-      case 'NameDescending':
+      case FilterTypes.NAME_DESCENDING:
         sortedProducts = sortedProducts.sort((a, b) =>
           b.name.localeCompare(a.name),
         );
         break;
-      case 'PriceAscending':
+      case FilterTypes.PRICE_ASCENDING:
         sortedProducts = sortedProducts.sort((a, b) => a.price - b.price);
         break;
-      case 'PriceDescending':
+      case FilterTypes.PRICE_DESCENDING:
         sortedProducts = sortedProducts.sort((a, b) => b.price - a.price);
         break;
       default:
@@ -154,14 +139,6 @@ export function CardProductsForCats({
   const handleFullScreenCardClose = () => {
     setSelectedCardIndex(null);
   };
-
-  const filteredProducts = sortProducts(shuffledProducts).filter(
-    (product) =>
-      (searchTerm === '' ||
-        product.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        product.brand.toLowerCase().includes(searchTerm.toLowerCase())) &&
-      (selectedCategory === '' || product.category === selectedCategory),
-  );
 
   const formatPrice = (price: number) => {
     return price.toLocaleString('pt-BR', {
@@ -203,6 +180,14 @@ export function CardProductsForCats({
     );
   };
 
+  const filteredProducts = sortProducts(shuffledProducts).filter(
+    (product) =>
+      (searchTerm === '' ||
+        product.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        product.brand.toLowerCase().includes(searchTerm.toLowerCase())) &&
+      (selectedCategory === '' || product.category === selectedCategory),
+  );
+
   return (
     <section aria-label="card sobre produtos para gato disponível para venda">
       {filteredProducts.length === 0 && (
@@ -224,14 +209,10 @@ export function CardProductsForCats({
               <>
                 <img
                   src={
-                    product.colors &&
-                    Array.isArray(product.colors) &&
-                    product.colors.length > 0
-                      ? product.colors[
-                          productColors.find((p) => p.productId === product.id)
-                            ?.currentColorIndex || 0
-                        ]?.photo
-                      : product.photo
+                    product.colors[
+                      productColors.find((p) => p.productId === product.id)
+                        ?.currentColorIndex || 0
+                    ]?.photo
                   }
                   alt={product.name}
                   className={`${imagesLoaded ? '' : 'image-loading'}`}

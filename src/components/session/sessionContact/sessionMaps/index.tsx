@@ -4,14 +4,14 @@ import { MapsSession } from './style';
 export function SessionMaps() {
   const [mapLoaded, setMapLoaded] = useState(false);
 
+  const handleMapLoad = () => {
+    setMapLoaded(true);
+  };
+
   useEffect(() => {
     const iframe = document.querySelector(
       'iframe[title="Filhotes de Patas Pet Shop"]',
     );
-
-    const handleMapLoad = () => {
-      setMapLoaded(true);
-    };
 
     if (iframe) {
       iframe.addEventListener('load', handleMapLoad);
@@ -25,7 +25,7 @@ export function SessionMaps() {
   }, []);
 
   return (
-    <section aria-label="Redes sociais do filhotes de patas">
+    <section aria-label="Redes sociais do Filhotes de Patas">
       <MapsSession>
         <h1>Redes Sociais e Localização</h1>
         <iframe

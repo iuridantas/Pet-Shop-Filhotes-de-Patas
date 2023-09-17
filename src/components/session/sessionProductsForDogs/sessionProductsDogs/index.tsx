@@ -12,20 +12,44 @@ export function SessionProductsDogs() {
   const [itemsToShow, setItemsToShow] = useState(12);
   const totalItems = 227;
 
-  const categoryItemCounts: { [category: string]: number } = {
-    'Ração': 4,
+  const categories = [
+    'Ração',
+    'Petiscos e Ossos',
+    'Tapetes, Fraldas e Banheiros',
+    'Farmácia',
+    'Brinquedos',
+    'Beleza e Limpeza',
+    'Coleiras, Guias e Peitorais',
+    'Camas',
+    'Cobertores',
+    'Comedouros e Bebedouros',
+    'Acessórios de Transporte',
+    'Portões e Grades',
+    'Roupas',
+  ];
+
+  const filters = [
+    { value: '', label: 'Escolha' },
+    { value: 'NameAscending', label: 'Nome de A-Z' },
+    { value: 'NameDescending', label: 'Nome de Z-A' },
+    { value: 'PriceAscending', label: 'Menor Preço' },
+    { value: 'PriceDescending', label: 'Maior Preço' },
+  ];
+
+  const categoryItemCounts: Record<string, number> = {
+    Ração: 4,
     'Petiscos e Ossos': 4,
     'Tapetes, Fraldas e Banheiros': 5,
-    'Farmácia': 8,
-    'Brinquedos': 44,
+    Farmácia: 8,
+    Brinquedos: 44,
     'Beleza e Limpeza': 50,
     'Coleiras, Guias e Peitorais': 24,
-    'Camas': 20,
-    'Cobertores': 1,
+    Camas: 20,
+    Cobertores: 1,
     'Comedouros e Bebedouros': 30,
     'Acessórios de Transporte': 6,
     'Portões e Grades': 2,
-    'Roupas': 29,
+    Roupas: 29,
   };
 
   const handleSeeMoreClick = () => {
@@ -41,11 +65,6 @@ export function SessionProductsDogs() {
     }
   };
 
-  useEffect(() => {
-    const itemsInCategory = categoryItemCounts[selectedCategory] || totalItems;
-    setItemsToShow(searchTerm === '' ? Math.min(12, itemsInCategory) : itemsInCategory);
-  }, [selectedCategory, searchTerm]);
-
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearchTerm(event.target.value);
   };
@@ -53,12 +72,6 @@ export function SessionProductsDogs() {
   const handleFilterChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setSelectedFilter(event.target.value);
   };
-
-  useEffect(() => {
-    const searchParams = new URLSearchParams(location.search);
-    const categoryFromUrl = searchParams.get('category');
-    setSelectedCategory(categoryFromUrl || '');
-  }, [location.search]);
 
   const handleCategoryChange = (
     event: React.ChangeEvent<HTMLSelectElement>,
@@ -75,6 +88,19 @@ export function SessionProductsDogs() {
     }
   };
 
+  useEffect(() => {
+    const searchParams = new URLSearchParams(location.search);
+    const categoryFromUrl = searchParams.get('category');
+    setSelectedCategory(categoryFromUrl || '');
+  }, [location.search]);
+
+  useEffect(() => {
+    const itemsInCategory = categoryItemCounts[selectedCategory] || totalItems;
+    setItemsToShow(
+      searchTerm === '' ? Math.min(12, itemsInCategory) : itemsInCategory,
+    );
+  }, [selectedCategory, searchTerm]);
+
   return (
     <section aria-label="Seção dos produtos para cachorros">
       <ProductsDogs>
@@ -86,37 +112,21 @@ export function SessionProductsDogs() {
             <h2>Categorias:</h2>
             <select value={selectedCategory} onChange={handleCategoryChange}>
               <option value="">Escolha</option>
-              <option value="Ração">Ração</option>
-              <option value="Petiscos e Ossos">Petiscos e Ossos</option>
-              <option value="Tapetes, Fraldas e Banheiros">
-                Tapetes, Fraldas e Banheiros
-              </option>
-              <option value="Farmácia">Farmácia</option>
-              <option value="Brinquedos">Brinquedos</option>
-              <option value="Beleza e Limpeza">Beleza e Limpeza</option>
-              <option value="Coleiras, Guias e Peitorais">
-                Coleiras, Guias e Peitorais
-              </option>
-              <option value="Camas">Camas</option>
-              <option value="Cobertores">Cobertores</option>
-              <option value="Comedouros e Bebedouros">
-                Comedouros e Bebedouros
-              </option>
-              <option value="Acessórios de Transporte">
-                Acessórios de Transporte
-              </option>
-              <option value="Portões e Grades">Portões e Grades</option>
-              <option value="Roupas">Roupas</option>
+              {categories.map((category) => (
+                <option key={category} value={category}>
+                  {category}
+                </option>
+              ))}
             </select>
           </div>
           <div className="select">
             <h2>Ordenar por:</h2>
             <select value={selectedFilter} onChange={handleFilterChange}>
-              <option value="">Escolha</option>
-              <option value="NameAscending">Nome de A-Z</option>
-              <option value="NameDescending">Nome de Z-A</option>
-              <option value="PriceAscending">Menor Preço</option>
-              <option value="PriceDescending">Maior Preço</option>
+              {filters.map((filter) => (
+                <option key={filter.value} value={filter.value}>
+                  {filter.label}
+                </option>
+              ))}
             </select>
           </div>
         </div>

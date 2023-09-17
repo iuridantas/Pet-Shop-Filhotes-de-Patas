@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react';
 import { BannerSession } from './style';
 
 export function SessionBannerBathAndGrooming() {
-  const images = ['/img/banho_tosa.png'];
-  const imagesPhone = ['/img/banho_tosa_cel.png'];
+  const desktopImages = ['/img/banho_tosa.png'];
+  const mobileImages = ['/img/banho_tosa_cel.png'];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [imagesLoaded, setImagesLoaded] = useState(false);
 
@@ -15,7 +15,7 @@ export function SessionBannerBathAndGrooming() {
       const links = document.querySelectorAll('link[rel="preload"]');
       links.forEach((link) => link.remove());
 
-      const preloadImages = isMobile ? imagesPhone : images;
+      const preloadImages = isMobile ? mobileImages : desktopImages;
       preloadImages.forEach((src) => {
         const link = document.createElement('link');
         link.rel = 'preload';
@@ -37,10 +37,13 @@ export function SessionBannerBathAndGrooming() {
     setImagesLoaded(true);
   };
 
+  const isMobile = window.innerWidth <= 600;
+  const images = isMobile ? mobileImages : desktopImages;
+
   return (
     <section aria-label="Banner sobre banho e tosa">
       <BannerSession>
-        {(window.innerWidth <= 600 ? imagesPhone : images).map((src, index) => (
+        {images.map((src, index) => (
           <div
             key={index}
             style={{ display: index === currentImageIndex ? 'block' : 'none' }}
