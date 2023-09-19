@@ -14,7 +14,7 @@ export function SessionServiceDetails() {
 
   return (
     <section aria-label="Sobre Serviços de Estética e Higiene, venda de filhotes e venda de produtos">
-      <AestheticsandHygieneSession aria-label="Sobre Serviços de Estética e Higiene">
+      <AestheticsandHygieneSession>
         <div>
           <img
             src="/img/cachorro_banho.png"

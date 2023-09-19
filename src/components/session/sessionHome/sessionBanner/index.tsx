@@ -46,7 +46,7 @@ export function SessionBannersHome() {
   const imagesToDisplay = windowWidth <= 1024 ? mobileImages : desktopImages;
 
   return (
-    <section aria-label="Banner sobre venda de filhotes e sobre banho e tosa">
+    <section aria-label="Banner sobre venda de filhotes, produtos a venda para gatos e cachorros e sobre banho e tosa">
       <BannersSession>
         <div className="carousel-container">
           <div
