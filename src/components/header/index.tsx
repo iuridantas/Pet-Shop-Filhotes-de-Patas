@@ -86,7 +86,7 @@ export function Header() {
         id: 'brinquedos-gato-link',
         target: '/gato?category=Brinquedos',
       },
-      { id: 'petiscos-ossos-link', target: '/boloPersonalizado' },
+      { id: 'petiscos-ossos-link', target: '/cachorro?category=Petiscos%20e%20Ossos' },
       {
         id: 'tapetes-fraldas-banheiros-gato-link',
         target: '/gato?category=Tapetes%2C%20Fraldas%20e%20Banheiros',
