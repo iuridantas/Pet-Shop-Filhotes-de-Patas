@@ -24,7 +24,10 @@ export const Container = styled.div`
   }
 
   .container-link {
-    display: block;
+    display: flex;
+    position: relative;
+    align-items: center;
+    text-decoration: none;
     background: #dd9094;
     color: #1f1c6e;
     cursor: pointer;
@@ -38,11 +41,67 @@ export const Container = styled.div`
     transition: all 0.3s ease-in-out;
   }
 
+  .container-link span {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+  }
+
   .container-link:hover {
-    background-color: #1f1c6e;
-    color: #dd9094;
     box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.35);
     transform: translate(0px, -2px);
+  }
+
+  .submenu-dog {
+    display: block;
+    position: absolute;
+    font-size: 24px;
+    width: auto;
+    cursor: pointer;
+    border-radius: 8px;
+    background: #dd9094;
+    padding: 10px;
+    z-index: 1;
+  }
+
+  .submenu-dog a {
+    display: block;
+    padding: 5px 0;
+    color: #1f1c6e;
+    text-decoration: none;
+  }
+
+  .submenu-dog a:hover {
+    color: #1f1c6e;
+    text-decoration: underline;
+  }
+
+  .submenu-cat {
+    display: block;
+    position: absolute;
+    font-size: 24px;
+    width: auto;
+    cursor: pointer;
+    border-radius: 8px;
+    background: #dd9094;
+    padding: 10px;
+    z-index: 1;
+  }
+
+  .submenu-cat a {
+    display: block;
+    padding: 5px 0;
+    color: #1f1c6e;
+    text-decoration: none;
+  }
+
+  .submenu-cat a:hover {
+    color: #1f1c6e;
+    text-decoration: underline;
+  }
+
+  .submenu-closed {
+    display: none;
   }
 
   button {
@@ -94,6 +153,30 @@ export const Container = styled.div`
       border: none;
       cursor: pointer;
     }
+
+    .submenu-dog {
+      width: 90%;
+      margin: 0 20px;
+      padding: 5px 0;
+      top: 190px;
+    }
+
+    .submenu-dog a {
+      display: block;
+      padding: 5px 10px;
+    }
+
+    .submenu-cat {
+      width: 90%;
+      margin: 0 20px;
+      padding: 5px 0;
+      top: 254px;
+    }
+
+    .submenu-cat a {
+      display: block;
+      padding: 5px 10px;
+    }
   }
 
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -139,6 +222,31 @@ export const Container = styled.div`
       color: #1f1c6e;
       border: none;
       cursor: pointer;
+    }
+
+    
+    .submenu-dog {
+      width: 95%;
+      margin: 0 20px;
+      padding: 5px 0;
+      top: 190px;
+    }
+
+    .submenu-dog a {
+      display: block;
+      padding: 5px 10px;
+    }
+
+    .submenu-cat {
+      width: 95%;
+      margin: 0 20px;
+      padding: 5px 0;
+      top: 254px;
+    }
+
+    .submenu-cat a {
+      display: block;
+      padding: 5px 10px;
     }
   }
 `;

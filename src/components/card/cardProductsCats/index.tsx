@@ -140,13 +140,6 @@ export function CardProductsForCats({
     setSelectedCardIndex(null);
   };
 
-  const formatPrice = (price: number) => {
-    return price.toLocaleString('pt-BR', {
-      style: 'currency',
-      currency: 'BRL',
-    });
-  };
-
   const handleNextColor = (productId: number, colorsLength: number) => {
     setProductColors((prevProductColors) =>
       prevProductColors.map((productColor) =>
@@ -244,10 +237,6 @@ export function CardProductsForCats({
               </>
             )}
           </ImageContainer>
-          <div className="information">
-            <h3>{formatPrice(product.price)}</h3>
-            <h4>{product.installments}</h4>
-          </div>
         </CardSession>
       ))}
       {selectedCardIndex !== null && (

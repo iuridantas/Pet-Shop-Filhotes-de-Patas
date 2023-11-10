@@ -5,7 +5,7 @@ import { PiMagnifyingGlassPlus } from 'react-icons/pi';
 
 export const CardSession = styled.div`
   width: 345px;
-  height: 330px;
+  height: 300px;
   padding: 16px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24),
     1px 1px 5px black;
