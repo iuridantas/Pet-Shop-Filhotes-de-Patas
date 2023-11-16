@@ -15,13 +15,23 @@ interface Product {
   id: number;
   name: string;
   brand: string;
-  colors?: {
-    photo: string;
-  }[];
+  colors?: { photo: string }[];
   price: number;
   installments: string;
   photo?: string;
   category: string;
+}
+
+enum FilterTypes {
+  NAME_ASCENDING = 'NameAscending',
+  NAME_DESCENDING = 'NameDescending',
+}
+
+interface Props {
+  searchTerm: string;
+  selectedFilter: string;
+  selectedCategory: string;
+  itemsToShow: number;
 }
 
 export function CardProductsForDogs({
@@ -29,12 +39,7 @@ export function CardProductsForDogs({
   selectedFilter,
   selectedCategory,
   itemsToShow,
-}: {
-  searchTerm: string;
-  selectedFilter: string;
-  selectedCategory: string;
-  itemsToShow: number;
-}) {
+}: Props) {
   const [productColors, setProductColors] = useState(
     productsDogs.map((product) => ({
       productId: product.id,
@@ -42,35 +47,11 @@ export function CardProductsForDogs({
     })),
   );
 
-  const FilterTypes = {
-    NAME_ASCENDING: 'NameAscending',
-    NAME_DESCENDING: 'NameDescending',
-    PRICE_ASCENDING: 'PriceAscending',
-    PRICE_DESCENDING: 'PriceDescending',
-  };
-
   const [selectedCardIndex, setSelectedCardIndex] = useState<number | null>(
     null,
   );
-
   const [shuffledProducts, setShuffledProducts] = useState<Product[]>([]);
-
   const [imagesLoaded, setImagesLoaded] = useState(false);
-
-  const preloadImages = (imageUrls: string[]) => {
-    const loadedImages = new Set<string>();
-
-    imageUrls.forEach((url) => {
-      const img = new Image();
-      img.src = url;
-      img.onload = () => {
-        loadedImages.add(url);
-        if (loadedImages.size === imageUrls.length) {
-          setImagesLoaded(true);
-        }
-      };
-    });
-  };
 
   useEffect(() => {
     const shuffleArray = (array: Product[]) => {
@@ -98,11 +79,27 @@ export function CardProductsForDogs({
       return urls;
     }, []);
 
+    const preloadImages = (imageUrls: string[]) => {
+      const loadedImages = new Set<string>();
+
+      imageUrls.forEach((url) => {
+        const img = new Image();
+        img.src = url;
+        img.onload = () => {
+          loadedImages.add(url);
+          if (loadedImages.size === imageUrls.length) {
+            setImagesLoaded(true);
+          }
+        };
+      });
+    };
+
     preloadImages(imageUrls);
   }, [selectedFilter, selectedCategory, shuffledProducts]);
 
-  const sortProducts = (products: any[]) => {
+  const sortProducts = (products: Product[]) => {
     let sortedProducts = [...products];
+
     switch (selectedFilter) {
       case FilterTypes.NAME_ASCENDING:
         sortedProducts = sortedProducts.sort((a, b) =>
@@ -113,12 +110,6 @@ export function CardProductsForDogs({
         sortedProducts = sortedProducts.sort((a, b) =>
           b.name.localeCompare(a.name),
         );
-        break;
-      case FilterTypes.PRICE_ASCENDING:
-        sortedProducts = sortedProducts.sort((a, b) => a.price - b.price);
-        break;
-      case FilterTypes.PRICE_DESCENDING:
-        sortedProducts = sortedProducts.sort((a, b) => b.price - a.price);
         break;
       default:
         break;
@@ -142,7 +133,11 @@ export function CardProductsForDogs({
     setSelectedCardIndex(null);
   };
 
-  const handleNextColor = (productId: number, colorsLength: number) => {
+  const handleColorChange = (
+    productId: number,
+    colorsLength: number,
+    direction: number,
+  ) => {
     setProductColors((prevProductColors) =>
       prevProductColors.map((productColor) =>
         productColor.productId === productId
@@ -150,23 +145,9 @@ export function CardProductsForDogs({
               ...productColor,
               currentColorIndex:
                 colorsLength > 0
-                  ? (productColor.currentColorIndex + 1) % colorsLength
-                  : 0,
-            }
-          : productColor,
-      ),
-    );
-  };
-
-  const handlePreviousColor = (productId: number, colorsLength: number) => {
-    setProductColors((prevProductColors) =>
-      prevProductColors.map((productColor) =>
-        productColor.productId === productId
-          ? {
-              ...productColor,
-              currentColorIndex:
-                colorsLength > 0
-                  ? (productColor.currentColorIndex - 1 + colorsLength) %
+                  ? (productColor.currentColorIndex +
+                      direction +
+                      colorsLength) %
                     colorsLength
                   : 0,
             }
@@ -217,12 +198,12 @@ export function CardProductsForDogs({
                 />
                 <IconLeft
                   onClick={() =>
-                    handlePreviousColor(product.id, product.colors!.length)
+                    handleColorChange(product.id, product.colors!.length, -1)
                   }
                 />
                 <IconRight
                   onClick={() =>
-                    handleNextColor(product.id, product.colors!.length)
+                    handleColorChange(product.id, product.colors!.length, 1)
                   }
                 />
               </>

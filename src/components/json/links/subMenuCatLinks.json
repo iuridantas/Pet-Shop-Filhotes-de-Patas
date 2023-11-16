@@ -1,0 +1,23 @@
+[
+  {
+    "id": "acessórios-transporte-gato-link",
+    "category": "Acessórios de Transporte"
+  },
+  { "id": "beleza-limpeza-gato-link", "category": "Beleza e Limpeza" },
+  { "id": "brinquedos-gato-link", "category": "Brinquedos" },
+  { "id": "camas-gato-link", "category": "Camas" },
+  {
+    "id": "coleiras-guias-peitorais-gato-link",
+    "category": "Coleiras, Guias e Peitorais"
+  },
+  {
+    "id": "comedouros-bebedouros-gato-link",
+    "category": "Comedouros e Bebedouros"
+  },
+  { "id": "cobertores-gato-link", "category": "Cobertores" },
+  { "id": "farmácia-gato-link", "category": "Farmácia" },
+  {
+    "id": "tapetes-fraldas-banheiros-gato-link",
+    "category": "Tapetes, Fraldas e Banheiros"
+  }
+]

@@ -28,8 +28,6 @@ export function SessionProductsCats() {
     { value: '', label: 'Escolha' },
     { value: 'NameAscending', label: 'Nome de A-Z' },
     { value: 'NameDescending', label: 'Nome de Z-A' },
-    { value: 'PriceAscending', label: 'Menor Preço' },
-    { value: 'PriceDescending', label: 'Maior Preço' },
   ];
 
   const categoryItemCounts: Record<string, number> = {

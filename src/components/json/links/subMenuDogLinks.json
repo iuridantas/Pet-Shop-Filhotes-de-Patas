@@ -1,0 +1,27 @@
+[
+  {
+    "id": "acessórios-transporte-cachorro-link",
+    "category": "Acessórios de Transporte"
+  },
+  { "id": "beleza-limpeza-cachorro-link", "category": "Beleza e Limpeza" },
+  { "id": "brinquedos-cachorro-link", "category": "Brinquedos" },
+  { "id": "camas-cachorro-link", "category": "Camas" },
+  {
+    "id": "coleiras-guias-peitorais-cachorro-link",
+    "category": "Coleiras, Guias e Peitorais"
+  },
+  {
+    "id": "comedouros-bebedouros-cachorro-link",
+    "category": "Comedouros e Bebedouros"
+  },
+  { "id": "cobertores-cachorro-link", "category": "Cobertores" },
+  { "id": "farmácia-cachorro-link", "category": "Farmácia" },
+  { "id": "petiscos-ossos-link", "category": "Petiscos e Ossos" },
+  { "id": "portões-grades-link", "category": "Portões e Grades" },
+  { "id": "roupas-link", "category": "Roupas" },
+  {
+    "id": "tapetes-fraldas-banheiros-cachorro-link",
+    "category": "Tapetes, Fraldas e Banheiros"
+  },
+  { "id": "ração-link", "category": "Ração" }
+]

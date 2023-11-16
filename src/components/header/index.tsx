@@ -2,6 +2,9 @@ import { Container } from './style';
 import { useEffect, useState } from 'react';
 import { AiOutlineMenu, AiFillCaretDown } from 'react-icons/ai';
 import { Link, useNavigate } from 'react-router-dom';
+import menuLinks from '../json/links/menuLinks.json';
+import subMenuDogLinks from '../json/links/subMenuDogLinks.json';
+import subMenuCatLinks from '../json/links/subMenuCatLinks.json';
 
 export function Header() {
   const navigate = useNavigate();
@@ -38,80 +41,6 @@ export function Header() {
         setSubmenuOpenCat(false);
       });
     }
-
-    const menuLinks = [
-      { id: 'home-link', target: '/' },
-      { id: 'estetica-link', target: '/estetica' },
-      { id: 'contato-link', target: '/contato' },
-      { id: 'filhotes-link', target: '/filhotes' },
-      { id: 'camas-cachorro-link', target: '/cachorro?category=Camas' },
-      { id: 'camas-gato-link', target: '/gato?category=Camas' },
-      {
-        id: 'comedouros-bebedouros-cachorro-link',
-        target: '/cachorro?category=Comedouros%20e%20Bebedouros',
-      },
-      {
-        id: 'comedouros-bebedouros-gato-link',
-        target: '/gato?category=Comedouros%20e%20Bebedouros',
-      },
-      {
-        id: 'cobertores-cachorro-link',
-        target: '/cachorro?category=Cobertores',
-      },
-      {
-        id: 'cobertores-gato-link',
-        target: '/gato?category=Cobertores',
-      },
-      {
-        id: 'coleiras-guias-peitorais-cachorro-link',
-        target: '/cachorro?category=Coleiras%2C%20Guias%20e%20Peitorais',
-      },
-      {
-        id: 'coleiras-guias-peitorais-gato-link',
-        target: '/gato?category=Coleiras%2C%20Guias%20e%20Peitorais',
-      },
-      {
-        id: 'beleza-limpeza-cachorro-link',
-        target: '/cachorro?category=Beleza%20e%20Limpeza',
-      },
-      {
-        id: 'beleza-limpeza-gato-link',
-        target: '/gato?category=Beleza%20e%20Limpeza',
-      },
-      {
-        id: 'brinquedos-cachorro-link',
-        target: '/cachorro?category=Brinquedos',
-      },
-      {
-        id: 'brinquedos-gato-link',
-        target: '/gato?category=Brinquedos',
-      },
-      { id: 'petiscos-ossos-link', target: '/cachorro?category=Petiscos%20e%20Ossos' },
-      {
-        id: 'tapetes-fraldas-banheiros-gato-link',
-        target: '/gato?category=Tapetes%2C%20Fraldas%20e%20Banheiros',
-      },
-      {
-        id: 'tapetes-fraldas-banheiros-cachorro-link',
-        target: '/cachorro?category=Tapetes%2C%20Fraldas%20e%20Banheiros',
-      },
-      { id: 'ração-link', target: '/cachorro?category=Ração' },
-      {
-        id: 'portões-grades-link',
-        target: '/cachorro?category=Portões%20e%20Grades',
-      },
-      { id: 'roupas-link', target: '/cachorro?category=Roupas' },
-      { id: 'farmácia-cachorro-link', target: '/cachorro?category=Farmácia' },
-      { id: 'farmácia-gato-link', target: '/gato?category=Farmácia' },
-      {
-        id: 'acessórios-transporte-cachorro-link',
-        target: '/cachorro?category=Acessórios%20de%20Transporte',
-      },
-      {
-        id: 'acessórios-transporte-gato-link',
-        target: '/gato?category=Acessórios%20de%20Transporte',
-      },
-    ];
 
     menuLinks.forEach((link) => {
       addLinkClickEvent(link.id, link.target);
@@ -159,20 +88,17 @@ export function Header() {
               <AiOutlineMenu />
             </button>
             <ul id="menu" role="menu">
-              <li>
-                <Link to="/" id="home-link" className="container-link">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/estetica"
-                  id="estetica-link"
-                  className="container-link"
-                >
-                  Estética
-                </Link>
-              </li>
+              {menuLinks.map((link) => (
+                <li key={link.id}>
+                  <Link
+                    to={link.target}
+                    id={link.id}
+                    className="container-link"
+                  >
+                    {link.id.replace('-link', '')}
+                  </Link>
+                </li>
+              ))}
               <li
                 onMouseEnter={() => setSubmenuOpenDog(true)}
                 onMouseLeave={() => setSubmenuOpenDog(false)}
@@ -189,104 +115,16 @@ export function Header() {
                 <ul
                   className={submenuOpenDog ? 'submenu-dog' : 'submenu-closed'}
                 >
-                  <li>
-                    <Link to="/cachorro?category=Ração" id="ração-link">
-                      Ração
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/cachorro?category=Petiscos%20e%20Ossos"
-                      id="petiscos-ossos-link"
-                    >
-                      Petiscos e Ossos
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/cachorro?category=Tapetes%2C%20Fraldas%20e%20Banheiros"
-                      id="tapetes-fraldas-banheiros-cachorro-link"
-                    >
-                      Tapetes, Fraldas e Banheiros
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/cachorro?category=Farmácia"
-                      id="farmácia-cachorro-link"
-                    >
-                      Farmácia
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/cachorro?category=Brinquedos"
-                      id="brinquedos-cachorro-link"
-                    >
-                      Brinquedos
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/cachorro?category=Beleza%20e%20Limpeza"
-                      id="beleza-limpeza-cachorro-link"
-                    >
-                      Beleza e Limpeza
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/cachorro?category=Coleiras%2C%20Guias%20e%20Peitorais"
-                      id="coleiras-guias-peitorais-cachorro-link"
-                    >
-                      Coleiras, Guias e Peitorais
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/cachorro?category=Camas"
-                      id="camas-cachorro-link"
-                    >
-                      Camas
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/cachorro?category=Cobertores"
-                      id="cobertores-cachorro-link"
-                    >
-                      Cobertores
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/cachorro?category=Comedouros%20e%20Bebedouros"
-                      id="comedouros-bebedouros-cachorro-link"
-                    >
-                      Comedouros e Bebedouros
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/cachorro?category=Acessórios%20de%20Transporte"
-                      id="acessórios-transporte-cachorro-link"
-                    >
-                      Acessórios de Transporte
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/cachorro?category=Portões%20e%20Grades"
-                      id="portões-grades-link"
-                    >
-                      Portões e Grades
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/cachorro?category=Roupas" id="roupas-link">
-                      Roupas
-                    </Link>
-                  </li>
+                  {subMenuDogLinks.map((link) => (
+                    <li key={link.id}>
+                      <Link
+                        to={`/cachorro?category=${link.category}`}
+                        id={link.id}
+                      >
+                        {link.category}
+                      </Link>
+                    </li>
+                  ))}
                 </ul>
               </li>
               <li
@@ -305,91 +143,14 @@ export function Header() {
                 <ul
                   className={submenuOpenCat ? 'submenu-cat' : 'submenu-closed'}
                 >
-                  <li>
-                    <Link
-                      to="/gato?category=Tapetes%2C%20Fraldas%20e%20Banheiros"
-                      id="tapetes-fraldas-banheiros-gato-link"
-                    >
-                      Tapetes, Fraldas e Banheiros
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/gato?category=Farmácia" id="farmácia-gato-link">
-                      Farmácia
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/gato?category=Brinquedos"
-                      id="brinquedos-gato-link"
-                    >
-                      Brinquedos
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/gato?category=Beleza%20e%20Limpeza"
-                      id="beleza-limpeza-gato-link"
-                    >
-                      Beleza e Limpeza
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/gato?category=Coleiras%2C%20Guias%20e%20Peitorais"
-                      id="coleiras-guias-peitorais-gato-link"
-                    >
-                      Coleiras, Guias e Peitorais
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/gato?category=Camas" id="camas-gato-link">
-                      Camas
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/gato?category=Cobertores"
-                      id="cobertores-gato-link"
-                    >
-                      Cobertores
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/gato?category=Comedouros%20e%20Bebedouros"
-                      id="comedouros-bebedouros-gato-link"
-                    >
-                      Comedouros e Bebedouros
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/gato?category=Acessórios%20de%20Transporte"
-                      id="acessórios-transporte-gato-link"
-                    >
-                      Acessórios de Transporte
-                    </Link>
-                  </li>
+                  {subMenuCatLinks.map((link) => (
+                    <li key={link.id}>
+                      <Link to={`/gato?category=${link.category}`} id={link.id}>
+                        {link.category}
+                      </Link>
+                    </li>
+                  ))}
                 </ul>
-              </li>
-              <li>
-                <Link
-                  to="/filhotes"
-                  id="filhotes-link"
-                  className="container-link"
-                >
-                  Filhotes
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/contato"
-                  id="contato-link"
-                  className="container-link"
-                >
-                  Contato
-                </Link>
               </li>
             </ul>
           </nav>

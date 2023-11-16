@@ -1,0 +1,6 @@
+[
+  { "id": "Home-link", "target": "/" },
+  { "id": "Estetica-link", "target": "/estetica" },
+  { "id": "Contato-link", "target": "/contato" },
+  { "id": "Filhotes-link", "target": "/filhotes" }
+]
